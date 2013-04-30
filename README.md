@@ -3,6 +3,7 @@ snapmeds
 
 Snap Meds Mobile Application Repository
 
+SnapMeds Team:
 Joel Dodge, Bobby Heidkamp, Caleb Johnson, Onur Karaman, Matt Omori, Zach Wand, 
 Tom Zhang, Terence Zhao
 
@@ -18,3 +19,21 @@ SnapMeds.test contains all of the java test code. These tests cover the utilitie
 The Dabase folder contains all the python used to populate our database. 
 The WebPages folder contains all the php used on our database for the restful API.
 All database usernames and passwords are removed from these files and they are designed primarily for setting up your own database
+
+License
+========
+
+Copyright 2013 Snap Meds Team
+
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
