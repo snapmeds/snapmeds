@@ -1,0 +1,60 @@
+<?php
+require_once("sensitive_data.php");
+
+// protects from SQL injection
+function sanitize($str) {
+	$str = trim($str);
+	return "\"".$str."\"";
+
+}
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+$conflictingconditions = sanitize($_POST['conflictingconditions']);
+$genericnames = sanitize($_POST['genericnames']);
+$ndc = sanitize($_POST['ndc']);
+$precautions = sanitize($_POST['precautions']);
+$uses = sanitize($_POST['uses']);
+$warnings = sanitize($_POST['warnings']);
+$conflictingconditions = sanitize($_POST['conflictingconditions']);
+$setid = strtolower(sanitize($_POST['setid']));
+$adversereactions = sanitize($_POST['adversereactions']);
+$boxwarnings = sanitize($_POST['boxwarnings']);
+$name = sanitize($_POST['name']);
+$medicationguide = sanitize($_POST['medicationguide']);
+
+if ($username === "snapmeds_admin" && $password == "safeerides"){
+	$connection = new mysqli("snapmeds.clnz0ggkmfv0.us-west-2.rds.amazonaws.com", $username, $password, "snapmeds_root");
+	echo "ndc: ".$ndc."\n";
+	if ($ndc != "\"\""){
+		$result = $connection->query("INSERT INTO NDC (setid, ndc) VALUES (".$setid.",".$ndc.")");
+	} else {
+
+		$sst = "INSERT INTO INFO 
+		(setid, adversereactions, boxwarnings, conflictingconditions,genericnames,precautions,uses,name,warnings,medicationguide) VALUES 
+		(".$setid.", ".$adversereactions.", ".$boxwarnings.",".$conflictingconditions.",".$genericnames.",".$precautions.",".$uses.",
+		".$name.",".$warnings.",".$medicationguide.")";
+		$result = $connection->query($sst);
+
+	}
+	
+		
+	
+	/*
+	$result = $connection->query("INSERT INTO ADVERSEREACTIONS (setid, adversereactions) VALUES (".$setid.",".$adversereactions.")");
+	$result = $connection->query("INSERT INTO CONFLICTINGCONDITIONS (setid,conflictingconditions) VALUES (".$setid.",".$conflictingconditions.")");
+	$result = $connection->query("INSERT INTO GENERICNAMES (setid, genericnames) VALUES (".$setid.",".$genericnames.")");
+	$result = $connection->query("INSERT INTO PRECAUTIONS (setid, precautions) VALUES (".$setid.",".$precautions.")");
+	$result = $connection->query("INSERT INTO BOXWARNINGS (setid, boxwarnings) VALUES (".$setid.",".$boxwarnings.")");
+	$result = $connection->query("INSERT INTO USES (setid, uses) VALUES (".$setid.",".$uses.")");
+	$result = $connection->query("INSERT INTO WARNINGS (setid, warnings) VALUES (".$setid.",".$warnings.")");
+	$result = $connection->query("INSERT INTO NAME (setid, name) VALUES (".$setid.",".$name.")");
+	$result = $connection->query("INSERT INTO MEDICATIONGUIDE (setid, medicationguide) VALUES (".$setid.",".$medicationguide.")");
+*/
+	
+	$connection->close();
+}
+
+
+?>

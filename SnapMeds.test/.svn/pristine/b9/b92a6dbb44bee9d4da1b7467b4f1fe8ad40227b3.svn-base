@@ -1,0 +1,133 @@
+package utilitiesTest;
+
+import static org.junit.Assert.*;
+
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import util.FakeStorage;
+
+import com.utilities.Drug;
+import com.utilities.MedicineCabinet;
+import com.utilities.Prescription;
+import com.utilities.Storage;
+
+public class MedicineCabinetTest {
+	private static MedicineCabinet cabinet;
+
+	private static final Prescription prescription1 = new Prescription();
+	private static final Prescription prescription2 = new Prescription();
+	private static final Prescription prescription3 = new Prescription();
+	
+	private static final Drug drug = new Drug();
+
+	@BeforeClass
+	public static void setup() {
+		Storage.setInstance(new FakeStorage());
+		
+		cabinet = MedicineCabinet.getInstance();
+		
+		// Make prescriptions distinguishable
+		prescription1.setNote("1");
+		prescription2.setNote("2");
+		prescription3.setNote("3");
+	}
+
+	@Before
+	public void resetState() {
+		cabinet.getList().clear();
+		cabinet.add(prescription1);
+		cabinet.add(prescription2);
+		cabinet.add(prescription3);
+	}
+	
+	@Test
+	public void testGetInstance() {
+		MedicineCabinet instanceCabinet = MedicineCabinet.getInstance();
+		assertNotNull(instanceCabinet);
+		assertTrue(instanceCabinet instanceof MedicineCabinet);
+	}
+	
+	@Test
+	public void testIterator() {
+		int i = 1;
+		for(Prescription p : cabinet) {
+			switch(i) {
+			case 1:
+				assertTrue(p.equals(prescription1));
+				break;
+			case 2:
+				assertTrue(p.equals(prescription2));
+				break;
+			case 3:
+				assertTrue(p.equals(prescription3));
+				break;
+			}
+			i++;
+		}
+	}
+	
+	@Test
+	public void testSize() {
+		assertEquals(3, cabinet.size());
+	}
+
+	@Test
+	public void testGet() {
+		assertTrue(((Prescription)cabinet.get(1)).equals(prescription2));
+	}
+
+	@Test
+	public void testAdd() {
+		cabinet.getList().clear();
+		cabinet.add(prescription2);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription2));
+	}
+	
+	@Test
+	public void testAddNull() {
+		cabinet.add(null);
+		assertEquals(3, cabinet.size());
+	}
+	
+	@Test
+	public void testAddWrongObject() {
+		cabinet.add(drug);
+		assertEquals(3, cabinet.size());
+	}
+
+	@Test
+	public void testRemove() {
+		cabinet.remove(1);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription1)
+				&& ((Prescription)cabinet.get(1)).equals(prescription3));
+	}
+
+	@Test
+	public void testReorderNoChange() {
+		cabinet.reorder(1, 1);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription1)
+				&& ((Prescription)cabinet.get(1)).equals(prescription2)
+				&& ((Prescription)cabinet.get(2)).equals(prescription3));
+	}
+
+	@Test
+	public void testReorderUpwards() {
+		// Move bottom to top
+		cabinet.reorder(0, 2);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription3)
+				&& ((Prescription)cabinet.get(1)).equals(prescription1)
+				&& ((Prescription)cabinet.get(2)).equals(prescription2));
+	}
+
+	@Test
+	public void testReorderDownwards() {
+		// Move top to bottom
+		cabinet.reorder(2, 0);
+		assertTrue(cabinet.get(0).equals(prescription2)
+				&& cabinet.get(1).equals(prescription3)
+				&& cabinet.get(2).equals(prescription1));
+	}
+}

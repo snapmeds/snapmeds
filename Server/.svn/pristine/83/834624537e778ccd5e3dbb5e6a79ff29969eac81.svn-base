@@ -1,0 +1,866 @@
+<?php
+
+$password = "safeerides";
+$username = "snapmeds_admin";
+
+
+
+$conflictingconditions = array();
+$genericnames = array();
+$ndc = array();
+$precautions = array();
+$uses = array();
+$warnings = array();
+$conflictingconditions = array();
+$setid = array();
+$adversereactions = array();
+$boxwarnings = array();
+$name = array();
+$medicationguide = array();
+
+$connection = new mysqli("engr-cpanel-mysql.engr.illinois.edu", $username, $password, "snapmeds_root");
+$i = 0;
+
+
+/******************************************************************************************************************************/
+/***************************************************START OF DEFINITIONS*******************************************************/
+/******************************************************************************************************************************/
+
+
+$name[$i]="Crestor";
+$uses[$i]="Lowers high levels of cholesterol and triglycerides (fats) in your blood. Helps keep atherosclerosis (hardening of the arteries) from getting worse. Lowers the risk of stroke and heart attack in people who have certain risk factors. This medicine is an HMG-CoA inhibitor, also called a statin.";
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+
+Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+
+Cloudy urine
+
+Dark-colored urine or pale stools
+
+Decrease in how much or how often you urinate
+
+Muscle pain, tenderness, weakness, or cramps
+
+Nausea, vomiting, loss of appetite, or pain in your upper stomach
+
+Painful urination
+
+Swelling in your hands, ankles, or feet
+
+Unusual tiredness or weakness
+
+Yellowing of your skin or the whites of your eyes
+If you notice these less serious side effects, talk with your doctor:
+
+Headache
+
+If you notice other side effects that you think are caused by this medicine, tell your doctor.";
+
+$warnings[$i]="Using this medicine while you are pregnant can harm your unborn baby. Use an effective form of birth control to keep from getting pregnant. If you think you have become pregnant while using the medicine, tell your doctor right away.
+
+Make sure your doctor knows if you have kidney disease or an underactive thyroid. Tell your doctor if you have a history of liver disease, if you have muscle pain or weakness, or if you drink alcohol on a regular basis.
+
+This medicine may work differently in people who are Asian or have Asian ancestry.
+
+Call your doctor right away if you have unexplained muscle pain, tenderness, or weakness. These could be symptoms of a serious muscle problem called myopathy.
+
+Call your doctor right away if you have dark-colored urine, fever, muscle cramps or spasms, muscle pain or stiffness, or unusual tiredness or weakness. These could be symptoms of a serious muscle problem called rhabdomyolysis, which can cause kidney problems.
+
+Call your doctor right away if you get a headache, stomach pain, vomiting, dark-colored urine, loss of appetite, weight loss, general feeling of tiredness or weakness, light-colored stools, upper right stomach pain, or yellow eyes or skin. These could be symptoms of liver damage.
+
+Make sure any doctor or dentist who treats you knows that you are using this medicine. You may need to stop using this medicine if you have a major surgery or major injury.
+Your doctor will need to check your blood at regular visits while you are using this medicine. Be sure to keep all appointments.";
+
+$conflictingconditions[$i]="Do not use this medicine if you have had an allergic reaction to rosuvastatin. You should not use this medicine if you have active liver disease, or if you are pregnant or breastfeeding.
+
+Ask your doctor or pharmacist before using any other medicine, including over-the-counter medicines, vitamins, and herbal products.
+
+Make sure your doctor knows if you are also using cimetidine (Tagamet®), cyclosporine (Gengraf®, Neoral®, Sandimmune®), atazanavir/ritonavir (Norvir®, Reyataz®), lopinavir/ritonavir (Kaletra®), niacin (Vitamin B3), spironolactone (Aldactone®), a blood thinner (such as warfarin or Coumadin®), an antibiotic (such as erythromycin, Ery-Tab®), medicine to treat fungus infection (such as fluconazole, itraconazole, ketoconazole, Nizoral®, or Sporanox®), or other medicine for lowering cholesterol (such as fenofibrate, gemfibrozil, Lopid®, or Tricor®).
+
+If you need to take an antacid that contains aluminum and magnesium (such as Maalox®), take the antacid at least 2 hours after you take rosuvastatin.
+Tell your doctor if you usually drink more than 2 glasses alcohol per day.";
+
+$genericnames[$i]="Rosuvastatin";
+$medicationguide[$i]="Tablet
+
+Your doctor will tell you how much of this medicine to use and how often. Your dose may need to be changed several times in order to find out what works best for you. Do not use more medicine or use it more often than your doctor tells you to.
+
+You may take this medicine with or without food.
+
+Swallow the tablet whole. Do not break, crush, or chew it.
+
+Carefully follow your doctor\'s instructions about diet and exercise. This medicine is part of a complete plan for lowering cholesterol and triglycerides in your blood.
+
+This medicine comes with patient instructions. Read and follow these instructions carefully. Ask your doctor or pharmacist if you have any questions.
+
+If a dose is missed:
+
+If you miss a dose or forget to use your medicine, use it as soon as you can. If it is almost time for your next dose, wait until then to use the medicine and skip the missed dose. Do not use extra medicine to make up for a missed dose.However, do not take 2 doses of this medicine within 12 hours.
+
+How to Store and Dispose of This Medicine:
+
+Store the medicine in a closed container at room temperature, away from heat, moisture, and direct light.
+
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any outdated medicine or medicine no longer needed.
+Keep all medicine away from children and never share your medicine with anyone.";
+
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-crestor";
+$ndc[$i]="0000-0000-01";
+$i = $i + 1;
+
+/******************************************************************************************/
+$name[$i]="Furosemide";
+$uses[$i]="Treats fluid retention (edema) and high blood pressure (hypertension). This medicine is a diuretic (water pill).";
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+
+Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+
+Blistering, peeling, or red skin rash
+
+Black, tarry stools
+
+Chest pain, shortness of breath
+
+Dry mouth, increased thirst, muscle cramps, problems urinating, or nausea or vomiting
+
+Fever chills, cough, or pain in the side or lower back
+
+Hearing loss, or ringing in the ears
+
+Lightheadedness or fainting
+
+Severe diarrhea or stomach pain
+
+Skin spots that look like blisters or pimples
+
+Sores, ulcers, or white patches on your lips, mouth, or throat
+
+Unusual bleeding or bruising
+
+Yellowing of your skin or the whites of your eyes, or seeing a yellow haze in your vision
+
+If you notice these less serious side effects, talk with your doctor:
+Loss of appetite
+Stomach cramps
+If you notice other side effects that you think are caused by this medicine, tell your doctor.";
+
+$warnings[$i]="Make sure your doctor knows if you are pregnant or breastfeeding, or if you have kidney disease, liver disease (cirrhosis), anemia, diabetes, gout, hearing problems, low blood pressure, or systemic lupus erythematosus (SLE). Tell your doctor if you have a mineral imbalance with calcium, magnesium, potassium, or sodium in the blood. Make sure your doctor knows if you have an enlarged prostate, low protein in the blood, trouble urinating, or an allergy to sulfa drugs (such as sulfamethoxazole, sulfasalazine, sulfisoxazole, Azulfidine®, Bactrim®, Gantrisin®, or Septra®).
+
+This medicine may cause you to lose more potassium from your body than normal (hypokalemia). This is more likely to occur if you have liver disease (such as cirrhosis), or if you are using this medicine together with steroids (cortisone-like medicines), adrenocorticotropic hormone (ACTH), large amounts of licorice, or laxatives for a long time. Tell your doctor if you become sick with severe or continuing nausea, vomiting, or diarrhea, and drink fluids to prevent getting dehydrated. Check with your doctor right away if you have dry mouth, increased thirst, muscle cramps, or nausea or vomiting.
+Dizziness, lightheadedness, or fainting may occur, especially when you get up suddenly from a lying or sitting position. Getting up slowly may help. If the problem continues or gets worse, check with your doctor.
+
+Stop using this medicine and check with your doctor right away if you have a sudden decrease in hearing or loss of hearing. You may also have dizziness or ringing in the ears. Tell your doctor if you have a feeling of constant movement or a sensation of spinning.
+This medicine may cause an increase in blood sugar levels. If you are diabetic and notice a change in the results of your blood or urine sugar tests, check with your doctor.
+
+This medicine may make your skin more sensitive to sunlight. Use a sunscreen when you are outdoors. Avoid sunlamps and tanning beds.
+Your doctor will need to check your blood or urine at regular visits while you are using this medicine. Be sure to keep all appointments.
+This medicine will not cure your high blood pressure, but it does help control it. You must continue to take it as directed if you expect to lower your blood pressure and keep it down. You might have to take blood pressure medicine for the rest of your life.";
+
+$conflictingconditions[$i]="Ask your doctor or pharmacist before using any other medicine, including over-the-counter medicines, vitamins, and herbal products.
+Make sure your doctor knows if you are also using bepridil (Vascor®), cisplatin (Platinol®), digoxin (Lanoxin®), lithium (Eskalith®, Lithobid®), succinylcholine (Anectine®, Quelicin®), tubocurarine, other medicine for high blood pressure (such as candesartan, enalapril, irbesartan, lisinopril, losartan, olmesartan, valsartan, Accupril®, Atacand®, Avapro®, Benicar®, Cozaar®, Diovan®, Hyzaar®, Lotrel®, or Zestril®), or a diuretic or water pill (such as bumetanide, ethacrynic acid, hydrochlorothiazide, Edecrin®, Hyzaar®, or Zestoretic®).
+
+Make sure your doctor knows if you are also using cyclosporine (Gengraf®, Neoral®, Sandimmune®), doxazosin (Cardura®), indomethacin (Indocin®), mecamylamine (Inversine®), methotrexate (Folex®, Rheumatrex®), norepinephrine (Levophed®), phenytoin (Dilantin®), medicine for infection (such as amikacin, cephalexin, gentamicin, streptomycin, Amidin®, Garamycin®, or Keflex®), or a pain or arthritis medicine (such as aspirin, ibuprofen, naproxen, Aleve®, Celebrex®, or Motrin®).
+Tell your doctor if you are also using a steroid medicine (such as dexamethasone, prednisolone, prednisone, or Medrol®), adrenocorticotropic hormone (ACTH), licorice, or laxatives.
+
+If you are taking sucralfate (Carafate®), take this medicine 2 hours before or 2 hours after taking furosemide.
+Do not use this medicine if you have had an allergic reaction to furosemide or if you are not able to pass urine (anuria).";
+
+$genericnames[$i]="Furosemide";
+$medicationguide[$i]="Liquid, Tablet
+Your doctor will tell you how much of this medicine to use and how often. Your dose may need to be changed several times in order to find out what works best for you. Do not use more medicine or use it more often than your doctor tells you to.
+Measure the oral liquid medicine with a marked measuring spoon, oral syringe, or medicine cup.
+If this medicine upsets your stomach, you may take it with food.
+
+Carefully follow your doctor\'s instructions about any special diet. You may need to eat foods that are high in potassium (such as oranges or bananas) and low in sodium while you are using this medicine.
+Be sure to drink plenty of fluids if you exercise, sweat more than usual, or have diarrhea or vomiting.
+
+If a dose is missed:
+If you miss a dose or forget to use your medicine, use it as soon as you can. If it is almost time for your next dose, wait until then to use the medicine and skip the missed dose. Do not use extra medicine to make up for a missed dose.
+
+How to Store and Dispose of This Medicine:
+Store the medicine in a closed container at room temperature, away from heat, moisture, and direct light.
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any outdated medicine or medicine no longer needed.
+Keep all medicine away from children and never share your medicine with anyone.";
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Furosemide";
+$ndc[$i]="0000-0000-02";
+$i = $i + 1;
+
+/****************************************************************************/
+
+$name[$i]="Enalapril Maleate";
+
+$uses[$i]="Enalapril is used to treat high blood pressure (hypertension). Lowering high blood pressure helps prevent strokes, heart attacks, and kidney problems. It is also used to treat heart failure.
+
+Enalapril is an ACE inhibitor and works by relaxing blood vessels so that blood can flow more easily.
+
+OTHER USES: This section contains uses of this drug that are not listed in the approved professional labeling for the drug but that may be prescribed by your health care professional. Use this drug for a condition that is listed in this section only if it has been so prescribed by your health care professional.
+
+This medication may also be used to help protect the kidneys from harm due todiabetes.";
+
+$adversereactions[$i]="Dizziness, lightheadedness, or weakness may occur as your body adjusts to the medication. Dry cough may also occur. If any of these effects persist or worsen, tell your doctor or pharmacist promptly.
+Remember that your doctor has prescribed this medication because he or she has judged that the benefit to you is greater than the risk of side effects. Many people using this medication do not have serious side effects.
+Tell your doctor right away if any of these unlikely but serious side effects occur:fainting, symptoms of a high potassium blood level (such as muscle weakness, slow/irregular heartbeat), signs of infection (such as fever, chills, persistent sore throat), change in the amount of urine.
+
+This drug may rarely cause serious (possibly fatal) liver problems. Tell your doctor right away if you notice any of the following rare but serious side effects: yellowing eyes/skin, dark urine, severe stomach/abdominal pain, persistent nausea/vomiting.
+A very serious allergic reaction to this drug is rare. However, get medical help right away if you notice any symptoms of a serious allergic reaction, including: rash,itching/swelling (especially of the face/tongue/throat), severe dizziness, trouble breathing.
+This is not a complete list of possible side effects. If you notice other effects not listed above, contact your doctor or pharmacist.";
+
+$warnings[$i]="This drug can cause serious (possibly fatal) harm to an unborn baby if used duringpregnancy. Therefore, it is important to prevent pregnancy while taking thismedication. Consult your doctor for more details and to discuss the use of reliable forms of birth control while taking this medication. If you are planning pregnancy, become pregnant, or think you may be pregnant, contact your doctor immediately.";
+
+$conflictingconditions[$i]="Drug interactions may change how your medications work or increase your risk for serious side effects. This document does not contain all possible drug interactions. Keep a list of all the products you use (including prescription/nonprescription drugs and herbal products) and share it with your doctor and pharmacist. Do not start, stop, or change the dosage of any medicines without your doctor\'s approval.
+
+Some products that may interact with this drug include: aliskiren, lithium, drugs that may increase the level of potassium in the blood (such as birth control pills containing drospirenone).
+
+Check the labels on all your medicines (such as cough-and-cold products, diet aids, or NSAIDs such as ibuprofen, naproxen) because they may contain ingredients that could increase your blood pressure or worsen your heart failure. Ask your pharmacist for more details.
+
+A very serious reaction may occur if you are getting injections for bee/wasp sting allergy (desensitization) and are also taking enalapril. Make sure all your doctors know which medicines you are using.";
+
+$genericnames[$i]="Enalapril Maleate";
+
+$medicationguide[$i]="Take this medication by mouth with or without food as directed by your doctor, usually once or twice daily.
+If you are using the suspension form of this medication, shake the bottle well before each dose. Carefully measure the dose using a special measuring device/spoon. Do not use a household spoon because you may not get the correct dose.
+
+The dosage is based on your medical condition and response to treatment. For children, the dosage is also based on weight.
+Use this medication regularly in order to get the most benefit from it. To help you remember, take it at the same time(s) each day. It is important to continue taking this medication even if you feel well. Most people with high blood pressure do not feel sick.
+For the treatment of high blood pressure, it may take several weeks before you get the full benefit of this medication. For the treatment of heart failure, it may take weeks to months before you get the full benefit of this medication. Tell your doctor if your condition does not improve or if it worsens (such as your blood pressure readings remain high or increase).";
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Enalapril Maleate";
+$ndc[$i]="0000-0000-03";
+$i = $i + 1;
+
+/**********************************************************************/
+
+$name[$i]="Vitamin D2";
+$uses[$i]="Increases the amount of vitamin D in your body. Also treats problems caused by not having enough calcium in the body (such as rickets). Ergocalciferol is a form of vitamin D.";
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+
+Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness,
+ trouble breathing
+Bone pain.
+Cloudy urine.
+Irregular heartbeat.
+Severe stomach pain.
+Weakness, headache, extreme tiredness.
+
+If you notice these less serious side effects, talk with your doctor:
+
+Diarrhea or constipation.
+Nausea and vomiting.
+
+If you notice other side effects that you think are caused by this medicine, tell your doctor.";
+
+$warnings[$i]="Make sure your doctor knows if you are pregnant or breastfeeding.
+Make sure your doctor knows about all health problems that you have.";
+
+$conflictingconditions[$i]="Ask your doctor or pharmacist before using any other medicine, including over-the-counter medicines, vitamins, and herbal products.
+
+Avoid antacids that contain aluminum (such as Amphojel®, Maalox®, Mylanta®) while using this medicine.
+Make sure your doctor knows if you are also using carbamazepine (Tegretol®), cholestyramine (Questran®), mineral oil, orlistat (Xenical®), phenobarbital (Luminal®, Solfoton®), or a diuretic or \"water pill\" (such as hydrochlorothiazide [HCTZ]).";
+
+$genericnames[$i]="Ergocalciferol";
+
+$medicationguide[$i]="Capsule, Liquid Filled Capsule, Liquid, Tablet
+Your doctor will tell you how much of this medicine to use and how often. Do not use more medicine or use it more often than your doctor tells you to.
+If you are using this medicine without a prescription, follow the instructions on the medicine label.
+You may take this medicine with or without food.
+Use the dropper that comes with the oral liquid to measure your dose. This medicine may either be mixed with foods such as cereal and fruit juice or dropped into the mouth.
+
+If a dose is missed:
+If you miss a dose or forget to use your medicine, use it as soon as you can. If it is almost time for your next dose, wait until then to use the medicine and skip the missed dose. Do not use extra medicine to make up for a missed dose.
+
+How to Store and Dispose of This Medicine:
+Store the medicine in a closed container at room temperature, away from heat, moisture, and direct light.
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any outdated medicine or medicine no longer needed.
+Keep all medicine away from children and never share your medicine with anyone.";
+
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Vitamin D2";
+$ndc[$i]="0000-0000-04";
+$i = $i + 1;
+
+$name[$i]="Metroproclamide";
+$uses[$i]="Metoclopramide is used to treat the symptoms of a certain type of stomach problem called gastroparesis in patients with diabetes. It works by increasing the movements or contractions of the stomach and intestines. It relieves symptoms such as nausea, vomiting, heartburn, a feeling of fullness after meals, and loss of appetite. Metoclopramide is also used to treat heartburn for patients with gastroesophageal reflux disease (GERD). GERD is esophageal irritation from the backward flow of gastric acid into the esophagus.
+
+This medicine is available only with your doctor\'s prescription.
+Once a medicine has been approved for marketing for a certain use, experience may show that it is also useful for other medical problems. Although these uses are not included in product labeling, metoclopramide is used in certain patients with the following medical conditions:
+
+Failure of the stomach to empty its contents.
+
+Nausea and vomiting caused by other medicines.
+
+Persistent hiccups.
+
+Prevention of aspirating fluid into the lungs during surgery.
+
+Vascular headaches.";
+
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+Depression or thoughts of hurting oneself.
+Fast, slow, or uneven heartbeat.
+Lightheadedness or fainting.
+Problems with balance or walking.
+Seizures.
+Severe muscle stiffness, tremors, or twitching.
+Swelling in your hands, arms, legs, or feet.
+Trouble breathing.
+Twitching or muscle movements you cannot control.
+Uncontrolled movement of your face, tongue, eyes, neck, or head.
+Yellowing of your skin or the whites of your eyes
+
+If you notice these less serious side effects, talk with your doctor:
+Breast swelling or tenderness.
+Constipation, diarrhea, nausea, or stomach cramps.
+Headache.
+Irregular menstrual periods.
+Problems having sex.
+Restlessness, confusion, or trouble sleeping.
+
+Skin rash or itching.
+If you notice other side effects that you think are caused by this medicine, tell your doctor.";
+
+$warnings[$i]="Make sure your doctor knows if you are pregnant or breastfeeding, or if you have kidney disease, liver disease, heart disease, congestive heart failure, heart rhythm problems, diabetes, Parkinson's disease, high blood pressure, or a history of depression, or had recent surgery on your stomach.
+
+This medicine may cause tardive dyskinesia (a movement disorder). Check with your doctor right away if you have any of the following symptoms while taking this medicine: lip smacking or puckering, puffing of the cheeks, rapid or worm-like movements of the tongue, uncontrolled chewing movements, or uncontrolled movements of the arms and legs. The risk of tardive dyskinesia is higher if you take this medicine longer than 12 weeks. Treatment for longer than 12 weeks should be avoided in all but rare cases.
+This medicine may make you dizzy or drowsy. Avoid driving, using machines, or doing anything else that could be dangerous if you are not alert.
+
+Check with your doctor right away if you have any of the following symptoms while using this medicine: convulsions (seizures); difficulty with breathing; a fast heartbeat; a high fever; high or low blood pressure; increased sweating; loss of bladder control; severe muscle stiffness; unusually pale skin; or tiredness. These could be symptoms of a serious condition called neuroleptic malignant syndrome (NMS).
+
+Do not stop using this medicine suddenly without asking your doctor. You may need to slowly decrease your dose before stopping it completely.
+
+Your doctor will need to check your progress at regular visits while you are using this medicine. Be sure to keep all appointments.";
+
+$conflictingconditions[$i]="Ask your doctor or pharmacist before using any other medicine, including over-the-counter medicines, vitamins, and herbal products.
+
+Make sure your doctor knows if you are also using acetaminophen (Tylenol®), cyclosporine (Gengraf®, Neoral®, Sandimmune®), digoxin (Lanoxin®), levodopa (Dopar®), or tetracycline (Sumycin®). Tell your doctor if you are also using an MAO inhibitor [MAOI] (such as isocarboxazid, selegiline, tranylcypromine, Eldepryl®, Marplan®, Nardil®, or Parnate®), narcotic pain killers, or medicine for depression.
+
+Tell your doctor if you are using any medicines that make you sleepy. These include sleeping pills, cold and allergy medicine, narcotic pain relievers, and sedatives.
+
+If you use insulin for diabetes, ask your doctor if you need to adjust your dose while using metoclopramide.
+Do not drink alcohol while you are using this medicine.";
+
+$genericnames[$i]="Metroproclamide";
+$medicationguide[$i]="Metoclopramide Tablets
+
+Read the Medication Guide that comes with Metoclopramide Tablets before you start taking it and each time you get a refill. There may be new information. If you take another product that contains metoclopramide (such as metoclopramide injection, metoclopramide ODT, or metoclopramide oral syrup), you should read the Medication Guide that comes with that product. Some of the information may be different. This Medication Guide does not take the place of talking with your doctor about your medical condition or your treatment.
+
+What is the most important information I should know about Metoclopramide Tablets?
+
+Metoclopramide Tablets can cause serious side effects, including:
+
+Abnormal muscle movements called tardive dyskinesia (TD). These movements happen mostly in the face muscles. You can not control these movements. They may not go away even after stopping Metoclopramide Tablets.  There is no treatment for TD, but symptoms may lessen or go away over time after you stop taking Metoclopramide Tablets.
+
+Your chances for getting TD go up:
+
+    the longer you take Metoclopramide Tablets and the more Metoclopramide Tablets you take.  You should not take Metoclopramide Tablets for more than 12 weeks.
+
+    if you are older, especially if you are a woman
+
+    if you have diabetes
+
+It is not possible for your doctor to know if you will get TD if you take Metoclopramide Tablets.
+
+Call your doctor right away if you get movements you can not stop or control, such as:
+
+    lip smacking, chewing, or puckering up your mouth
+
+    frowning or scowling
+
+    sticking out your tongue
+
+    blinking and moving your eyes
+
+    shaking of your arms and legs
+
+    See the section “What are the possible side effects of Metoclopramide Tablets?” for more information about side effects.
+
+    What are Metoclopramide Tablets?
+
+    Metoclopramide Tablets are a prescription medicine used:
+
+    in adults for 4 to 12 weeks to relieve heartburn symptoms with gastroesophageal reflux disease (GERD) when certain other treatments do not work. Metoclopramide Tablets relieve daytime heartburn and heartburn after meals. It also helps ulcers in the esophagus to heal.
+
+    to relieve symptoms of slow stomach emptying in people with diabetes. Metoclopramide Tablets help treat symptoms such as nausea, vomiting, heartburn, feeling full long after a meal, and loss of appetite. Not all these symptoms get better at the same time.
+
+It is not known if Metoclopramide Tablets are safe and work in children.
+
+Who should not take Metoclopramide Tablets?
+
+Do not take Metoclopramide Tablets if you:
+
+    have stomach or intestine problems that could get worse with Metoclopramide Tablets, such as bleeding, blockage or a tear in the stomach or bowel wall
+
+    have an adrenal gland tumor called a pheochromocytoma
+
+    are allergic to Metoclopramide Tablets or anything in it. See the end of this Medication Guide for a list of ingredients in Metoclopramide Tablets.
+
+    take medicines that can cause uncontrolled movements, such as medicines for mental illness
+
+    have seizures
+
+What should I tell my doctor before taking Metoclopramide Tablets?
+
+Tell your doctor about all your medical conditions, including if you have:
+
+    depression
+
+    Parkinson’s disease
+
+    high blood pressure
+
+    kidney problems. Your doctor may start with a lower dose.
+
+    liver problems or heart failure. Metoclopramide Tablets may cause your body to hold fluids.
+
+    diabetes. Your dose of insulin may need to be changed.
+
+    breast cancer
+
+    you are pregnant or plan to become pregnant. It is not known if Metoclopramide Tablets will harm your unborn baby.
+
+    you are breast-feeding. Metoclopramide Tablets can pass into breast milk and may harm your baby.  Talk with your doctor about the best way to feed your baby if you take Metoclopramide Tablets.
+
+Tell your doctor about all the medicines you take, including prescription and non-prescription medicines, vitamins, and herbal supplements. Metoclopramide Tablets and some other medicines may interact with each other and may not work as well, or cause possible side effects. Do not start any new medicines while taking Metoclopramide Tablets until you talk with your doctor.
+
+Especially tell your doctor if you take:
+
+    another medicine that contains metoclopramide, such as metoclopramide ODT, or metoclopramide oral syrup
+
+    a blood pressure medicine
+
+    a medicine for depression, especially an Monoamine Oxidase Inhibitor (MAOI)
+
+    insulin
+
+    a medicine that can make you sleepy, such as anti-anxiety medicine, sleep medicines, and narcotics.
+
+If you are not sure if your medicine is one listed above, ask your doctor or pharmacist.
+
+Know the medicines you take. Keep a list of them and show it to your doctor and pharmacist when you get a new medicine.
+
+How should I take Metoclopramide Tablets?
+
+    Metoclopramide Tablets come as a tablet you take by mouth.
+
+    Take Metoclopramide Tablets exactly as your doctor tells you. Do not change your dose unless your doctor tells you.
+
+    You should not take Metoclopramide Tablets for more than 12 weeks.
+
+    If you take too much metoclopramide, call your doctor or Poison Control Center right away.
+
+What should I avoid while taking Metoclopramide Tablets?
+
+    Do not drink alcohol while taking Metoclopramide Tablets. Alcohol may make some side effects of Metoclopramide Tablets worse, such as feeling sleepy.
+
+    Do not drive, work with machines, or do dangerous tasks until you know how Metoclopramide Tablets affect you. Metoclopramide Tablets may cause sleepiness.
+
+What are the possible side effects of Metoclopramide Tablets?
+
+Metoclopramide Tablets can cause serious side effects, including:
+
+    Abnormal muscle movements.  See “What is the most important information I need to know about Metoclopramide Tablets?”
+
+    Uncontrolled spasms of your face and neck muscles, or muscles of your body, arms, and legs (dystopia). These muscle spasms can cause abnormal movements and body positions. These spasms usually start within the first 2 days of treatment.  These spasms happen more often in children and adults under age 30.
+
+    Depression, thoughts about suicide, and suicide. Some people who take Metoclopramide Tablets become depressed. You may have thoughts about hurting or killing yourself. Some people who take Metoclopramide Tablets have ended their own lives (suicide).
+
+    Neuroleptic Malignant Syndrome (NMS).  NMS is a very rare but very serious condition that can happen with Metoclopramide Tablets.  NMS can cause death and must be treated in a hospital.  Symptoms of NMS include: high fever, stiff muscles, problems thinking, very fast or uneven heartbeat, and increased sweating.
+
+    Parkinsonism. Symptoms include slight shaking, body stiffness, trouble moving or keeping your balance.  If you already have Parkinson’s disease, your symptoms may become worse while you are receiving Metoclopramide Tablets.
+
+Call your doctor and get medical help right away if you:
+
+    feel depressed or have thoughts about hurting or killing yourself
+
+    have high fever, stiff muscles, problems thinking, very fast or uneven heartbeat, and increased sweating
+
+    have muscle movements you cannot stop or control
+
+    have muscle movements that are new or unusual
+
+Common side effects of Metoclopramide Tablets include:
+
+    feeling restless, sleepy, tired, dizzy, or exhausted
+
+    headache
+
+    confusion
+
+    trouble sleeping
+
+You may have more side effects the longer you take Metoclopramide Tablets and the more Metoclopramide Tablets you take.
+
+You may still have side effects after stopping Metoclopramide Tablets.  You may have symptoms from stopping (withdrawal) Metoclopramide Tablets such as headaches, and feeling dizzy or nervous.
+
+Tell your doctor about any side effects that bother you or do not go away. These are not all the possible side effects of Metoclopramide Tablets.
+
+Call your doctor for medical advice about side effects. You may report side effects to FDA at 1–800–FDA-1088.
+
+How should I store Metoclopramide Tablets?
+
+Keep Metoclopramide Tablets at room temperature between 68ºF to 77ºF (20ºC to 25ºC).
+Keep Metoclopramide Tablets in the bottle it comes in.  Keep the bottle closed tightly.
+Keep Metoclopramide Tablets and all medicines out of the reach of children.
+
+General information about Metoclopramide Tablets
+
+Medicines are sometimes prescribed for purposes other than those listed in a Medication Guide. Do not use Metoclopramide Tablets for a condition for which it was not prescribed.  Do not give Metoclopramide Tablets to other people, even if they have the same symptoms that you have. It may harm them.
+
+This Medication Guide summarizes the most important information about Metoclopramide Tablets. If you would like more information, talk with your doctor.  You can ask your doctor or pharmacist for information about Metoclopramide Tablets that is written for health professionals.  For more information, call 1-800-308-6755.
+
+What are the ingredients in Metoclopramide Tablets?
+
+Active ingredient: metoclopramide
+
+Inactive ingredients:
+
+Metoclopramide 10 mg tablets: magnesium stearate, mannitol, microcrystalline cellulose, stearic acid
+Metoclopramide 5 mg tablets: corn starch, D&C yellow 10 aluminum lake, FD&C blue 1 aluminum lake, lactose, microcrystalline cellulose, silicon dioxide, stearic acid";
+
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Metroproclamide";
+$ndc[$i]="0000-0000-05";
+$i = $i + 1;
+
+$name[$i]="Synthroid";
+$uses[$i]="Treats hypothyroidism. Also treats an enlarged thyroid gland (goiter) and thyroid cancer";
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+
+Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+
+Chest pain, fast, uneven, or pounding heartbeat
+
+Limp or walk favoring one leg (in children)
+
+Nervousness, sensitivity to heat, sweating, leg cramps, trouble sleeping, tremors, weakness
+
+Severe headache, blurred or double vision, nausea, vomiting (in children)
+
+Severe vomiting, diarrhea, stomach pain
+
+Trouble breathing, cold sweats, bluish-colored skin
+
+If you notice these less serious side effects, talk with your doctor:
+Changes in weight
+Changes in your menstrual periods
+Hair loss
+Mild headache
+
+If you notice other side effects that you think are caused by this medicine, tell your doctor.";
+
+$warnings[$i]="Make sure your doctor knows if you are pregnant or breastfeeding. Tell your doctor if you are postmenopausal or if you have blood clotting problems, diabetes, heart or blood vessel disease (such as coronary artery disease), heart rhythm problems, osteoporosis, pernicious anemia, pituitary gland problems, or adrenal gland problems. Tell your doctor if you are allergic to any food or medicines.
+
+If you have diabetes, it is very important that you keep track of your blood or urine sugar levels as instructed by your doctor. Check with your doctor right away if you notice any changes in your sugar levels.
+
+Women who use this medicine for a long time may have some bone loss, which could lead to osteoporosis. Talk with your doctor if you have questions or concerns about this.
+
+Call your doctor right away if you have rapid or uneven heartbeats, chest pain, trouble breathing, headaches, nervousness, trouble sleeping, tremors, a change in appetite or weight, diarrhea, sweating, sensitivity to heat, or changes in menstrual periods. These could be symptoms of too much medicine in your body.
+
+You may have to take this medicine for 6 to 8 weeks before your symptoms start to get better.
+
+Tell any doctor or dentist who treats you that you take this medicine before you have any surgery.
+
+Do not stop using this medicine suddenly without asking your doctor. You may need to slowly decrease your dose before stopping it completely.
+Your doctor will need to check your blood at regular visits while you are using this medicine. Be sure to keep all appointments.";
+
+$conflictingconditions[$i]="Ask your doctor or pharmacist before using any other medicine, including over-the-counter medicines, vitamins, and herbal products.
+
+There are many other medicines that you should not use together with levothyroxine. This includes over-the-counter medicines. Make sure your doctor knows about all other medicines that you use.
+
+Make sure your doctor knows if you use digoxin (Lanoxin®), a blood thinner (such as heparin, warfarin, Coumadin®), insulin, or diabetes medicine that you take by mouth (such as glimepiride, glipizide, glyburide, metformin, repaglinide, tolbutamide, Actos®, Janumet®, Januvia®). Tell your doctor if you use rifampin (Rifadin®, Rimactane®), medicines to treat heart problems (such as amiodarone, furosemide, propranolol, Inderal®, Lasix®), medicines to treat epilepsy or seizures (such as carbamazepine, diazepam, phenobarbital, phenytoin), or pain or arthritis medicine (NSAIDs including aspirin, mefenamic acid, phenylbutazone, Ponstel®).
+Make sure your doctor knows if you also use medicines to treat depression (such as amitriptyline, doxepin, imipramine, maprotiline, nortriptyline, sertraline, Elavil®, Pamelor®), medicines to treat Parkinson disease (such as bromocriptine, ropinirole, Parlodel®, Requip®), medicines to treat thyroid problems (such as methimazole, PTU, Tapazole®), or growth hormones (such as octreotide, somatrem, somatropin, Nutropin®, Sandostatin®).
+
+Make sure your doctor knows if you also use any estrogens or birth control pills that contain estrogen, such as estradiol, estropipate, Activella®, Climara®, Femhrt®, Premarin®, Vivelle-Dot®. Tell your doctor if you also use 5-fluorouracil (Adrucil®), aminoglutethimide (Cytadren®), asparaginase (Elspar®), clofibrate (Atromid-S®), dexamethasone (Decadron®), heroin, iodide, ketamine (Ketalar®), methadone (Dolophine®), mitotane (Lysodren®), tamoxifen (Nolvadex®), theophylline (Theo-Dur®), or slow-release nicotinic acid.
+
+If you use antacids (such as Amphojel®, Maalox®, Mylanta®, Tums®), medicines to treat high cholesterol (such as cholestyramine, colesevelam, colestipol, Colestid®, Questran®), orlistat (Xenical®), sevelamer (Renagel®), sodium polystyrene sulfonate (Kayexalate®), sucralfate (Carafate®), or any medicine that contains calcium or iron,take it at least 4 hours before or 4 hours after you take levothyroxine.
+Cottonseed meal, dietary fiber, soybean flour (infant formula), or walnuts may interfere with the absorption of this medicine. You may need to eat these foods at a different time from when you take this medicine. Talk with your doctor if you have questions.
+
+When Not To Use
+Do not use this medicine if you have had an allergic reaction to any type of thyroid hormone or to a color dye. You should not use this medicine if you have adrenal problems that are not treated or if you have recently had a heart attack.";
+
+$genericnames[$i]="Levothyroxine";
+$medicationguide[$i]="Capsule, Tablet
+Your doctor will tell you how much of this medicine to use and how often. Your dose may need to be changed several times in order to find out what works best for you. Do not use more medicine or use it more often than your doctor tells you to.
+
+Take this medicine in the morning on an empty stomach. Wait at least 30 minutes to 1 hour before you eat any food.
+
+Swallow the capsule whole. Do not cut or crush it. If you take multiple strengths of this medicine, do not remove the capsules from the blisters in advance. The blisters help identify the strength of each medicine.
+Swallow the tablet with a full glass (8 ounces) of water. This will help prevent choking or gagging on the tablet. If you still have trouble swallowing the tablet, talk to your doctor or pharmacist.
+
+If this medicine is being given to a baby or a small child, you can crush the tablet and mix it in a small amount (1 to 2 teaspoons) of water. This mixture can be given by spoon or dropper. Do not mix the tablet with any other liquid except water, unless your doctor says it is okay. Do not store the mixture. If you do not give the medicine right after it is mixed, throw the medicine away.
+Some people must take this medicine every day for the rest of their life.
+
+If a dose is missed:
+If you miss a dose or forget to use your medicine, use it as soon as you can. If it is almost time for your next dose, wait until then to use the medicine and skip the missed dose. Do not use extra medicine to make up for a missed dose.
+
+How to Store and Dispose of This Medicine:
+Store the medicine in a closed container at room temperature, away from heat, moisture, and direct light.
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any outdated medicine or medicine no longer needed.
+Keep all medicine away from children and never share your medicine with anyone.";
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Synthroid";
+$ndc[$i]="0000-0000-06";
+$i = $i + 1;
+
+/*********************************************************/
+
+$name[$i]="Amlodipine Besylate";
+$uses[$i]="Treats fluid retention (edema) and high blood pressure (hypertension). This medicine is a diuretic (water pill).";
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+
+Chest pain (may be related to your disease and not a side effect)
+
+Lightheadedness, dizziness, or fainting
+
+Swelling in your hands, ankles, or legs
+
+Unusual tiredness
+
+If you notice these less serious side effects, talk with your doctor:
+
+Mild nausea or stomach pain
+Headache";
+
+$warnings[$i]="Make sure your doctor knows if you are pregnant or breastfeeding, or if you have liver disease. Tell your doctor if you have ever had a heart attack, heart or blood vessel disease (such as obstructive coronary artery disease), low blood pressure, or aortic stenosis (narrowing of a heart valve).
+
+This medicine could lower your blood pressure too much and cause you to feel dizzy or lightheaded. Stand or sit up slowly, if needed. This is more likely to happen when you begin to use the medicine or if you become dehydrated.
+
+Check with your doctor right away if you feel chest pain that is worse than usual, trouble breathing, nausea, unusual sweating, faintness, or pain in your arms, jaw, back, or neck.
+
+Your doctor will need to check your progress at regular visits while you are using this medicine. Be sure to keep all appointments.
+This medicine will not cure high blood pressure, but it does help control it. Continue to take it as directed to lower your blood pressure and keep it down. Your blood pressure may go up or your angina may get worse if you stop this medicine. Even if you feel well, do not stop using this medicine without asking your doctor.";
+
+$conflictingconditions[$i]="Rarely, patients, particularly those with severe obstructive coronary artery disease, have developed documented increased frequency, duration and/or severity of angina or acute myocardial infarction on starting calcium channel blocker therapy or at the time of dosage increase. The mechanism of this effect has not been elucidated.";
+
+$genericnames[$i]="Amlodipine";
+$medicationguide[$i]="Tablet, Dissolving Tablet:
+
+Your doctor will tell you how much of this medicine to use and how often. Your dose may need to be changed several times in order to find out what works best for you. Do not use more medicine or use it more often than your doctor tells you to.
+
+Take this medicine at the same time each day.
+
+This medicine comes with patient instructions. Read and follow these instructions carefully. Ask your doctor or pharmacist if you have any questions.
+
+If a dose is missed:
+
+If you miss a dose or forget to take your medicine, take it as soon as you can. If more than 12 hours has passed since you missed your last dose, then skip the missed dose and take the next dose when you normally would.
+How to Store and Dispose of This Medicine:
+
+Store the medicine in a closed container at room temperature, away from heat, moisture, and direct light.
+
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any outdated medicine or medicine no longer needed.
+Keep all medicine away from children and never share your medicine with anyone.";
+
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Amlodipine Besylate";
+$ndc[$i]="0000-0000-07";
+$i = $i + 1;
+
+$name[$i]="Lantus";
+$uses[$i]="Treats fluid retention (edema) and high blood pressure (hypertension). This medicine is a diuretic (water pill).";
+$adversereactions[$i]="Call your doctor right away if you notice any of these side effects:
+
+    Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+
+    Anxiety, confusion, restlessness, or mood or mental changes
+
+    Blurred vision, or any changes in vision
+
+    Fast, pounding, or irregular heartbeat
+
+    Headache, lightheadedness, dizziness, or drowsiness
+
+    Increased sweating
+
+    Problems with walking
+
+    Slurred speech
+
+    Tingling in your hands, feet, lips, or tongue
+
+    Tremors
+
+    Trouble breathing
+
+If you notice these less serious side effects, talk with your doctor:
+
+    Nightmares or trouble sleeping
+
+    Redness, pain, itching, burning, swelling, or a lump under your skin where the shot is given
+
+    Skin itching or rash";
+    
+$warnings[$i]="Make sure your doctor knows if you are pregnant or breastfeeding, or planning to become pregnant. Tell your doctor if you have kidney disease or liver disease.
+
+Never share insulin pens or cartridges with others under any circumstances. It is not safe for one pen to be used for more than one person. Sharing needles or pens can result in transmission of hepatitis viruses, HIV, or other blood-borne illnesses.
+
+Your correct insulin dose may change slightly with changes in your diet or activity. Your dose needs may also change if you are ill (especially with vomiting or diarrhea), stressed out, pregnant, traveling, using a new medicine, or exercising more or less than usual. Follow your doctor\'s instructions about changes in your insulin dose.
+
+Hyperglycemia (high blood sugar) may occur if you do not take enough or skip a dose of your antidiabetic medicine, overeat or do not follow your meal plan, have emotional stress or an infection, or do not exercise as much as usual.
+
+Symptoms of high blood sugar include blurred vision; drowsiness; dry mouth; flushed, dry skin; fruit-like breath odor; increased urination; ketones in urine; loss of appetite; stomachache, nausea, or vomiting; tiredness; troubled breathing (rapid and deep); unconsciousness; and unusual thirst.
+
+If symptoms of high blood sugar occur, check your blood sugar level and then call your doctor for instructions. Seek medical help immediately if symptoms are severe.
+
+Your doctor will need to check your blood at regular visits while you are using this medicine. Be sure to keep all appointments.";
+    
+$conflictingconditions[$i]="You should not use this medicine if you have had an allergic reaction to insulin glargine or other components of this product, or if you have diabetic ketoacidosis.";
+$genericnames[$i]="Insulin Glargine";
+$medicationguide[$i]="Injectable
+Your doctor will prescribe your exact dose and tell you how often it should be given. This medicine is given as a shot under your skin.
+
+You may be taught how to give your medicine at home. Make sure you understand all instructions before giving yourself an injection. Do not use more medicine or use it more often than your doctor tells you to.
+
+This medicine comes with patient instructions. Read and follow these instructions carefully. Ask your doctor or pharmacist if you have any questions.
+
+There are many different devices available for giving an insulin injection. You may be taught how to use a regular syringe or another delivery device. Each device has special instructions that you must follow. Make sure you understand all the instructions for your device before you use it.
+
+Do not mix this medicine with any other insulin or with water.
+
+This medicine should look clear before you use it. Do not shake the vial. If you use insulin once a day, it is best to use it at about the same time every day.
+
+You will be shown the body areas where this shot can be given. Use a different body area each time you give yourself a shot. Keep track of where you give each shot to make sure you rotate body areas.
+
+Use only syringes that are specially made for insulin. It is best to always use the same brand and type of syringe and needle. Some types of insulin must be used with a certain type of syringe or needle. Ask your pharmacist if you are not sure which one to use.
+
+Use a new needle and syringe each time you inject your medicine.
+
+Do not change the brand or type of your insulin unless your doctor tells you to. If you must change the brand or type, ask your doctor before giving yourself an injection.
+
+Carefully follow your doctor\'s instructions about any special diet. Your doctor may suggest that you follow an exercise program. You may also be taught to check your own blood sugar levels at home. Diet, exercise, medicine, and checking your blood sugar are all important to control your diabetes.
+
+If a dose is missed:
+
+    Call your doctor or pharmacist for instructions.
+
+How to Store and Dispose of This Medicine:
+
+Store unopened insulin in the refrigerator. Do not freeze. If you cannot refrigerate the insulin you will use for the day, keep it in a cool place away from heat or sunlight. Do not use insulin that has been frozen or overheated.
+
+If you use an Opticlik® cartridge, keep the medicine in the refrigerator until you are ready to use it. Once you start using a cartridge, keep it at room temperature. Never store a used pen or cartridge in a refrigerator and with the needle in place. The medicine will keep for up to 28 days if protected from heat and direct light.
+
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any leftover medicine, containers, and other supplies. You will also need to throw away old medicine after the expiration date has passed.
+
+Throw away used needles in a hard, closed container that the needles cannot poke through. Keep this container away from children and pets.
+
+Keep all medicine away from children and never share your medicine with anyone.";
+
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Lantus";
+$ndc[$i]="0000-0000-08";
+$i = $i + 1;
+
+/***********************************************************************/
+
+$name[$i]="Novolog";
+$uses[$i]="Treats diabetes mellitus. Insulin is a hormone that helps get sugar from the blood to the muscles, where it is used for energy. This type of insulin is similar to regular insulin, but acts in the body more quickly.";
+$adversereactions[$i]="Allergic reaction: Itching or hives, swelling in your face or hands, swelling or tingling in your mouth or throat, chest tightness, trouble breathing
+
+Fainting
+
+Seizures (convulsions)";
+
+$warnings[$i]="Make sure your doctor knows if you are pregnant, planning to become pregnant, or breastfeeding. Tell your doctor if you have kidney disease or liver disease.
+
+Insulin aspart starts to work faster than some other types of insulin, and its effects do not last as long. It should act more like the insulin your body would normally produce.
+
+Because the effects of insulin aspart are short-acting, your doctor may also prescribe a longer-acting insulin for you to use.
+
+Never share insulin pens or cartridges with others under any circumstances. It is not safe for one pen to be used for more than one person. Sharing needles or pens can result in transmission of hepatitis viruses, HIV, or other blood-borne illnesses.
+
+Follow the special diet and use the correct dose of insulin that your doctor orders. Diet, exercise, medicine, and checking your blood sugar are important to control your diabetes.
+You may sometimes have low blood sugar while you are using insulin. This is more likely if you miss a meal, exercise for a long time, or drink alcohol.";
+
+$conflictingconditions[$i]="NovoLog is contraindicated
+
+•during episodes of hypoglycemia
+
+•in patients with hypersensitivity to NovoLog or one of its excipients.";
+
+$genericnames[$i]="Insulin Aspart";
+$medicationguide[$i]="Injectable:
+
+Your doctor will prescribe your exact dose and tell you how often it should be given. This medicine is given as a shot under your skin.
+
+Do not change the brand or dose of your insulin unless your doctor tells you to. When you receive a new supply of insulin, check the label to be sure it is the correct insulin.
+
+If you are using this insulin at meal times, give your injection within 5 to 10 minutes before you eat.
+
+A doctor, nurse, or pharmacist should teach you how to give your insulin shots. Make sure you understand how to use the medicine and give yourself the shots.
+
+This medicine comes with patient instructions. Read and follow these instructions carefully. Ask your doctor or pharmacist if you have any questions.
+
+You will be shown the body areas where this shot can be given. Use a different body area each time you give yourself a shot. Keep track of where you give each shot to make sure you rotate body areas.
+
+If you are using a vial (bottle) of NovoLog™, only use syringes that are made for giving insulin injections. Use a new syringe each time you give yourself an injection. If you are using a NovoLog™ PenFill cartridge, use a new needle each time.
+
+If you are mixing insulin aspart and a longer-acting insulin in the same syringe, always draw up insulin aspart into the syringe first. Then draw up the longer-acting insulin.
+
+The insulin should look clear and colorless. Do not use insulin aspart if it is cloudy or thickened.
+If a dose is missed:
+
+Call your doctor or pharmacist for instructions.
+How to Store and Dispose of This Medicine:
+
+Store unused bottles or cartridges in the refrigerator. Do not freeze. The expiration date on the insulin package tells you how long you can keep the medicine in the refrigerator. Throw the medicine away after the expiration date has passed.
+
+The bottle or cartridge that you are currently using may be kept in the refrigerator or at room temperature in a cool place, away from sunlight and heat, for 28 days.
+
+Ask your pharmacist, doctor, or health caregiver about the best way to dispose of any leftover medicine, containers, and other supplies. You will also need to throw away old medicine after the expiration date has passed.
+
+You should receive a container for throwing away your used needles and syringes. Throw away used needles in a hard, closed container that the needles cannot poke through. Keep this container away from children and pets.
+
+Keep all medicine away from children and never share your medicine with anyone.";
+$precautions[$i]="";
+$boxwarnings[$i]="";
+$setid[$i]="sample-Novolog";
+$ndc[$i]="0000-0000-09";
+$i = $i + 1;
+
+
+
+/******************************************************************************************************************************/
+/******************************************************END OF DEFINITIONS******************************************************/
+/******************************************************************************************************************************/
+
+//print_r ($genericnames);
+
+for ($j=4; $j<5; $j++){
+
+	$setid1 = "'".$setid[$j]."'";
+	$ndc1 =  "'".$ndc[$j]."'";
+	$adversereactions1 =  "'".$adversereactions[$j]."'";
+	$boxwarnings1 =  "'".$boxwarnings[$j]."'";
+	$conflictingconditions1 =  "'".$conflictingconditions[$j]."'";
+	$genericnames1 =  "'".$genericnames[$j]."'";
+	$uses1 =  "'".$uses[$j]."'";
+	$name1 =  "'".$name[$j]."'";
+	$warnings1 =  "'".$warnings[$j]."'";
+	$medicationguide1 =  "'".$medicationguide[$j]."'";
+	$precautions1 = "'".$precautions[$j]."'";	
+
+	$result = $connection->query("INSERT INTO NDC (setid, ndc) VALUES (".$setid1.",".$ndc1.")");
+
+	$sst = "INSERT INTO INFO (setid, adversereactions, boxwarnings, conflictingconditions,genericnames,precautions,uses,name,warnings,medicationguide) VALUES 
+		(".$setid1.", ".$adversereactions1.", ".$boxwarnings1.",".$conflictingconditions1.",".$genericnames1.",".$precautions1.",".$uses1.",
+		".$name1.",".$warnings1.",".$medicationguide1.")";
+	
+	$result = $connection->query($sst);
+	echo $sst;
+		
+
+
+
+
+}

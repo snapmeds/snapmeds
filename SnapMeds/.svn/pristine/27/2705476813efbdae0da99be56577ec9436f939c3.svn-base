@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ValidFragment" severity="ignore">
+        <ignore path="src/com/snapmeds/PrescriptionDetailActivity.java" />
+        <ignore path="src\com\snapmeds\PrescriptionDetailActivity.java" />
+    </issue>
+</lint>

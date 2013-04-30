@@ -1,0 +1,46 @@
+package dosageTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import com.utilities.*;
+
+public class FrequencyTest {
+
+    Frequency actualFrequency;
+
+    @Before
+    public void setUp() {
+        actualFrequency = new Frequency();
+    }
+
+    @Test
+    public void testUnit() {
+        actualFrequency.parseString( "daily" );
+        Frequency expectedFrequency = new Frequency( 1, FrequencyUnit.DAILY, 1 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+    @Test
+    public void testNumTimes() {
+        actualFrequency.parseString( "two times daily" );
+        Frequency expectedFrequency = new Frequency( 2, FrequencyUnit.DAILY, 1 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+    @Test
+    public void testInterval() {
+        actualFrequency.parseString( "once every two days" );
+        Frequency expectedFrequency = new Frequency( 1, FrequencyUnit.DAILY, 2 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+    @Test
+    public void testComplex() {
+        actualFrequency.parseString( "once every other hour" );
+        Frequency expectedFrequency = new Frequency( 1, FrequencyUnit.HOURLY, 2 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+}

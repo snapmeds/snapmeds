@@ -1,0 +1,47 @@
+package com.snapmeds.storage.test;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.test.InstrumentationTestCase;
+
+import com.snapmeds.MainActivity;
+import com.snapmeds.TestActivity;
+import com.storage.SimpleStorage;
+import com.utilities.Drug;
+import com.utilities.Prescription;
+
+public class MultiActivityStorageTest extends InstrumentationTestCase
+{
+  private Activity _activity1, _activity2;
+  private Prescription _prescription;
+  private Drug _drug;
+  
+  public MultiActivityStorageTest()
+  {}
+  
+  public void setUp() throws IOException
+  {
+    _activity1 = launchActivity("com.snapmeds", MainActivity.class, null);
+    SimpleStorage.clearPrescriptions(_activity1);
+    _prescription = new Prescription();
+    _drug = new Drug();
+    _drug.setSetID("54");
+    _prescription.setDrug(_drug);
+  }
+  
+  public void testMutliActivityWriteRead() throws IOException
+  {
+    List<Prescription> expectedDosages = new ArrayList<Prescription>();
+    expectedDosages.add(_prescription);
+    SimpleStorage.addPrescription(_activity1, _prescription);
+    _activity1.finish();
+    _activity2 = launchActivity("com.snapmeds", TestActivity.class, null);
+    List<Prescription> actualDosages = SimpleStorage.loadPrescriptions(_activity2);
+    _activity2.finish();
+    
+    assertEquals(expectedDosages, actualDosages);
+  }
+}

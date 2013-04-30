@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/add_medication"
+        android:showAsAction="ifRoom"
+        android:title="@string/detail_drug_add_medication"/>
+    <item
+        android:id="@+id/view_prescription"
+        android:visible="false"
+        android:showAsAction="ifRoom"
+        android:title="@string/detail_drug_view_prescription"/>
+
+</menu>

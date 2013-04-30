@@ -1,0 +1,95 @@
+package utilitiesTest;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.dosage.Reminder;
+import com.utilities.Dosage;
+import com.utilities.Frequency;
+
+public class DosageTest {
+	public static final Dosage dosage1 = new Dosage();
+	public static final Dosage dosage2 = new Dosage();
+
+	public static final Frequency FREQUENCY = new Frequency();
+	public static final Frequency DIFFERENT_FREQUENCY = new Frequency();
+	
+	public static final List<Reminder> REMINDERS = new ArrayList<Reminder>();
+
+	private static void populateFakeDosage(Dosage dosage) {
+		dosage.setFrequency(FREQUENCY);
+		dosage.setInstructions("instructions");
+		dosage.setQuantity("quantity");
+		dosage.setReason("reason");
+		dosage.setReminders(REMINDERS);
+		dosage.setRoute("route");
+		dosage.setWarnings("warnings");
+	}
+
+	@BeforeClass
+	public static void setup() {
+		// Distinguish between different frequencies.
+		FREQUENCY.setInterval(1);
+		DIFFERENT_FREQUENCY.setInterval(2);
+	}
+
+	@Before
+	public void resetDosages() {
+		populateFakeDosage(dosage1);
+		populateFakeDosage(dosage2);
+	}
+
+	@Test
+	public void testEqualsWorks() {
+		assertTrue(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksFrequency() {
+		dosage2.setFrequency(DIFFERENT_FREQUENCY);
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksInstructions() {
+		dosage2.setInstructions("different");
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksQuantity() {
+		dosage2.setQuantity("different");
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksReason() {
+		dosage2.setReason("different");
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksReminders() {
+		dosage2.setReminders(null);
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksRoute() {
+		dosage2.setRoute("different");
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+	@Test
+	public void testEqualsChecksWarnings() {
+		dosage2.setWarnings("different");
+		assertFalse(dosage1.equals(dosage2));
+	}
+
+}

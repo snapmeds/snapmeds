@@ -1,0 +1,92 @@
+package dosageTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import com.utilities.*;
+
+public class FrequencyTest {
+
+    private Frequency actualFrequency;
+    private static final Frequency frequency1 = new Frequency();
+    private static final Frequency frequency2 = new Frequency();
+    
+    private static final int INTERVAL = 0;
+    private static final int DIFFERENT_INTERVAL = 1;
+    
+    private static final int NUM_TIMES = 2;
+    private static final int DIFFERENT_NUM_TIMES = 3;
+    
+    private static final FrequencyUnit UNIT = FrequencyUnit.DAILY;
+    private static final FrequencyUnit DIFFERENT_UNIT = FrequencyUnit.HOURLY;
+    
+    public static void populateFakeFrequency(Frequency frequency) {
+    	frequency.setInterval(INTERVAL);
+    	frequency.setNumTimes(NUM_TIMES);
+    	frequency.setUnit(UNIT);
+    }
+    
+    @Before
+    public void reset() {
+        actualFrequency = new Frequency();
+    	populateFakeFrequency(frequency1);
+    	populateFakeFrequency(frequency2);
+    }
+
+    @Test
+    public void testUnit() {
+        actualFrequency.parseString( "daily" );
+        Frequency expectedFrequency = new Frequency( 1, FrequencyUnit.DAILY, 0 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+    @Test
+    public void testNumTimes() {
+        actualFrequency.parseString( "two times daily" );
+        Frequency expectedFrequency = new Frequency( 2, FrequencyUnit.DAILY, 0 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+    @Test
+    public void testInterval() {
+        actualFrequency.parseString( "once every two days" );
+        Frequency expectedFrequency = new Frequency( 1, FrequencyUnit.DAILY, 2 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+
+    @Test
+    public void testComplex() {
+        actualFrequency.parseString( "once every other hour" );
+        Frequency expectedFrequency = new Frequency( 1, FrequencyUnit.HOURLY, 2 );
+        assertEquals( expectedFrequency, actualFrequency );
+    }
+    
+    @Test
+    public void testEqualsWorks() {
+    	assertTrue(frequency1.equals(frequency2));
+    }
+    
+    @Test
+    public void testEqualsHandlesNull() {
+    	assertFalse(frequency1.equals(null));
+    }
+    
+    @Test
+    public void testEqualsChecksInterval() {
+    	frequency2.setInterval(DIFFERENT_INTERVAL);
+    	assertFalse(frequency1.equals(frequency2));
+    }
+    
+    @Test
+    public void testEqualsChecksNumTimes() {
+    	frequency2.setNumTimes(DIFFERENT_NUM_TIMES);
+    	assertFalse(frequency1.equals(frequency2));
+    }
+    
+    @Test
+    public void testEqualsChecksUnit() {
+    	frequency2.setUnit(DIFFERENT_UNIT);
+    	assertFalse(frequency1.equals(frequency2));
+    }
+}

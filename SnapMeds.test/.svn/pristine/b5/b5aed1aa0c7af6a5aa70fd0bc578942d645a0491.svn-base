@@ -1,0 +1,36 @@
+package util;
+
+import java.util.List;
+
+import com.utilities.Prescription;
+import com.utilities.Storage;
+
+public class FakeStorage extends Storage {
+
+	@Override
+	public List<Prescription> loadPrescriptions() throws Exception {
+		return null;
+	}
+
+	@Override
+	public void addPrescription(Prescription prescription) throws Exception {
+	}
+
+	@Override
+	public void addPrescriptions(List<Prescription> addedPrescriptions)
+			throws Exception {
+	}
+
+	@Override
+	public void removePrescription(Prescription prescription) throws Exception {
+	}
+
+	@Override
+	public void editPrescription(Prescription prescription) throws Exception {
+	}
+
+	@Override
+	public void clearPrescriptions() throws Exception {
+	}
+
+}

@@ -1,0 +1,92 @@
+package utilitiesTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.utilities.Dosage;
+import com.utilities.Drug;
+import com.utilities.Prescription;
+
+public class PrescriptionTest {
+	private static final Prescription prescription1 = new Prescription();
+	private static final Prescription prescription2 = new Prescription();
+
+	private static final Drug drug = new Drug();
+	private static final Drug differentDrug = new Drug();
+
+	private static final Dosage dosage = new Dosage();
+	private static final Dosage differentDosage = new Dosage();
+
+	@BeforeClass
+	public static void setup() {
+		
+		// Make drug and differentDrug distinguishable
+		drug.setSetid("setid1");
+		differentDrug.setSetid("setid2");
+
+		// Make dosage and differentDosage distinguishable
+		dosage.setDuration("1");
+		differentDosage.setDuration("2");
+	}
+	
+	public static void populateFakePrescription(Prescription prescription) {
+		prescription.setDrug(drug);
+		prescription.setDosage(dosage);
+		prescription.setNote("note");
+		prescription.setImagePath("imagepath");
+	}
+
+	@Before
+	public void resetPrescriptions() {
+		populateFakePrescription(prescription1);
+		populateFakePrescription(prescription2);
+	}
+
+	@Test
+	public void testEqualsWorks() {
+		assertTrue(prescription1.equals(prescription1));
+	}
+	
+	@Test
+	public void testEqualsHandlesNull() {
+		assertFalse(prescription1.equals(null));
+	}
+
+	@Test
+	public void testEqualsChecksDrug() {
+		prescription2.setDrug(differentDrug);
+		assertFalse(prescription1.equals(prescription2));
+	}
+
+	@Test
+	public void testEqualsChecksNote() {
+		prescription2.setNote("different");
+		assertFalse(prescription1.equals(prescription2));
+	}
+
+	@Test
+	public void testEqualsChecksDosage() {
+		prescription2.setDosage(differentDosage);
+		assertFalse(prescription1.equals(prescription2));
+	}
+
+	@Test
+	public void testEqualsChecksImagePath() {
+		prescription2.setImagePath("different");
+		assertFalse(prescription1.equals(prescription2));
+	}
+
+	@Test
+	public void testSameDrugWorks() {
+		assertTrue(prescription1.sameDrug(prescription2));
+	}
+
+	@Test
+	public void testSameDrugChecksDrug() {
+		prescription2.setDrug(differentDrug);
+		assertFalse(prescription1.sameDrug(prescription2));
+	}
+}

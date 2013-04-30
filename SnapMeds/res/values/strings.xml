@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Snap Meds</string>
+    <string name="action_settings">Settings</string>
+    <string name="calendar">Calendar</string>
+    <string name="search">Search</string>
+    <string name="scan">Scan</string>
+    <string name="detail_drug_add_medication">Add Medication</string>
+    <string name="detail_drug_view_prescription">View Prescription</string>
+    <string name="delete_prescription">Delete Prescription</string>
+    <string name="detail_prescription_dosage">Dosage</string>
+    <string name="detail_prescription_remove">Remove Prescription</string>
+    <string name="title_activity_dosage_parser">DosageParserActivity</string>
+    <string name="dosage_text_hint">Enter dosage information.</string>
+    <string name="dosage_text_parse">Parse</string>
+    <string name="dosage_add">Add Dosage</string>
+    <string name="dosage_quantity">e.g. \'one tablet\'</string>
+    <string name="dosage_frequency">e.g. \'daily\'</string>
+    <string name="dosage_route">e.g. \'by mouth\'</string>
+    <string name="dosage_instructions">e.g. \'with water\'</string>
+    <string name="dosage_duration">e.g. \'for one week\'</string>
+    <string name="dosage_reason">e.g. \'for pain\'</string>
+    <string name="dosage_warnings">e.g. \'avoid alcohol\'</string>
+    <string name="dosage_save">Save</string>
+    <string name="dosage_quantity_label">Quantity (required): </string>
+    <string name="dosage_frequency_label">Frequency (required): </string>
+    <string name="dosage_route_label">Route: </string>
+    <string name="dosage_instructions_label">Instructions: </string>
+    <string name="dosage_duration_label">Duration: </string>
+    <string name="dosage_reason_label">Reason: </string>
+    <string name="dosage_warnings_label">Warnings: </string>
+    <string name="title_activity_mock_detail">MockDetailActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="search_label">Search</string>
+    <string name="search_hint">Search Drug Name/NDC</string>
+    <string name="search_view">search</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="dosage_parse_failed">Dosage Text Not Understood</string>
+    <string name="detail_prescription_remove_dialog_title">Remove Prescription?</string>
+    <string name="detail_prescription_remove_dialog_message">You\'ll lose all data associated with this, including dosage, note and picture!</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save_title">Saving Dosage</string>
+    <string name="save_message">Are you sure you want to save this dosage?</string>
+    <string name="dosage_skip">Skip</string>
+    <string name="medicine_cabinet_title">Medicine Cabinet</string>
+    <string name="drug_name">Name</string>
+    <string name="drug_generic_name">Generic Name</string>
+    <string name="drug_uses">Uses</string>
+    <string name="drug_warnings">Warnings</string>
+    <string name="drug_precautions">Precautions</string>
+    <string name="drug_adverse_reactions">Possible Side Effects</string>
+    <string name="drug_box_warnings">Box Warnings</string>
+    <string name="drug_conflicting_conditions">Conflicting Conditions</string>
+    <string name="drug_medication_guide">Medication Guide</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="detail_prescription_note_edit">Edit Note</string>
+    <string name="detail_prescription_note_save">Save</string>
+    <string name="detail_drug_title">Medication Detail</string>
+    <string name="detail_prescription_title">Prescription Detail</string>
+    <string name="detail_prescription_note_hint">Add a personal note</string>
+    <string name="detail_prescription_image_description">My personal picture</string>
+    <string name="detail_prescription_note_add">Add</string>
+    <string name="dosage_summary">Dosage Information</string>
+    <string name="dosage_text_example">e.g. \'take one tablet daily\'</string>
+    <string name="dosage_quantity_example">e.g. \'one tablet\'</string>
+    <string name="frequency_connector">time(s) every</string>
+    <string name="duration_connector">For</string>
+    <string name="other_info_label">Other Information:</string>
+    <string name="other_info">e.g. \'take with food\'</string>
+    <string name="dosage_edit">Edit Dosage</string>
+    <string name="dosage_enter">Enter Dosage Text</string>
+    <string name="confirm">Confirm</string>
+    <string name="skip">Skip</string>
+    <string name="verify">Verify Dosage</string>
+    <string name="manual_enter">Manually Enter Dosage</string>
+    <string name="save">Save</string>
+    <string name="failed_parse">Dosage Text Not Understood.</string>
+    <string name="reminders_title">Reminders</string>
+    <string name="notifications">Notifications</string>
+    <string name="calendar_events">Calendar Events</string>
+    <string name="edit_times">Edit Times</string>
+    <string name="apply">Apply</string>
+    <string name="reminders_saved">Reminders successfully saved</string>
+
+    <string-array name="num_times">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="interval">
+        <item>-</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="unit">
+        <item>Hours</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+    </string-array>
+    <string-array name="durationNum">
+        <item>-</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="durationUnit">
+        <item>-</item>
+        <item>Hours</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+    </string-array>
+
+    <string name="detail_prescription_image_change">Change Image</string>
+    <string name="detail_prescription_image_cancel">Cancel</string>
+    <string name="detail_prescription_image_remove">Remove Image</string>
+
+</resources>

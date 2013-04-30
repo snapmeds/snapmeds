@@ -1,0 +1,52 @@
+import xml.etree.ElementTree as ET
+tree = ET.parse('test.xml')
+root = tree.getroot()
+structuredBody=root[7][0]
+manufacturedProduct=structuredBody[0][0][3][0][0]
+usesComponent=structuredBody[3][0]
+drugName = manufacturedProduct[1].text
+genericNames = manufacturedProduct[3]
+conflictingConditions =structuredBody[4][0]
+warnings = structuredBody[5][0]
+precautions = structuredBody[6][0]
+print drugName
+
+print 'Generic Names:'
+for generic in genericNames:
+    print "     "  + generic[0].text
+
+print 'Uses:'
+for use in usesComponent:
+    for paragraph in use.iter('{urn:hl7-org:v3}paragraph'):
+        if paragraph.text:
+            print "     " + paragraph.text
+
+print 'Conflicting Conditions'
+for conflict in conflictingConditions:
+    if conflict.text:
+        print ">>"
+        print  ET.tostring(conflict, method="text")
+        print "<<"
+
+print "Warnings:"
+for component in warnings.findall('{urn:hl7-org:v3}component'):
+    section = component[0]
+    title = section.find('{urn:hl7-org:v3}title')
+    if title.text:
+        print "    " + title.text.rstrip()
+    for warning in section.iter('{urn:hl7-org:v3}paragraph'):
+        if warning.text:
+            print "        " + warning.text.rstrip()
+
+print "Precautions:"
+for section in precautions:
+    for component in section.iter("{urn:hl7-org:v3}component"):
+        section = component[0]
+        title = section.find('{urn:hl7-org:v3}title')
+        if title.text:
+            print "    " + title.text.rstrip()
+        for precaution in section.iter('{urn:hl7-org:v3}paragraph'):
+            if precaution.text:
+                print "        " + precaution.text.rstrip()
+                
+

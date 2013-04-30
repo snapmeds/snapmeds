@@ -1,0 +1,88 @@
+package com.snapmeds.dosage.test;
+
+import java.util.Calendar;
+
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.provider.CalendarContract.Events;
+import android.test.ActivityInstrumentationTestCase2;
+import android.test.UiThreadTest;
+import android.widget.Button;
+import android.widget.EditText;
+
+import com.dosage.CalendarReminder;
+import com.dosage.DosageParserActivity;
+import com.snapmeds.R;
+import com.utilities.Frequency;
+import com.utilities.FrequencyUnit;
+
+public class DosageParserActivityTest extends ActivityInstrumentationTestCase2<DosageParserActivity> {
+
+    private DosageParserActivity activity;
+    private EditText parseText;
+    private EditText doseText;
+    private EditText frequencyText;
+    private EditText routeText;
+    private Button parseButton;
+
+    public DosageParserActivityTest() {
+        super( DosageParserActivity.class );
+    }
+
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+        setActivityInitialTouchMode( false );
+
+        activity = getActivity();
+        parseText = ( (EditText) activity.findViewById( R.id.dosageText ) );
+        doseText = ( (EditText) activity.findViewById( R.id.dosageQuantity ) );
+        frequencyText = ( (EditText) activity.findViewById( R.id.dosageFrequency ) );
+        routeText = ( (EditText) activity.findViewById( R.id.dosageRoute ) );
+        parseButton = ( (Button) activity.findViewById( R.id.parseButton ) );
+    }
+
+    @UiThreadTest
+    public void testDosageParse() {
+        parseText.setText( "Take two tablets by mouth daily" );
+        parseButton.performClick();
+        assertEquals( "two tablets", doseText.getText().toString() );
+        assertEquals( "by mouth", routeText.getText().toString() );
+        assertEquals( "daily", frequencyText.getText().toString() );
+
+        doseText.setText( "two tablets" );
+        frequencyText.setText( "daily" );
+        assertEquals( "two tablets", doseText.getText().toString() );
+        assertEquals( "daily", frequencyText.getText().toString() );
+    }
+
+    @UiThreadTest
+    public void testCalendarEvents() {
+        long millis = Calendar.getInstance().getTimeInMillis();
+        Frequency frequency = new Frequency( 1, FrequencyUnit.DAILY, 1 );
+        frequency.addTime( millis );
+        CalendarReminder calReminder = new CalendarReminder( frequency, "Medication", "One tablet" );
+        calReminder.setupReminder( activity );
+        
+        String[] projection = { Events.DTSTART, Events.DTEND, Events.TITLE, Events.RRULE, Events.DESCRIPTION,
+                Events.ACCESS_LEVEL, Events.AVAILABILITY };
+
+        ContentResolver cr = activity.getContentResolver();
+
+        for ( Long eventID : calReminder.eventIds ) {
+            String selection = Events._ID + " = " + eventID.toString();
+            Cursor cur = cr.query( Events.CONTENT_URI, projection, selection, null, null );
+            assertEquals( 1, cur.getCount() );
+            while ( cur.moveToNext() ) {
+                assertEquals(millis, cur.getLong(0));
+                assertEquals(millis, cur.getLong(1));
+                assertEquals( "Medication", cur.getString( 2 ) );
+                assertEquals( "FREQ=DAILY", cur.getString( 3 ) );
+                assertEquals( "One tablet", cur.getString( 4 ) );
+                assertEquals( Events.ACCESS_PRIVATE, cur.getInt( 5 ) );
+                assertEquals( Events.AVAILABILITY_FREE, cur.getInt( 6 ) );
+            }
+        }
+        calReminder.cancelReminder( activity );
+    }
+}

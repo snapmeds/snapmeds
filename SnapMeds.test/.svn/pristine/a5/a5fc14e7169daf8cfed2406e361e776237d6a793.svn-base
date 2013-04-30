@@ -1,0 +1,103 @@
+package utilitiesTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.utilities.Drug;
+
+public class DrugTest {
+	private static final Drug drug1 = new Drug();
+	private static final Drug drug2 = new Drug();
+
+	private void populateFakeDrug(Drug drug) {
+		drug.setAdversereactions("adversereactions");
+		drug.setBoxwarnings("boxwarnings");
+		drug.setConflictingconditions("conflictingconditions");
+		drug.setGenericnames("genericnames");
+		drug.setMedicationguide("medicationguide");
+		drug.setName("name");
+		drug.setPrecautions("precautions");
+		drug.setSetid("setid");
+		drug.setUses("uses");
+		drug.setWarnings("warnings");
+	}
+
+	@Before
+	public void resetDrugs() {
+		populateFakeDrug(drug1);
+		populateFakeDrug(drug2);
+	}
+
+	@Test
+	public void testEqualsWorks() {
+		assertTrue(drug1.equals(drug2));
+	}
+	
+	@Test
+	public void testEqualsHandlesNull() {
+		assertFalse(drug1.equals(null));
+	}
+
+	@Test
+	public void testEqualsChecksAdverseReactions() {
+		drug2.setAdversereactions("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksBoxWarnings() {
+		drug2.setBoxwarnings("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksConflictingConditions() {
+		drug2.setConflictingconditions("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksGenericNames() {
+		drug2.setGenericnames("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksMedicationGuide() {
+		drug2.setMedicationguide("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksName() {
+		drug2.setName("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksPrecautions() {
+		drug2.setPrecautions("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksSetid() {
+		drug2.setSetid("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksUses() {
+		drug2.setUses("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+	@Test
+	public void testEqualsChecksWarnings() {
+		drug2.setWarnings("different");
+		assertFalse(drug1.equals(drug2));
+	}
+
+}

@@ -1,0 +1,19 @@
+<?php
+
+function get_database_server(){
+	return "snapmeds.clnz0ggkmfv0.us-west-2.rds.amazonaws.com";
+}
+
+function get_database_user(){
+	return "snapmeds_admin";
+}
+
+function get_database_password(){
+	return "safeerides";
+}
+
+function get_database_name(){
+	return "snapmeds_root";
+}
+
+?>

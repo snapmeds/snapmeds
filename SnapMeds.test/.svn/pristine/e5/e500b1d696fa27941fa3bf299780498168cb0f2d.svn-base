@@ -1,0 +1,184 @@
+package queryTest;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+
+import org.json.JSONArray;
+import org.junit.Test;
+
+import com.query.DailyMedQueryer;
+import com.query.Queryer;
+import com.utilities.Drug;
+
+public class DailyMedQueryerTest {	
+
+	/**
+	 * testAmoxicillinFromNDCs() checks that the populated drug
+	 * name is what is expected based the ndcs all representing
+	 * Amoxicillin
+	 */
+	@Test
+	public void testAmoxicillinFromNDCs(){
+		DailyMedQueryer q = new DailyMedQueryer();
+		Drug amoxicillin = q.getDrugFromNDC("43598-225-01");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+		
+		amoxicillin = q.getDrugFromNDC("43598-225-05");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+		
+		amoxicillin = q.getDrugFromNDC("43598-205-01");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+		
+		amoxicillin = q.getDrugFromNDC("43598-224-14");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+		
+		amoxicillin = q.getDrugFromNDC("43598-224-01");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-224-05");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-219-14");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-219-01");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-222-80");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-222-52");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+		
+		amoxicillin = q.getDrugFromNDC("43598-222-53");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-223-50");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-223-51");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-223-52");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-209-80");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-209-52");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-209-53");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-207-50");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-207-51");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-207-52");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		amoxicillin = q.getDrugFromNDC("43598-222-52");
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+	
+		//check no hyphens
+		List<Drug> drugs = q.getDrugsFromNDC("4359822252");
+		amoxicillin = drugs.get(0);
+		assertEquals(drugs.size(),1);
+		assertEquals(amoxicillin.getName(),"AMOXICILLIN");
+		
+		//check bad hyphens
+		amoxicillin = q.getDrugFromNDC("43598-22252");
+		assertEquals(amoxicillin.getName(),null);
+		
+	}
+	
+	
+	@Test
+	public void testDrugsFromNames(){
+		DailyMedQueryer q = new DailyMedQueryer();
+		q.getDrugsFromName("Amox");
+		List<Drug> drugs = q.getDrugsFromName("Methotrexate");
+		assertEquals(2,drugs.size());
+		Drug drugA = drugs.get(0);
+		Drug drugB = drugs.get(1);
+		assertTrue( (drugA.getName().equals("METHOTREXATE") &&
+					drugB.getName().equals("Methotrexate Sodium")) ||
+					(drugA.getName().equals("Methotrexate Sodium") &&
+					drugB.getName().equals("METHOTREXATE")));
+	}
+	
+	@Test
+	public void testDrugsFromNDCs() {
+		DailyMedQueryer q = new DailyMedQueryer();
+		List<Drug> drugs = q.getDrugsFromNDC("6332312250");
+		assertEquals(drugs.size(), 1);
+	}
+	
+	/**
+	 * testNamesFromNDCs() checks that the populated drug
+	 * names are expected based the ndcs in each case
+	 */
+	@Test
+	public void testNamesFromNDCs(){
+		Queryer q = new DailyMedQueryer();
+		Drug drug = q.getDrugFromNDC("36987-1003-1");
+		assertEquals(drug.getName(),"Cattle Epithelium");
+		
+		drug = q.getDrugFromNDC("58980-330-61");
+		assertEquals(drug.getName(),"Cerisa");
+		
+		drug = q.getDrugFromNDC("49349-894-02");
+		assertEquals(drug.getName(),"Bupropion Hydrochloride");
+		
+	}
+	
+	/**
+	 * testSetIDFromNDCs() checks that the populated drug
+	 * setID is as expected
+	 */
+	@Test
+	public void testSetIDFromNDCs(){
+		Queryer q = new DailyMedQueryer();
+		Drug drug = q.getDrugFromNDC("4828-9943-06");
+		assertEquals(drug.getSetID(),"0003458f-352a-46fa-9d99-230daa76ae29");
+		
+		drug = q.getDrugFromNDC("6052-7530-47");
+		assertEquals(drug.getSetID(),"0003458f-352a-46fa-9d99-230daa76ae29");
+		
+		List<Drug> drugs = q.getDrugsFromNDC("6808432601");
+		assertEquals(drugs.size(),1);
+		drug = drugs.get(0);
+		assertEquals(drug.getSetID(),"0003458f-352a-46fa-9d99-230daa76ae29");
+		
+		drugs = q.getDrugsFromNDC("6808432611");
+		assertEquals(drugs.size(),1);
+		drug = drugs.get(0);
+		assertEquals(drug.getSetID(),"0003458f-352a-46fa-9d99-230daa76ae29");
+		
+	}
+	
+	/**
+	 * testVicodin() checks a known problem case before database update
+	 */
+	@Test
+	public void testVicodin(){
+		Queryer q = new DailyMedQueryer();
+		Drug drug = q.getDrugFromNDC("0074-1949-14");
+		assertEquals(drug.getSetID(),"60ac290f-fa72-40bc-807b-2c18ffe10eb0");
+		assertEquals(drug.getName(),"Vicodin");
+	}
+
+
+	private class DailyMedQueryerTestClass extends DailyMedQueryer {
+		public void populateDrug(Drug drug, JSONArray json){
+			super.populateDrug(drug, json);
+		}
+	}
+}
+
+

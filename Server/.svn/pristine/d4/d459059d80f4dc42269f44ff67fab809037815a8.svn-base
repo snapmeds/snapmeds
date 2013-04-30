@@ -1,0 +1,87 @@
+<?php
+require_once("sensitive_data.php");
+
+// adds quotes around string
+function format($str) {
+	if ($str){
+		return "\"".$str."\"";
+	} else {
+		return $str;
+	}
+}
+
+function get_json_from_ndc($connection, $setid){
+    $longstring = "SELECT adversereactions, boxwarnings, ".
+    "conflictingconditions, genericnames, medicationguide, ".
+    "name, precautions, uses, warnings FROM INFO WHERE ".
+    "INFO.setid=?";
+    $json = array();
+    if($stmt = $connection -> prepare($longstring)) {
+        $stmt -> bind_param("s", $setid);
+        /* Execute it */
+        $stmt -> execute();
+        /* Bind results */
+        $stmt -> bind_result($result);
+        /* Fetch the value */
+        $stmt -> fetch();
+        $row = $result->fetch_row();
+        $json[]['adversereactions'] = trim($row[0]);
+        $json[]['boxwarnings'] = trim($row[1]);
+        $json[]['conflictingconditions'] = trim($row[2]);
+        $json[]['genericnames'] = trim($row[3]);
+        $json[]['medicationguide'] = trim($row[4]);
+        $json[]['name'] = trim($row[5]);
+        $json[]['precautions'] = trim($row[6]);
+        $json[]['uses'] = trim($row[7]);
+        $json[]['warnings'] = trim($row[8]);
+        $json[]['setid'] = str_replace('"',"",$setid);
+    }
+    else{
+        echo "error". ;
+    }
+    return $json;
+}
+    $username = isset($_GET['username']) ? $_GET['username'] : "";
+    $password = isset($_GET['password']) ? $_GET['password'] : "";
+    $ndc = isset($_GET['ndc']) ? $_GET['ndc'] : "";
+    if ($username === "restful" && $password == "api"){
+        $connection = new mysqli(get_database_server(), get_database_user(), get_database_password(), get_database_name());
+        $drugsjson = array();
+        if ($ndc != NULL && $ndc != ""){
+            if($stmt = $connection -> prepare("SELECT setid FROM NDC WHERE NDC=?")) {
+                $ndc=$connection->real_escape_string($ndc);
+                echo $ndc;
+                $stmt -> bind_param("s", $ndc);
+                /* Execute it */
+                $stmt -> execute();
+                /* Bind results */
+                $stmt -> bind_result($setid);
+                /* Fetch the value */
+                $stmt -> fetch();
+                $setid = $connection->real_escape_string($setid);
+                echo $setid;
+                $drugsjson[0] = get_json_from_ndc($connection, $setid);
+            }
+        } else {
+            $i = 0;
+            $likename = $connection->real_escape_string("%".$_GET['name']."%");
+            $likename = format($likename);
+            $qstring = "SELECT DISTINCT setid FROM INFO WHERE name like ".$likename." GROUP BY name ORDER BY length(name) ASC";
+            $setid_array = $connection->query($qstring);
+            $setid = $setid_array->fetch_row();
+            $setid = format($setid[0]);
+            while ($setid != NULL && $i < 10){
+                $drugsjson[$i] = get_json_from_ndc($connection, $setid);
+                $i = $i + 1;
+                $setid = $setid_array->fetch_row();
+                $setid = $connection->real_escape_string($setid[0]);
+                $setid = format($setid);
+            }
+        }
+        $connection->close();
+        echo json_encode($drugsjson);
+    }
+    
+    
+    ?>
+

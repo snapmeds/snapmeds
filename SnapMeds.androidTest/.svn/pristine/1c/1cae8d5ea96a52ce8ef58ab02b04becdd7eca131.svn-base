@@ -1,0 +1,200 @@
+package com.snapmeds.storage.test;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+
+import android.app.Activity;
+import android.test.ActivityInstrumentationTestCase2;
+
+import com.snapmeds.MainActivity;
+import com.storage.SimpleStorage;
+import com.utilities.Dosage;
+import com.utilities.Drug;
+import com.utilities.Frequency;
+import com.utilities.Prescription;
+
+public class StorageTest extends ActivityInstrumentationTestCase2<MainActivity>
+{
+  private Activity activity;
+  private Prescription prescription1, prescription2;
+  private Drug drug;
+  
+  public StorageTest()
+  {
+    super("com.snapmeds", MainActivity.class);
+  }
+  
+  public void setUp() throws IOException
+  {
+    activity = getActivity();
+    SimpleStorage.clearPrescriptions(activity);
+    drug = new Drug();
+    drug.setSetid("testDrugId");
+    
+    prescription1 = new Prescription();
+    prescription1.setDrug(drug);
+    
+    prescription2 = new Prescription();
+    prescription2.setDrug(drug);
+  }
+  
+  /**
+   * Test to make sure loading Prescriptions when no Prescription has been stored results
+   * in an empty list of Prescriptions
+   * @throws IOException 
+   * @throws JsonMappingException 
+   * @throws JsonParseException 
+   */
+  public void testEmptyInitialStorage() throws IOException
+  {
+    List<Prescription> actualPrescriptions = SimpleStorage.loadPrescriptions(activity);
+    List<Prescription> expectedPrescriptions = new ArrayList<Prescription>();
+    assertEquals(expectedPrescriptions, actualPrescriptions);
+  }
+  
+  /**
+   * Test to make sure that a Prescription added to Storage can be 
+   * retrieved from Storage
+   * @throws IOException
+   */
+  public void testAddPrescription() throws IOException
+  {
+    SimpleStorage.addPrescription(activity, prescription1);
+    
+    List<Prescription> actualPrescriptions = SimpleStorage.loadPrescriptions(activity);
+    List<Prescription> expectedPrescriptions = new ArrayList<Prescription>();
+    expectedPrescriptions.add(prescription1);
+    
+    assertEquals(expectedPrescriptions, actualPrescriptions);
+  }
+  
+  /**
+   * Test to make sure that a Prescription removed from Storage no longer 
+   * exists in Storage
+   * @throws IOException
+   */
+  public void testRemovePrescription() throws IOException
+  {
+    SimpleStorage.addPrescription(activity, prescription1);
+    SimpleStorage.removePrescription(activity, prescription1);
+
+    List<Prescription> actualPrescriptions = SimpleStorage.loadPrescriptions(activity);
+    List<Prescription> expectedPrescriptions = new ArrayList<Prescription>();
+    
+    assertEquals(expectedPrescriptions, actualPrescriptions);
+  }
+  
+  /**
+   * Test to make sure that an edited Prescription object has 
+   * the edit persisted to Storage
+   * @throws IOException
+   */
+  public void testEditPrescription() throws IOException
+  {
+    SimpleStorage.addPrescription(activity, prescription1);
+    
+    prescription1.setNote("this is a test");
+    SimpleStorage.editPrescription(activity, prescription1);
+
+    List<Prescription> prescriptions = SimpleStorage.loadPrescriptions(activity);
+    
+    if (prescriptions != null && prescriptions.size() == 1)
+    {
+      Prescription storedPrescription = prescriptions.get(0);
+      boolean isSameId = prescription1.getDrug().getSetid().equals(storedPrescription.getDrug().getSetid());
+      boolean wasEdited = prescription1.getNote().equals(storedPrescription.getNote());
+      
+      assertTrue(isSameId && wasEdited);
+    }
+    else
+    {
+      fail();
+    }
+  }
+  
+  /**
+   * Test to make sure that clearing the Storage actually removes
+   * all Prescriptions from Storage
+   * @throws IOException
+   */
+  public void testClearStorage() throws IOException
+  {
+    SimpleStorage.addPrescription(activity, prescription1);
+    SimpleStorage.addPrescription(activity, prescription2);
+    SimpleStorage.clearPrescriptions(activity);
+    
+    List<Prescription> actualPrescriptions = SimpleStorage.loadPrescriptions(activity);
+    List<Prescription> expectedPrescriptions = new ArrayList<Prescription>();
+    
+    assertEquals(expectedPrescriptions, actualPrescriptions);
+  }
+  
+  /**
+   * Test to make sure that all Prescription objects added to Storage
+   * are persisted to Storage
+   * @throws IOException
+   */
+  public void testAddMultiplePrescriptions() throws IOException
+  {
+    SimpleStorage.addPrescription(activity, prescription1);
+    SimpleStorage.addPrescription(activity, prescription2);
+    
+    List<Prescription> actualPrescriptions = SimpleStorage.loadPrescriptions(activity);
+    List<Prescription> expectedPrescriptions = new ArrayList<Prescription>();
+    expectedPrescriptions.add(prescription1);
+    expectedPrescriptions.add(prescription2);
+    
+    assertEquals(expectedPrescriptions, actualPrescriptions);
+  }
+  
+  /**
+   * Test to make sure that removing one Prescription from Storage within a set of
+   * other Prescriptions exactly removes just that removed Prescription
+   * @throws IOException
+   */
+  public void testRemoveOneFromMultiplePrescriptions() throws IOException
+  {
+    SimpleStorage.addPrescription(activity, prescription1);
+    SimpleStorage.addPrescription(activity, prescription2);
+    
+    SimpleStorage.removePrescription(activity, prescription2);
+    List<Prescription> actualPrescriptions = SimpleStorage.loadPrescriptions(activity);
+    List<Prescription> expectedPrescriptions = new ArrayList<Prescription>();
+    expectedPrescriptions.add(prescription1);
+    
+    assertEquals(expectedPrescriptions, actualPrescriptions);    
+  }
+  
+  public void testDrugDataPersists() throws IOException
+  {
+	  drug.setAdversereactions("Test Reactions");
+	  drug.setBoxwarnings("Test Box Warnings");
+	  drug.setGenericnames("Test Generic Names");
+	  
+	  SimpleStorage.addPrescription(activity, prescription1);
+	  Drug loadedDrug = SimpleStorage.loadPrescriptions(activity).get(0).getDrug();
+	 
+	  assertEquals(loadedDrug.getAdversereactions(), "Test Reactions");
+	  assertEquals(loadedDrug.getBoxwarnings(), "Test Box Warnings");
+	  assertEquals(loadedDrug.getGenericnames(), "Test Generic Names");
+  }
+  
+  public void testDosageDataPersists() throws IOException
+  {
+	  Dosage dosage= new Dosage();
+	  dosage.getFrequency().setNumTimes(5);
+	  dosage.getFrequency().setInterval(10);
+	  prescription1.setDosage(dosage);
+	  
+	  SimpleStorage.addPrescription(activity, prescription1);
+	  Dosage loadedDosage = SimpleStorage.loadPrescriptions(activity).get(0).getDosage();
+	  Frequency dosageFrequency = loadedDosage.getFrequency();
+	  
+	  assertEquals(dosageFrequency.getNumTimes(), 5);
+	  assertEquals(dosageFrequency.getInterval(), 10);
+  }
+}

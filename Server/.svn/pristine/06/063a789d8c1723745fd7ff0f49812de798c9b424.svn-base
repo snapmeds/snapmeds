@@ -1,0 +1,65 @@
+<?php
+require_once("sensitive_data.php");
+
+// protects from SQL injection
+function sanitize($str) {
+	if ($str){
+		return "\"".$str."\"";
+	} else {
+		return $str;
+	}
+}
+
+function get_json_from_ndc($connection, $setid){
+	$longstring = "SELECT ADVERSEREACTIONS.adversereactions, BOXWARNINGS.boxwarnings, ".
+		"CONFLICTINGCONDITIONS.conflictingconditions, GENERICNAMES.genericnames, MEDICATIONGUIDE.medicationguide, ".
+		"NAME.name, PRECAUTIONS.precautions, USES.uses, WARNINGS.warnings FROM ADVERSEREACTIONS,BOXWARNINGS, ".
+		"CONFLICTINGCONDITIONS,GENERICNAMES,MEDICATIONGUIDE,NAME,PRECAUTIONS,USES,WARNINGS WHERE ".
+		"ADVERSEREACTIONS.setid=".$setid."AND BOXWARNINGS.setid=".$setid."AND CONFLICTINGCONDITIONS.setid=".$setid.
+		"AND GENERICNAMES.setid=".$setid." AND MEDICATIONGUIDE.setid=".$setid."AND NAME.setid=".$setid."AND USES.setid=".$setid.
+		"AND PRECAUTIONS.setid=".$setid." AND WARNINGS.setid=".$setid;
+	$result = $connection->query($longstring);
+
+	$json = array();
+	$row = $result->fetch_row();
+	$json[]['adversereactions'] = trim($row[0]);
+	$json[]['boxwarnings'] = trim($row[1]);
+	$json[]['conflictingconditions'] = trim($row[2]);
+	$json[]['genericnames'] = trim($row[3]);
+	$json[]['medicationguide'] = trim($row[4]);
+	$json[]['name'] = trim($row[5]);
+	$json[]['precautions'] = trim($row[6]);
+	$json[]['uses'] = trim($row[7]);
+	$json[]['warnings'] = trim($row[8]);
+	$json[]['setid'] = $setid;
+	return $json;
+}
+
+$username = $_GET['username'];
+$password = $_GET['password'];
+$ndc = sanitize($_GET['ndc']);
+if ($username === "snapmeds_admin" && $password == "safeerides"){
+	$connection = new mysqli("engr-cpanel-mysql.engr.illinois.edu", $username, $password, "snapmeds_root");
+	$drugsjson = array();
+	if ($ndc != NULL && $ndc != ""){		
+		$setid = $connection->query("SELECT setid FROM NDC WHERE NDC=".$ndc);
+		$setid = sanitize($setid->fetch_row()[0]);
+		$drugsjson[0] = get_json_from_ndc($connection, $setid);
+	} else {
+		$i = 0;
+		$likename = sanitize("%".$_GET['name']."%");
+		$qstring = "SELECT DISTINCT setid FROM NAME WHERE name like ".$likename." GROUP BY name";
+		$setid_array = $connection->query($qstring);
+		$setid = sanitize($setid_array->fetch_row()[0]);
+		while ($setid != NULL && $i < 10){
+			$drugsjson[$i] = get_json_from_ndc($connection, $setid);
+			$i = $i + 1;
+			$setid = sanitize($setid_array->fetch_row()[0]);
+		}
+	}
+	$connection->close();
+	echo json_encode($drugsjson);
+}
+
+
+?>

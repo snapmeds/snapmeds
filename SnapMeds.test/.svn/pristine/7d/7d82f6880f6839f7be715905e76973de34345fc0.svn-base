@@ -1,0 +1,80 @@
+package utilitiesTest;
+
+import static org.junit.Assert.*;
+
+
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.utilities.MedicineCabinet;
+import com.utilities.Prescription;
+
+public class MedicineCabinetTest {
+	private static MedicineCabinet cabinet;
+
+	private static final Prescription prescription1 = new Prescription();
+	private static final Prescription prescription2 = new Prescription();
+	private static final Prescription prescription3 = new Prescription();
+
+	@BeforeClass
+	public static void setup() {
+		// Make prescriptions distinguishable
+		prescription1.setNote("1");
+		prescription2.setNote("2");
+		prescription3.setNote("3");
+	}
+
+	@Before
+	public void resetState() {
+		cabinet = new MedicineCabinet();
+		cabinet.add(prescription1);
+		cabinet.add(prescription2);
+		cabinet.add(prescription3);
+	}
+
+	@Test
+	public void testGet() {
+		assertTrue(((Prescription)cabinet.get(1)).equals(prescription2));
+	}
+
+	@Test
+	public void testAdd() {
+		cabinet = new MedicineCabinet();
+		cabinet.add(prescription2);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription2));
+	}
+
+	@Test
+	public void testRemove() {
+		cabinet.remove(1);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription1)
+				&& ((Prescription)cabinet.get(1)).equals(prescription3));
+	}
+
+	@Test
+	public void testReorderNoChange() {
+		cabinet.reorder(1, 1);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription1)
+				&& ((Prescription)cabinet.get(1)).equals(prescription2)
+				&& ((Prescription)cabinet.get(2)).equals(prescription3));
+	}
+
+	@Test
+	public void testReorderUpwards() {
+		// Move bottom to top
+		cabinet.reorder(0, 2);
+		assertTrue(((Prescription)cabinet.get(0)).equals(prescription3)
+				&& ((Prescription)cabinet.get(1)).equals(prescription1)
+				&& ((Prescription)cabinet.get(2)).equals(prescription2));
+	}
+
+	@Test
+	public void testReorderDownwards() {
+		// Move top to bottom
+		cabinet.reorder(2, 0);
+		assertTrue(cabinet.get(0).equals(prescription2)
+				&& cabinet.get(1).equals(prescription3)
+				&& cabinet.get(2).equals(prescription1));
+	}
+}

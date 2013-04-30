@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="http://www.accessdata.fda.gov/spl/stylesheet/spl.xsl" type="text/xsl"?>
+<document xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://www.accessdata.fda.gov/spl/schema/spl.xsd">
+   <id root="f9dcc8f1-514b-4728-85e7-4ef80805fe72"/>
+   <code code="34391-3" displayName="HUMAN PRESCRIPTION DRUG LABEL" codeSystem="2.16.840.1.113883.6.1"/>
+   <title>
+      <content styleCode="bold">These highlights do not include all the information needed to use divalproex sodium capsules (sprinkle )(divalproex sodium USP equivalent to 125 mg of valproic acid) safely and effectively. See full prescribing information for divalproex sodium capsules (sprinkle) (divalproex sodium USP equivalent to 125 mg of valproic acid). <br/>Divalproex Sodium Capsules (Sprinkle)  <br/>(divalproex sodium USP equivalent to 125 mg of valproic acid) <br/>Initial U.S. Approval: 1989</content>
+   </title>
+   <effectiveTime value="20130128"/>
+   <setId root="0a67fd2f-7fe8-4573-9be3-69ebe65a3ffe"/>
+   <versionNumber value="10"/>
+   <author>
+      <time/>
+      <assignedEntity>
+         <representedOrganization>
+            <id extension="050052943" root="1.3.6.1.4.1.519.1"/>
+            <name>NCS HealthCare of KY, Inc dba Vangard Labs</name>
+            <assignedEntity>
+               <assignedOrganization>
+                  <assignedEntity>
+                     <assignedOrganization>
+                        <id extension="050052943" root="1.3.6.1.4.1.519.1"/>
+                        <name>NCS HealthCare of KY, Inc dba Vangard Labs</name>
+                     </assignedOrganization>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73607" displayName="RELABEL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="0615-1393" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                     <performance>
+                        <actDefinition>
+                           <code code="C73606" displayName="REPACK" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <product>
+                              <manufacturedProduct classCode="MANU">
+                                 <manufacturedMaterialKind>
+                                    <code code="0615-1393" codeSystem="2.16.840.1.113883.6.69"/>
+                                 </manufacturedMaterialKind>
+                              </manufacturedProduct>
+                           </product>
+                        </actDefinition>
+                     </performance>
+                  </assignedEntity>
+               </assignedOrganization>
+            </assignedEntity>
+         </representedOrganization>
+      </assignedEntity>
+   </author>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <id root="0a90e1b8-8787-4af9-986a-c3b1a6c020d6"/>
+               <code code="48780-1" displayName="SPL LISTING DATA ELEMENTS SECTION" codeSystem="2.16.840.1.113883.6.1"/>
+               <effectiveTime value="20130128"/>
+               <subject>
+                  <manufacturedProduct>
+                     <manufacturedProduct>
+                        <code code="0615-1393" codeSystem="2.16.840.1.113883.6.69"/>
+                        <name>Divalproex sodium</name>
+                        <formCode code="C25158" displayName="CAPSULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        <asEntityWithGeneric>
+                           <genericMedicine>
+                              <name>Divalproex sodium</name>
+                           </genericMedicine>
+                        </asEntityWithGeneric>
+                        <asEquivalentEntity classCode="EQUIV">
+                           <code code="C64637" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <definingMaterialKind>
+                              <code code="55111-532" codeSystem="2.16.840.1.113883.6.69"/>
+                           </definingMaterialKind>
+                        </asEquivalentEntity>
+                        <ingredient classCode="ACTIM">
+                           <quantity>
+                              <numerator unit="mg" value="125"/>
+                              <denominator unit="1" value="1"/>
+                           </quantity>
+                           <ingredientSubstance>
+                              <code code="644VL95AO6" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>DIVALPROEX SODIUM</name>
+                              <activeMoiety>
+                                 <activeMoiety>
+                                    <code code="614OI1Z5WI" codeSystem="2.16.840.1.113883.4.9"/>
+                                    <name>VALPROIC ACID</name>
+                                 </activeMoiety>
+                              </activeMoiety>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="XM0M87F357" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FERROSOFERRIC OXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="767IP0Y5NH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>D&amp;C RED NO. 28</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="7Z8S9VYZ4B" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>ETHYLCELLULOSES</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="H3R47K3TBD" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>FD&amp;C BLUE NO. 1</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="2G86QN327L" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>GELATIN</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="3NXW29V3WO" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>HYPROMELLOSES</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="70097M6I30" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>MAGNESIUM STEARATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="15FIX9V2JP" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TITANIUM DIOXIDE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="8Z96QXD6UM" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>TRIETHYL CITRATE</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <ingredient classCode="IACT">
+                           <ingredientSubstance>
+                              <code code="8M707QY5GH" codeSystem="2.16.840.1.113883.4.9"/>
+                              <name>RAW SUGAR</name>
+                           </ingredientSubstance>
+                        </ingredient>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="15">
+                                 <translation code="C48480" value="15" displayName="CAPSULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              </numerator>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="0615-1393-05" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43168" displayName="BLISTER PACK" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="31">
+                                 <translation code="C48480" value="31" displayName="CAPSULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              </numerator>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="0615-1393-31" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43168" displayName="BLISTER PACK" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                        <asContent>
+                           <quantity>
+                              <numerator unit="1" value="30">
+                                 <translation code="C48480" value="30" displayName="CAPSULE" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                              </numerator>
+                              <denominator value="1"/>
+                           </quantity>
+                           <containerPackagedProduct>
+                              <code code="0615-1393-39" codeSystem="2.16.840.1.113883.6.69"/>
+                              <formCode code="C43168" displayName="BLISTER PACK" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           </containerPackagedProduct>
+                        </asContent>
+                     </manufacturedProduct>
+                     <subjectOf>
+                        <approval>
+                           <id extension="ANDA078979" root="2.16.840.1.113883.3.150"/>
+                           <code code="C73584" displayName="ANDA" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <author>
+                              <territorialAuthority>
+                                 <territory>
+                                    <code code="USA" codeSystem="2.16.840.1.113883.5.28"/>
+                                 </territory>
+                              </territorialAuthority>
+                           </author>
+                        </approval>
+                     </subjectOf>
+                     <subjectOf>
+                        <marketingAct>
+                           <code code="C53292" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                           <statusCode code="active"/>
+                           <effectiveTime>
+                              <low value="20090123"/>
+                           </effectiveTime>
+                        </marketingAct>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLCOLOR" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48325" displayName="WHITE" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLIMPRINT" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value xsi:type="ST">THIS;END;UP;RDY;532</value>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSCORE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value value="1" xsi:type="INT"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSHAPE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value code="C48336" displayName="CAPSULE" codeSystem="2.16.840.1.113883.3.26.1.1" xsi:type="CE"/>
+                        </characteristic>
+                     </subjectOf>
+                     <subjectOf>
+                        <characteristic classCode="OBS">
+                           <code code="SPLSIZE" codeSystem="2.16.840.1.113883.1.11.19255"/>
+                           <value unit="mm" value="19" xsi:type="PQ"/>
+                        </characteristic>
+                     </subjectOf>
+                     <consumedIn>
+                        <substanceAdministration>
+                           <routeCode code="C38288" displayName="ORAL" codeSystem="2.16.840.1.113883.3.26.1.1"/>
+                        </substanceAdministration>
+                     </consumedIn>
+                  </manufacturedProduct>
+               </subject>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_0d5e1566-bf22-4804-ac57-24577d384f88">
+               <id root="3410f7dd-7932-43ac-b7e5-9da8c31c8e85"/>
+               <code code="34066-1" codeSystem="2.16.840.1.113883.6.1" displayName="BOXED WARNING SECTION"/>
+               <title>BOXED WARNING</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">BOXED WARNING</content>
+                  </paragraph>
+                  <paragraph>WARNING: LIFE THREATENING ADVERSE REACTIONS  </paragraph>
+                  <paragraph>HEPATOTOXICITY </paragraph>
+                  <paragraph>Hepatic failure resulting in fatalities has occurred in patients receiving valproate and its derivatives. Children under the age of two years are at a considerably increased risk of developing fatal hepatotoxicity, especially those on multiple anticonvulsants, those with congenital metabolic disorders, those with severe seizure disorders accompanied by mental retardation, and those with organic brain disease. When divalproex sodium# capsules (sprinkle) are used in this patient group, they should be used with extreme caution and as a sole agent. The benefits of therapy should be weighed against the risks. The incidence of fatal hepatotoxicity decreases considerably in progressively older patient groups.</paragraph>
+                  <paragraph>These incidents usually have occurred during the first six months of treatment. Serious or fatal hepatotoxicity may be preceded by non-specific symptoms such as malaise, weakness, lethargy, facial edema, anorexia, and vomiting. In patients with epilepsy, a loss of seizure control may also occur. Patients should be monitored closely for appearance of these symptoms. Liver function tests should be performed prior to therapy and at frequent intervals thereafter, especially during the first six months [see Warnings and Precautions (5.1)].</paragraph>
+                  <paragraph>FETAL RISK </paragraph>
+                  <paragraph>Valproate can cause major congenital malformations, particularly neural tube defects (e.g., spina bifida). Valproate should not be administered to a woman of childbearing potential unless the drug is essential to the management of her medical condition. This is especially important when valproate use is considered for a condition not usually associated with permanent injury or death (e.g., migraine). Women should use effective contraception while using valproate [see Warnings and Precautions (5.2)]. </paragraph>
+                  <paragraph>A Medication Guide describing the risks of valproate is available for patients [see Patient Counseling Information (17)].</paragraph>
+                  <paragraph>PANCREATITIS </paragraph>
+                  <paragraph>Cases of life-threatening pancreatitis have been reported in both children and adults receiving valproate. Some of the cases have been described as hemorrhagic with a rapid progression from initial symptoms to death. Cases have been reported shortly after initial use as well as after several years of use. Patients and guardians should be warned that abdominal pain, nausea, vomiting and/or anorexia can be symptoms of pancreatitis that require prompt medical evaluation. If pancreatitis is diagnosed, valproate should ordinarily be discontinued. Alternative treatment for the underlying medical condition should be initiated as clinically indicated [seeWarnings and Precautions (5.4)]. </paragraph>
+               </text>
+               <effectiveTime value="20130128"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>
+                           <content styleCode="bold">WARNING: LIFE THREATENING ADVERSE REACTIONS</content>
+                        </paragraph>
+                        <paragraph>See full prescribing information for complete boxed warning.  </paragraph>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Hepatotoxicity, including fatalities, usually during first 6 months of treatment. Children under the age of two years are at considerably higher risk of fatal hepatotoxicity. Monitor patients closely, and perform liver function tests prior to therapy and  at frequent intervals  thereafter (5.1) 
+</item>
+                           <item>Fetal Risk, particularly neural tube defects and other major malformations (5.2, 5.3) 
+</item>
+                           <item>Pancreatitis, including fatal hemorrhagic cases (5.4) </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_2337e6dc-0c08-448e-a104-3b4ff77ac63d">
+               <id root="6da86e6c-1f4b-409d-888b-c1e1c9d2d2d4"/>
+               <code code="43683-2" codeSystem="2.16.840.1.113883.6.1" displayName="RECENT MAJOR CHANGES SECTION"/>
+               <title/>
+               <effectiveTime value="20130117"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Warnings and Precautions, Use in Women of Childbearing Potential (5.2)                                      10/2011 </paragraph>
+                        <paragraph>Warnings and Precautions, Birth Defects (5.3)                                                                                   10/2011 </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c8e0b232-564c-4c73-9a2e-3d357952896a">
+               <id root="0cd63ab9-e6d1-42a2-b8b0-7046109d4d9c"/>
+               <code code="34067-9" codeSystem="2.16.840.1.113883.6.1" displayName="INDICATIONS &amp; USAGE SECTION"/>
+               <title>1 INDICATIONS AND USAGE</title>
+               <effectiveTime value="20130128"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) is an anti-epileptic drug indicated for: </paragraph>
+                        <paragraph>Monotherapy and adjunctive therapy of complex partial seizures and simple and complex absence seizures; adjunctive therapy in patients with multiple seizure types that include absence seizures </paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_7136a6df-b674-4b69-b609-b58ec5267a8b">
+                     <id root="0862e13d-1141-4319-8e7a-eb40753d8fd0"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>1.1 Epilepsy</title>
+                     <text>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) are indicated as monotherapy and adjunctive therapy in the treatment of adult patients and pediatric patients down to the age of 10 years with complex partial seizures that occur either in isolation or in association with other types of seizures. Divalproex sodium# capsules (sprinkle) are also indicated for use as sole and adjunctive therapy in the treatment of simple and complex absence seizures, and adjunctively in patients with multiple seizure types that include absence seizures. </paragraph>
+                        <paragraph>Simple absence is defined as very brief clouding of the sensorium or loss of consciousness accompanied by certain generalized epileptic discharges without other detectable clinical signs. Complex absence is the term used when other signs are also present. [seeWarnings and Precautions (5.2), Patient Counseling Information (17.3)].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_b49c6cb1-fd26-4ad9-93d5-1d37e5960b59">
+               <id root="aa9f4e4e-1b7d-429b-b316-33c94cd97204"/>
+               <code code="34068-7" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE &amp; ADMINISTRATION SECTION"/>
+               <title>2 DOSAGE AND ADMINISTRATION</title>
+               <effectiveTime value="20130117"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Divalproex sodium# particles in capsules may be swallowed whole or the contents may be sprinkled on soft food. The drug/food mixture should be swallowed immediately (avoid chewing)    
+</item>
+                           <item>Safety of doses above 60 mg/kg/day is not established (2.1, 2.2)    
+</item>
+                           <item>Complex Partial Seizures: Start at 10 to 15 mg/kg/day, increasing at 1 week intervals by 5 to 10 mg/kg/day to achieve optimal clinical response; if response is not satisfactory, check valproate plasma level; see full prescribing information for conversion to monotherapy (2.1)    
+</item>
+                           <item>Absence Seizures: Start at 15 mg/kg/day, increasing at 1 week intervals by 5 to 10 mg/kg/day until seizure control or limiting side effects (2.1)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_c6740b7b-00b6-4b17-a9ff-58732bfd27f2">
+                     <id root="d47942f5-c9ab-48cc-9e50-4c78811b8cd7"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.1 Epilepsy</title>
+                     <text>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) are administered orally. As divalproex sodium# capsules (sprinkle) dosage is titrated upward, concentrations of clonazepam, diazepam, ethosuximide, lamotrigine, tolbutamide, phenobarbital, carbamazepine, and/or phenytoin may be affected [seeDrugInteractions (7.2)].</paragraph>
+                        <paragraph>Complex Partial Seizures</paragraph>
+                        <paragraph>For adults and children 10 years of age or older.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Monotherapy (Initial Therapy)</content>
+                        </paragraph>
+                        <paragraph>Divalproex sodium # capsules (sprinkle) has not been systematically studied as initial therapy. Patients should initiate therapy at 10 to 15 mg/kg/day. The dosage should be increased by 5 to 10 mg/kg/week to achieve optimal clinical response. Ordinarily, optimal clinical response is achieved at daily doses below 60 mg/kg/day. If satisfactory clinical response has not been achieved, plasma levels should be measured to determine whether or not they are  in the usually accepted therapeutic range (50 to 100 mcg/mL). No recommendation regarding the safety of valproate for use at doses above 60 mg/kg/day can be made.</paragraph>
+                        <paragraph>The probability of thrombocytopenia increases significantly at total trough valproate plasma concentrations above 110 mcg/mL in females and 135 mcg/mL in males. The benefit of improved seizure control with higher doses should be weighed against the possibility of a greater incidence of adverse reactions.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Conversion to Monotherapy</content>
+                        </paragraph>
+                        <paragraph>Patients should initiate therapy at 10 to 15 mg/kg/day. The dosage should be increased by 5 to 10 mg/kg/week to achieve optimal clinical response. Ordinarily, optimal clinical response is achieved at daily doses below 60 mg/kg/day. If satisfactory clinical response has not been achieved, plasma levels should be measured to determine whether or not they are in the usually accepted therapeutic range (50 - 100 mcg/mL). No recommendation regarding the safety of valproate for use at doses above 60 mg/kg/day can be made.  </paragraph>
+                        <paragraph>Concomitant antiepilepsy drug (AED) dosage can ordinarily be reduced by approximately 25% every 2 weeks. This reduction may be started at initiation of divalproex sodium therapy, or delayed by 1 to 2 weeks if there is a concern that seizures are likely to occur with a reduction. The speed and duration of withdrawal of the concomitant AED can be highly variable, and patients should be monitored closely during this period for increased seizure frequency.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Adjunctive Therapy</content>
+                        </paragraph>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) may be added to the patient"s regimen at a dosage of 10 to 15 mg/kg/day. The dosage may be increased by 5 to 10 mg/kg/week to achieve optimal clinical response. Ordinarily, optimal clinical response is achieved at daily doses below 60 mg/kg/day. If satisfactory clinical response has not been achieved, plasma levels should be measured to determine whether or not they are in the usually accepted therapeutic range (50 to 100 mcg/mL). No recommendation regarding the safety of valproate for use at doses above 60 mg/kg/day can be made. If the total daily dose exceeds 250 mg, it should be given in divided doses.</paragraph>
+                        <paragraph>In a study of adjunctive therapy for complex partial seizures in which patients were receiving either carbamazepine or phenytoin in addition to valproate, no adjustment of carbamazepine or phenytoin dosage was needed [see Clinical studies (14)]. However, since valproate may interact with these or other concurrently administered AEDs as well as other drugs, periodic plasma concentration determinations of concomitant AEDs are recommended during the early course of therapy [see Drug Interactions (7)].</paragraph>
+                        <paragraph>Simple and Complex Absence Seizures</paragraph>
+                        <paragraph>The recommended initial dose is 15 mg/kg/day, increasing at one week intervals by 5 to 10 mg/kg/day until seizures are controlled or side effects preclude further increases. The maximum recommended dosage is 60 mg/kg/day. If the total daily dose exceeds 250 mg, it should be given in divided doses.</paragraph>
+                        <paragraph>A good correlation has not been established between daily dose, serum concentrations, and therapeutic effect. However, therapeutic valproate serum concentrations for most patients with absence seizures are considered to range from 50 to 100 mcg/mL. Some patients may be controlled with lower or higher serum concentrations [see <content styleCode="bold">
+                              <linkHtml href="#LINK_c221cdb0-8aaa-4ec9-8c25-388b7cdff2c0">Clinical Pharmacology (12.2)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>As the divalproex sodium # capsules (sprinkle) dosage is titrated upward, blood concentrations of phenobarbital and/or phenytoin may be affected [see <content styleCode="bold">
+                              <linkHtml href="#LINK_27639637-5a66-4328-aee2-6c2e7e269f69">Drug</linkHtml>
+                              <linkHtml href="#LINK_f67182c1-ee6e-48df-86ee-63ca8abe2fbc">Interactions</linkHtml> (<linkHtml href="#LINK_27639637-5a66-4328-aee2-6c2e7e269f69">7.2</linkHtml>
+                              <linkHtml href="#LINK_27639637-5a66-4328-aee2-6c2e7e269f69">)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>Antiepilepsy drugs should not be abruptly discontinued in patients in whom the drug is administered to prevent major seizures because of the strong possibility of precipitating status epilepticus with attendant hypoxia and threat to life.</paragraph>
+                        <paragraph>In epileptic patients previously receiving valproic acid therapy, divalproex sodium# capsules (sprinkle) should be initiated at the same daily dose and dosing schedule. After the patient is stabilized on divalproex sodium# capsules (sprinkle), a dosing schedule of two or three times a day may be elected in selected patients.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_b3a126a9-3306-475d-a90b-16fcaa3bd6aa">
+                     <id root="74056cfc-484c-4962-8bfa-fac49c2a497a"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>2.2 General Dosing Advice</title>
+                     <text>
+                        <paragraph>Dosing in Elderly Patients</paragraph>
+                        <paragraph>Due to a decrease in unbound clearance of valproate and possibly a greater sensitivity to somnolence in the elderly, the starting dose should be reduced in these patients. Dosage should be increased more slowly and with regular monitoring for fluid and nutritional intake, dehydration, somnolence, and other adverse reactions. Dose reductions or discontinuation of valproate should be considered in patients with decreased food or fluid intake and in patients with excessive somnolence. The ultimate therapeutic dose should be achieved on the basis of both tolerability and clinical response [see <content styleCode="bold">
+                              <linkHtml href="#LINK_bf0da6b2-67f6-46a8-a780-4003f3012a92">Warnings and Precautions (5.13)</linkHtml>
+                           </content>, <content styleCode="bold">
+                              <linkHtml href="#LINK_16012728-cf8f-48ca-8fcc-a16a3ea8543b">Use In Specific Populations (8.5)</linkHtml>
+                           </content> and <content styleCode="bold">
+                              <linkHtml href="#LINK_8bd148e5-97ab-4e9d-aa3a-165fca548f4e">Clinical Pharmacology (12.3)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>Dose-Related Adverse Reactions</paragraph>
+                        <paragraph>The frequency of adverse effects (particularly elevated liver enzymes and thrombocytopenia) may be dose-related. The probability of thrombocytopenia appears to increase significantly at total valproate concentrations of ≥ 110 mcg/mL (females) or ≥ 135 mcg/mL (males) [see<content styleCode="bold">
+                              <linkHtml href="#LINK_496b7624-c38c-49f3-a271-f655f28223b4">Warnings</linkHtml>
+                           </content>
+                           <content styleCode="bold">
+                              <linkHtml href="#LINK_496b7624-c38c-49f3-a271-f655f28223b4">and Precautions (5.7)</linkHtml>
+                           </content>]. The benefit of improved therapeutic effect with higher doses should be weighed against the possibility of a greater incidence of adverse reactions.</paragraph>
+                        <paragraph>G.I. Irritation</paragraph>
+                        <paragraph>Patients who experience G.I. irritation may benefit from administration of the drug with food or by slowly building up the dose from an initial low level. </paragraph>
+                        <paragraph>Administration of divalproex Sodium# Capsules (Sprinkle)</paragraph>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) may be swallowed whole or may be administered by carefully opening the capsule and sprinkling the entire contents on a small amount (teaspoonful) of soft food such as applesauce or pudding. The drug/food mixture should be swallowed immediately (avoid chewing) and not stored for future use. Each capsule is oversized to allow ease of opening.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_0368d078-36b6-4aa6-9613-993ec8b16266">
+               <id root="06970774-c8de-4ffb-9279-e1a7cdd577ca"/>
+               <code code="43678-2" codeSystem="2.16.840.1.113883.6.1" displayName="DOSAGE FORMS &amp; STRENGTHS SECTION"/>
+               <title>3 DOSAGE FORMS AND STRENGTHS</title>
+               <text>
+                  <paragraph>Divalproex sodium# capsules (sprinkle) are for oral administration. Divalproex sodium capsules (sprinkle) contain specially coated particles of divalproex sodium equivalent to 125 mg of valproic acid in a hard gelatin capsule.</paragraph>
+               </text>
+               <effectiveTime value="20130117"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Capsules: 125 mg</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9">
+               <id root="20694f89-a61a-40c4-8160-8b74f009b147"/>
+               <code code="34070-3" codeSystem="2.16.840.1.113883.6.1" displayName="CONTRAINDICATIONS SECTION"/>
+               <title>4 CONTRAINDICATIONS</title>
+               <text>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Divalproex sodium# capsules (sprinkle) should not be administered to patients with hepatic disease or significant hepatic dysfunction [see <content styleCode="bold">
+                           <linkHtml href="#LINK_7238db63-38aa-413d-a496-d54e1e95d56c">Warnings and Precautions (5.1)</linkHtml>
+                        </content>].         
+</item>
+                     <item>Divalproex sodium# capsules (sprinkle) are contraindicated in patients with known hypersensitivity to the drug [see <content styleCode="bold">
+                           <linkHtml href="#LINK_5b375cbd-3d1d-4c0f-9569-28d708d5e685">Warnings and Precautions (5.11)</linkHtml>
+                        </content>]. 
+</item>
+                     <item>Divalproex sodium# capsules (sprinkle) are contraindicated in patients with known urea cycle disorders [see <content styleCode="bold">
+                           <linkHtml href="#LINK_cb0b5e8e-a4ef-48bc-9194-4d3d893a7433">Warnings and Precautions (5.5)</linkHtml>
+                        </content>].</item>
+                  </list>
+               </text>
+               <effectiveTime value="20130117"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Hepatic disease or significant hepatic dysfunction (4, 5.1) 
+</item>
+                           <item>Known hypersensitivity to the drug (4, 5.11) 
+</item>
+                           <item>Urea cycle disorders (4, 5.5)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_64ef57de-2f4a-4dd6-86d0-e56f2558aa75">
+               <id root="963c00d9-d6b1-4fe3-80d1-1883861ce55e"/>
+               <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+               <title>5 WARNINGS AND PRECAUTIONS</title>
+               <effectiveTime value="20130128"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Hepatotoxicity; monitor liver function tests (5.1)    </item>
+                           <item>Women of Childbearing Potential; weigh divalproex sodium# capsules (sprinkle) benefits of use during pregnancy against risk to the fetus (5.2) </item>
+                           <item>Birth Defects; Divalproex sodium# capsules (sprinkle) can cause fetal harm when taken during pregnancy (5.3) </item>
+                           <item>Pancreatitis; Divalproex sodium# capsules (sprinkle) should ordinarily be discontinued (5.4) </item>
+                           <item>Suicidal behavior or ideation; Antiepileptic drugs, including divalproex sodium# capsules (sprinkle) increase the risk of suicidal thoughts or behavior (5.6)</item>
+                           <item>Thrombocytopenia; monitor platelet counts and coagulation tests (5.7)</item>
+                           <item>Hyperammonemia and hyperammonemic encephalopathy; measure ammonia level if unexplained lethargy and vomiting or changes in mental status (5.8, 5.9) </item>
+                           <item>Hypothermia; Hypothermia has been reported during valproate therapy with or without associated hyperammonemia. This adverse reaction can also occur in patients using concomitant topiramate (5.10) </item>
+                           <item>Multi-organ hypersensitivity reaction; discontinue divalproex sodium# capsules (sprinkle) (5.11) </item>
+                           <item>Somnolence in the elderly can occur. Divalproex sodium# capsules (sprinkle) dosage should be increased slowly and with regular monitoring for fluid and nutritional intake (5.13) </item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_7238db63-38aa-413d-a496-d54e1e95d56c">
+                     <id root="7238db63-38aa-413d-a496-d54e1e95d56c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.1 Hepatotoxicity</title>
+                     <text>
+                        <paragraph>Hepatic failure resulting in fatalities has occurred in patients receiving valproic acid. These incidents usually have occurred during the first six months of treatment. Serious or fatal hepatotoxicity may be preceded by non-specific symptoms such as malaise, weakness, lethargy, facial edema, anorexia, and vomiting. In patients with epilepsy, a loss of seizure control may also occur. Patients should be monitored closely for appearance of these symptoms. Liver function tests should be performed prior to therapy and at frequent intervals thereafter, especially during the first six months. However, physicians should not rely totally on serum biochemistry since these tests may not be abnormal in all instances, but should also consider the results of careful interim medical history and physical examination.</paragraph>
+                        <paragraph>Caution should be observed when administering divalproex sodium products to patients with a prior history of hepatic disease. Patients on multiple anticonvulsants, children, those with congenital metabolic disorders, those with severe seizure disorders accompanied by mental retardation, and those with organic brain disease may be at particular risk. Experience has indicated that children under the age of two years are at a considerably increased risk of developing fatal hepatotoxicity, especially those with the aforementioned conditions. When divalproex sodium is used in this patient group, it should be used with extreme caution and as a sole agent. The benefits of therapy should be weighed against the risks. Above this age group, experience in epilepsy has indicated that the incidence of fatal hepatotoxicity decreases considerably in progressively older patient groups.</paragraph>
+                        <paragraph>The drug should be discontinued immediately in the presence of significant hepatic dysfunction, suspected or apparent. In some cases, hepatic dysfunction has progressed in spite of discontinuation of drug [see <content styleCode="bold">
+                              <linkHtml href="#LINK_0d5e1566-bf22-4804-ac57-24577d384f88">Boxed Warning</linkHtml>
+                           </content> and<content styleCode="bold">
+                              <linkHtml href="#LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9"> Contraindications (4)</linkHtml>
+                           </content>].</paragraph>
+                     </text>
+                     <effectiveTime value="20100806"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a1b7b684-6e2a-4ad6-8214-ef56763380b7">
+                     <id root="d50c8c7a-0078-4760-a36e-31db2ebaecbf"/>
+                     <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+                     <title>5.2 Use in Women of Childbearing Potential</title>
+                     <text>
+                        <paragraph>Because of the risk to the fetus of neural tube defects and other major congenital malformations, which may occur very early in pregnancy, valproate should not be administered to a woman of childbearing potential unless the drug is essential to the management of her medical condition. This is especially important when valproate use is considered for a condition not usually associated with permanent injury or death (e.g., migraine). Women should use effective contraception while using valproate. Women who are planning a pregnancy should be counseled regarding the relative risks and benefits of valproate use during pregnancy, and alternative therapeutic options should be considered for these patients [see Boxed Warning and Use in Specific Populations (8.1)]. </paragraph>
+                        <paragraph>To prevent major seizures, divalproex sodium# capsules (sprinkle) should not be discontinued abruptly, as this can precipitate status epilepticus with resulting maternal and fetal hypoxia and threat to life. </paragraph>
+                        <paragraph>Evidence suggests that folic acid supplementation prior to conception and during the first trimester of pregnancy decreases the risk for congenital neural tube defects in the general population.</paragraph>
+                     </text>
+                     <effectiveTime value="20130128"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_1a57f686-de21-4747-8ebc-1a83100ab45b">
+                     <id root="154204ec-c117-4457-bd6c-22d000e4930e"/>
+                     <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+                     <title>5.3 Birth Defects and Neurobehavioral Adverse Effects</title>
+                     <text>
+                        <paragraph>Valproate can cause fetal harm when administered to a pregnant woman. Pregnancy registry data show maternal valproate use can cause neural tube defects and other structural abnormalities (e.g., craniofacial defects, cardiovascular malformations and malformations involving various body systems). The rate of congenital malformations among babies born to mothers using valproate is about four times higher than the rate among babies born to epileptic mothers using other anti-seizure monotherapies. Evidence suggests that folic acid supplementation prior to conception and during the first trimester of pregnancy decreases the risk for congenital neural tube defects in the general population. </paragraph>
+                        <paragraph>Several published epidemiological studies have indicated that children exposed to valproate in utero have lower cognitive test scores than children exposed to either another antiepileptic drug in utero or to no antiepileptic drugs in utero. The largest of these studies is a prospective cohort study conducted in the United States and United Kingdom that found that children with prenatal exposure to valproate had lower Differential Ability Scale (D.A.S.) scores at age 3 (92 [95% C.I. 88-97]) than children with prenatal exposure to the other antiepileptic drug monotherapy treatments evaluated: lamotrigine (101 [95% C.I. 98-104]), carbamazepine (98 [95% C.I. 95-102]) and phenytoin (99 [95% C.I. 94 - 104]). The D.A.S., which has a mean score of 100 (SD = 15), is a battery of cognitive tests designed for children ages 2.5 to 17 years. The D.A.S. is a measure of neurobehavioral development performed when children are too young to undergo IQ testing and generally correlates with IQ scores later in childhood. </paragraph>
+                        <paragraph>Although all of the available studies have methodological limitations, the weight of the evidence supports the conclusion that valproate exposure in utero causes subsequent adverse effects on cognitive development. </paragraph>
+                        <paragraph>In animal studies, valproate-exposed offspring had malformations similar to those seen in humans and demonstrated behavioral deficits [see Use in Specific Populations (8.1)].</paragraph>
+                     </text>
+                     <effectiveTime value="20130128"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_b69a6b29-ffcf-4ea3-ac2f-e7ca1f454589">
+                     <id root="89c38557-5cbe-43b8-a00a-ca3a4b3bd3f5"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.4 Pancreatitis</title>
+                     <text>
+                        <paragraph>Cases of life-threatening pancreatitis have been reported in both children and adults receiving valproate. Some of the cases have been described as hemorrhagic with rapid progression from initial symptoms to death. Some cases have occurred shortly after initial use as well as after several years of use<content styleCode="bold">. </content>The rate based upon the reported cases exceeds that expected in the general population and there have been cases in which pancreatitis recurred after rechallenge with valproate. In clinical trials, there were 2 cases of pancreatitis without alternative etiology in 2416 patients, representing 1044 patient-years experience<content styleCode="bold">. </content>Patients and guardians should be warned that abdominal pain, nausea, vomiting, and/or anorexia can be symptoms of pancreatitis that require prompt medical evaluation. If pancreatitis is diagnosed, divalproex sodium should ordinarily bediscontinued. Alternative treatment for the underlying medical condition should be initiated as clinically indicated [see <content styleCode="bold">
+                              <linkHtml href="#LINK_0d5e1566-bf22-4804-ac57-24577d384f88">Boxed Warning</linkHtml>]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_cb0b5e8e-a4ef-48bc-9194-4d3d893a7433">
+                     <id root="04cbc4e6-970b-42dd-a2af-9efc78b8560d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.5 Urea Cycle Disorders</title>
+                     <text>
+                        <paragraph>Divalproex sodium is contraindicated in patients with known urea cycle disorders (UCD). Hyperammonemic encephalopathy, sometimes fatal, has been reported following initiation of valproate therapy in patients with urea cycle disorders, a group of uncommon genetic abnormalities, particularly ornithine transcarbamylase deficiency. Prior to the initiation of divalproex sodium therapy, evaluation for UCD should be considered in the following patients: 1) those with a history of unexplained encephalopathy or coma, encephalopathy associated with a protein load, pregnancy-related or postpartum encephalopathy, unexplained mental retardation, or history of elevated plasma ammonia or glutamine; 2) those with cyclical vomiting and lethargy, episodic extreme irritability, ataxia, low BUN, or protein avoidance; 3) those with a family history of UCD or a family history of unexplained infant deaths (particularly males); 4) those with other signs or symptoms of UCD. Patients who develop symptoms of unexplained hyperammonemic encephalopathy while receiving valproate therapy should receive prompt treatment (including discontinuation of valproate therapy) and be evaluated for underlying urea cycle disorders [see <content styleCode="bold">
+                              <linkHtml href="#LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9">Contraindications (4)</linkHtml>
+                           </content> and <content styleCode="bold">
+                              <linkHtml href="#LINK_eb901d80-043a-4c90-9f78-50316cf57151">Warnings and Precautions (5.9)</linkHtml>
+                           </content>]</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_eb901d80-043a-4c90-9f78-50316cf57151">
+                     <id root="71b61610-be78-46da-848a-4192fdca4cb0"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.6 Suicidal Behavior and Ideation</title>
+                     <text>
+                        <paragraph>Antiepileptic drugs (AEDs), including divalproex sodium, increase the risk of suicidal thoughts or behavior in patients taking these drugs for any indication. Patients treated with any AED for any indication should be monitored for the emergence or worsening of depression, suicidal thoughts or behavior, and/or any unusual changes in mood or behavior. </paragraph>
+                        <paragraph>Pooled analyses of 199 placebo-controlled clinical trials (mono- and adjunctive therapy) of 11 different AEDs showed that patients randomized to one of the AEDs had approximately twice the risk (adjusted Relative Risk 1.8, 95% CI:1.2, 2.7) of suicidal thinking or behavior compared to patients randomized to placebo. In these trials, which had a median treatment duration of 12 weeks, the estimated incidence rate of suicidal behavior or ideation among 27,863 AED-treated patients was 0.43%, compared to 0.24% among 16,029 placebo-treated patients, representing an increase of approximately one case of suicidal thinking or behavior for every 530 patients treated. There were four suicides in drug-treated patients in the trials and none in placebo-treated patients, but the number is too small to allow any conclusion about drug effect on suicide. </paragraph>
+                        <paragraph>The increased risk of suicidal thoughts or behavior with AEDs was observed as early as one week after starting drug treatment with AEDs and persisted for the duration of treatment assessed. Because most trials included in the analysis did not extend beyond 24 weeks, the risk of suicidal thoughts or behavior beyond 24 weeks could not be assessed. </paragraph>
+                        <paragraph>The risk of suicidal thoughts or behavior was generally consistent among drugs in the data analyzed. The finding of increased risk with AEDs of varying mechanisms of action and across a range of indications suggests that the risk applies to all AEDs used for any indication. The risk did not vary substantially by age (5 to 100 years) in the clinical trials analyzed. Table 1 shows absolute and relative risk by indication for all evaluated AEDs. </paragraph>
+                        <paragraph>Table 1. Risk by indication for antiepileptic drugs in the pooled analysis </paragraph>
+                        <table>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <col/>
+                           <tbody>
+                              <tr>
+                                 <td valign="top">Indication</td>
+                                 <td valign="top">Placebo Patientswith Events Per1,000 Patients </td>
+                                 <td valign="top">Drug Patientswith Events Per1,000 Patients</td>
+                                 <td valign="top">Relative Risk: Incidence of Events in Drug Patients/Incidence in Placebo Patients</td>
+                                 <td valign="top">Risk Difference: Additional  Drug Patients with Events Per 1,000 Patients</td>
+                              </tr>
+                              <tr>
+                                 <td valign="top">Epilepsy</td>
+                                 <td valign="top">1</td>
+                                 <td valign="top">3.4</td>
+                                 <td valign="top">3.5</td>
+                                 <td valign="top">2.4</td>
+                              </tr>
+                              <tr>
+                                 <td valign="top">Psychiatric</td>
+                                 <td valign="top">5.7</td>
+                                 <td valign="top">8.5</td>
+                                 <td valign="top">1.5</td>
+                                 <td valign="top">2.9</td>
+                              </tr>
+                              <tr>
+                                 <td valign="top">Other</td>
+                                 <td valign="top">1</td>
+                                 <td valign="top">1.8</td>
+                                 <td valign="top">1.9</td>
+                                 <td valign="top">0.9</td>
+                              </tr>
+                              <tr>
+                                 <td valign="top">Total</td>
+                                 <td valign="top">2.4</td>
+                                 <td valign="top">4.3</td>
+                                 <td valign="top">1.8</td>
+                                 <td valign="top">1.9</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <paragraph>The relative risk for suicidal thoughts or behavior was higher in clinical trials for epilepsy than in clinical trials for psychiatric or other conditions, but the absolute risk differences were similar for the epilepsy and psychiatric indications. </paragraph>
+                        <paragraph>Anyone considering prescribing divalproex sodium or any other AED must balance the risk of suicidal thoughts or behavior with the risk of untreated illness. Epilepsy and many other illnesses for which AEDs are prescribed are themselves associated with morbidity and mortality and an increased risk of suicidal thoughts and behavior. Should suicidal thoughts and behavior emerge during treatment, the prescriber needs to consider whether the emergence of these symptoms in any given patient may be related to the illness being treated. </paragraph>
+                        <paragraph>Patients, their caregivers, and families should be informed that AEDs increase the risk of suicidal thoughts and behavior and should be advised of the need to be alert for the emergence or worsening of the signs and symptoms of depression, any unusual changes in mood or behavior, or the emergence of suicidal thoughts, behavior, or thoughts about self-harm. Behaviors of concern should be reported immediately to healthcare providers.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_496b7624-c38c-49f3-a271-f655f28223b4">
+                     <id root="830d1821-ce16-42b2-96f8-5c4a81dc6226"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.7 Thrombocytopenia</title>
+                     <text>
+                        <paragraph>The frequency of adverse effects (particularly elevated liver enzymes and thrombocytopenia) may be dose-related. In a clinical trial of valproate as monotherapy in patients with epilepsy, 34/126 patients (27%) receiving approximately 50 mg/kg/day on average, had at least one value of platelets ≤ 75 x 109/L. Approximately half of these patients had treatment discontinued, with return of platelet counts to normal. In the remaining patients, platelet counts normalized with continued treatment. In this study, the probability of thrombocytopenia appeared to increase significantly at total valproate concentrations of ≥110 mcg/mL (females) or ≥135 mcg/mL (males). The therapeutic benefit which may accompany the higher doses should therefore be weighed against the possibility of a greater incidence of adverse effects.</paragraph>
+                        <paragraph>Because of reports of thrombocytopenia, inhibition of the secondary phase of platelet aggregation, and abnormal coagulation parameters, (e.g., low fibrinogen), platelet counts and coagulation tests are recommended before initiating therapy and at periodic intervals. It is recommended that patients receiving divalproex sodium be monitored for platelet count and coagulation parameters prior to planned surgery. Evidence of hemorrhage, bruising, or a disorder of hemostasis/coagulation is an indication for reduction of the dosage or withdrawal of therapy.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_6580b973-1543-430f-8953-384ca0ed27e6">
+                     <id root="7f31813f-bd25-4e3d-bfb2-16cb80abd45c"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.8 Hyperammonemia</title>
+                     <text>
+                        <paragraph>Hyperammonemia has been reported in association with valproate therapy and may be present despite normal liver function tests. In patients who develop unexplained lethargy and vomiting or changes in mental status, hyperammonemic encephalopathy should be considered and an ammonia level should be measured [see Contraindications(4) andWarningsandPrecautions(5.5,5.8, 5.9)]. Hyperammonemia should also be considered in patients who present with hypothermia [see Warnings and Precautions (5.10)]. If ammonia is increased, valproate therapy should be discontinued. Appropriate interventions for treatment of hyperammonemia should be initiated, and such patients should undergo investigation for underlying urea cycle disorders [see Contraindications(4) and Warnings and Precautions (5.5,5.8, 5.9)]. </paragraph>
+                        <paragraph>Asymptomatic elevations of ammonia are more common and when present, require closemonitoring of plasma ammonia levels. If the elevation persists, discontinuation of valproate therapy should be considered.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_d6cec3d0-91aa-47b2-81ef-2abf769173b0">
+                     <id root="abaec8bb-26e9-4d17-8842-232260827fa8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.9 Hyperammonemia and Encephalopathy associated with Concomitant Topiramate Use</title>
+                     <text>
+                        <paragraph>Concomitant administration of topiramate and valproic acid has been associated with hyperammonemia with or without encephalopathy in patients who have tolerated either drug alone. Clinical symptoms of hyperammonemic encephalopathy often include acute alterations in level of consciousness and/ or cognitive function with lethargy or vomiting. Hypothermia can also be a manifestation of hyperammonemia [see <content styleCode="bold">
+                              <linkHtml href="#LINK_6580b973-1543-430f-8953-384ca0ed27e6">Warnings and Precautions (5.10)</linkHtml>
+                           </content>]. In most cases, symptoms and signs abated with discontinuation of either drug. This adverse event is not due to a pharmacokinetic interaction. It is not known if topiramate monotherapy is associated with hyperammonemia. Patients with inborn errors of metabolism or reduced hepatic mitochondrial activity may be at an increased risk for hyperammonemia with or without encephalopathy. Although not studied, an interaction of topiramate and valproic acid may exacerbate existing defects or unmask deficiencies in susceptible persons. In patients who develop unexplained lethargy, vomiting, or changes in mental status, hyperammonemic encephalopathy should be considered and an ammonia level should be measured. [see <content styleCode="bold">
+                              <linkHtml href="#LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9">Contraindications (4)</linkHtml>
+                           </content> and <content styleCode="bold">Warnings and Precautions (5.</content>5, <content styleCode="bold">5.</content>8)].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_083c57f6-dc88-4b6c-8a28-ac385f1e7e29">
+                     <id root="ce602a66-b78a-47ef-bf1c-ec815fe78738"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.10 Hypothermia</title>
+                     <text>
+                        <paragraph>Hypothermia, defined as an unintentional drop in body core temperature to &lt; 35°C (95°F), has been reported in association with valproate therapy both in conjunction with and in the absence of hyperammonemia. This adverse reaction can also occur in patients using concomitant topiramate with valproate after starting topiramate treatment or after increasing the daily dose of topiramate [see Drug Interactions (7.3)]. Consideration should be given to stopping valproate in patients who develop hypothermia, which may be manifested by a variety of clinical abnormalities including lethargy, confusion, coma, and significant alterations in other major organ systems such as the cardiovacular and respiratory systems. Clinical management and assessment should include examination of blood ammonia levels.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_5b375cbd-3d1d-4c0f-9569-28d708d5e685">
+                     <id root="49b08a5d-c7de-404f-a10a-48c1ccf1e45e"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.11 Multi-Organ Hypersensitivity Reactions</title>
+                     <text>
+                        <paragraph>Multi-organ hypersensitivity reactions have been rarely reported in close temporal association to the initiation of valproate therapy in adult and pediatric patients (median time to detection 21 days: range 1 to 40 days). Although there have been a limited number of reports, many of these cases resulted in hospitalization and at least one death has been reported. Signs and symptoms of this disorder were diverse; however, patients typically, although not exclusively, presented with fever and rash associated with other organ system involvement. Other associated manifestations may include lymphadenopathy, hepatitis, liver function test abnormalities, hematological abnormalities (e.g., eosinophilia, thrombocytopenia, neutropenia), pruritis, nephritis, oliguria, hepato-renal syndrome, arthralgia, and asthenia. Because the disorder is variable in its expression, other organ system symptoms and signs, not noted here, may occur. If this reaction is suspected, valproate should be discontinued and an alternative treatment started. Although the existence of cross sensitivity with other drugs that produce this syndrome is unclear, the experience amongst drugs associated with multi-organ hypersensitivity would indicate this to be a possibility.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_3b4f49df-4779-4954-aadb-c9bbf10afced">
+                     <id root="9669edeb-4d34-45c2-830d-48acee99a16c"/>
+                     <code code="43685-7" codeSystem="2.16.840.1.113883.6.1" displayName="WARNINGS AND PRECAUTIONS SECTION"/>
+                     <title>5.12 Interaction with Carbapenem Antibiotics</title>
+                     <text>
+                        <paragraph>Carbapenem antibiotics (for example, ertapenem, imipenem, meropenem; this is not a complete list) may reduce serum valproate concentrations to subtherapeutic levels, resulting in loss of seizure control. Serum valproate concentrations should be monitored frequently after initiating carbapenem therapy. Alternative antibacterial or anticonvulsant therapy should be considered if serum valproate concentrations drop significantly or seizure control deteriorates [see Drug Interactions (7.1)]. </paragraph>
+                     </text>
+                     <effectiveTime value="20130128"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_bf0da6b2-67f6-46a8-a780-4003f3012a92">
+                     <id root="12a4bcf3-3790-4f75-8595-29f460033089"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.13 Somnolence in the Elderly</title>
+                     <text>
+                        <paragraph>In a double-blind, multicenter trial of valproate in elderly patients with dementia (mean age = 83 years), doses were increased by 125 mg/day to a target dose of 20 mg/kg/day<content styleCode="bold">. </content>A significantly higher proportion of valproate patients had somnolence compared to placebo, and although not statistically significant, there was a higher proportion of patients with dehydration. Discontinuations for somnolence were also significantly higher than with placebo<content styleCode="bold">. </content>In some patients with somnolence (approximately one-half), there was associated reduced nutritional intake and weight loss<content styleCode="bold">. </content>There was a trend for the patients who experienced these events to have a lower baseline albumin concentration, lower valproate clearance, and a higher BUN<content styleCode="bold">. </content>In elderly patients, dosage should be increased more slowly and with regular monitoring for fluid and nutritional intake, dehydration, somnolence, and other adverse reactions. Dose reductions or discontinuation of valproate should be considered in patients with decreased food or fluid intake and in patients with excessive somnolence [see <content styleCode="bold">Dosage and Administration (2.4)</content>].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_08fe3367-43c1-4650-8dbf-0ba2b7d76514">
+                     <id root="02066c3d-1f17-40be-8bd0-126b07d9c908"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.14 Monitoring: Drug Plasma Concentration</title>
+                     <text>
+                        <paragraph>Since divalproex sodium may interact with concurrently administered drugs which are capable of enzyme induction, periodic plasma concentration determinations of valproate and concomitant drugs are recommended during the early course of therapy [see <content styleCode="bold">
+                              <linkHtml href="#LINK_317ca73e-ff68-4960-8bba-8e2f0bacbf8f">Drug Interactions (7)</linkHtml>
+                           </content>]. </paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_379b73bb-d248-4e76-b1c7-b58aacac946e">
+                     <id root="f0409541-57d4-4e64-afb3-842bb69f91e3"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.15 Effects on Ketone and Thyroid function Tests</title>
+                     <text>
+                        <paragraph>Valproate is partially eliminated in the urine as a keto-metabolite which may lead to a false interpretation of the urine ketone test.</paragraph>
+                        <paragraph>There have been reports of altered thyroid function tests associated with valproate. The clinical significance of these is unknown [see <content styleCode="bold">
+                              <linkHtml href="#LINK_c4da0859-ba5d-4537-8f30-a795b41ef4ec">Adverse Events (6.2)</linkHtml>
+                           </content>].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a68375d0-eed9-47c7-b90b-b4729d8e1afd">
+                     <id root="5dbb7c86-9a75-439b-8dea-8df5e44b21cc"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>5.16 Effects on HIV and CMV Viruses Replication</title>
+                     <text>
+                        <paragraph>There are <content styleCode="italics">in vitro </content>studies that suggest valproate stimulates the replication of the HIV and CMV viruses under certain experimental conditions. The clinical consequence, if any, is not known. Additionally, the relevance of these <content styleCode="italics">in vitro</content> findings is uncertain for patients receiving maximally suppressive antiretroviral therapy. Nevertheless, these data should be borne in mind when interpreting the results from regular monitoring of the viral load in HIV infected patients receiving valproate or when following CMV infected patients clinically.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_cdcf7ff0-cea7-4876-a3c3-9531b1d56021">
+               <id root="cb5afd46-467b-4895-8641-a5bdf9d137cc"/>
+               <code code="34084-4" codeSystem="2.16.840.1.113883.6.1" displayName="ADVERSE REACTIONS SECTION"/>
+               <title>6  ADVERSE REACTIONS</title>
+               <text>
+                  <paragraph>The following adverse reactions are discussed in greater detail in other sections of  the labeling:            </paragraph>
+                  <paragraph>Hepatic failure (5.1)            </paragraph>
+                  <paragraph>Birth defects and neurobehavioral adverse effects  (5.3)            </paragraph>
+                  <paragraph>Pancreatitis (5.4)            </paragraph>
+                  <paragraph>Hyperammonemic encephalopathy (5.5, 5.8)            </paragraph>
+                  <paragraph>Somnolence in the elderly (5.13)            </paragraph>
+                  <paragraph>Thrombocytopenia (5.7)            </paragraph>
+                  <paragraph>Multi-organ hypersensitivity reactions (5.11) </paragraph>
+                  <paragraph>Because clinical studies are conducted under widely varying conditions, adverse reaction rates observed in the clinical studies of a drug cannot be directly compared to rates in the clinical studies of another drug and may not reflect the rates observed in practice.</paragraph>
+               </text>
+               <effectiveTime value="20130128"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <paragraph>Most common adverse reactions (reported &gt;5%) are thrombocytopenia,) nausea, somnolence, dizziness, vomiting, asthenia, abdominal pain, dyspepsia, diarrhea, increased appetite, tremor, weight gain, weight loss, alopecia, headache, fever, anorexia, constipation, diplopia, ambylopia/blurred vision, ataxia, nystagmus, emotional lability, thinking abnormal, amnesia, flu syndrome, infection, bronchitis, rhinitis, ecchymosis, peripheral edema, insomnia, nervousness, depression, pharyngitis, dyspnea, tinnitus (6.1)</paragraph>
+                        <paragraph>To report SUSPECTED ADVERSE REACTIONS, contact Dr. Reddy's Laboratories Limited at 1-888-375-3784 or 1-800-FDA-1088 or www.fda.gov/medwatch.</paragraph>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_d0582a27-fa0a-414d-a9bd-172cdc21df6a">
+                     <id root="710bde5d-7100-445e-b816-6263a71c034d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.1 Epilepsy</title>
+                     <text>
+                        <paragraph>Based on a placebo-controlled trial of adjunctive therapy for treatment of complex partial seizures, divalproex sodium was generally well tolerated with most adverse reactions rated as mild to moderate in severity. Intolerance was the primary reason for discontinuation in the divalproex sodium-treated patients (6%), compared to 1% of placebo-treated patients. </paragraph>
+                        <paragraph>In a long term (12-month) safety study in pediatric patients (n=169) between the ages of 3 and 10 years old, no clinically meaningful differences in the adverse event profile were observed when compared to adults.</paragraph>
+                        <paragraph>Table 2 lists treatment-emergent adverse reactions which were reported by ≥ 5% of divalproex sodium-treated patients and for which the incidence was greater than in the placebo group, in the placebo-controlled trial of adjunctive therapy for treatment of complex partial seizures. Since patients were also treated with other antiepilepsy drugs, it is not possible, in most cases, to determine whether the following adverse reactions can be ascribed to divalproex sodium alone, or the combination of divalproex sodium and other antiepilepsy drugs.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Table 2. Adverse reactions Reported by &gt; 5% of Patients Treated with Divalproex Sodium During Placebo-Controlled Trial of Adjunctive Therapy for Complex Partial Seizures</content>
+                        </paragraph>
+                        <renderMultiMedia referencedObject="MM1"/>
+                        <paragraph>Table 3 lists treatment-emergent adverse reactions which were reported by ≥ 5% of patients in the high dose divalproex sodium group, and for which the incidence was greater than in the low dose group, in a controlled trial of divalproex sodium monotherapy treatment of complex partial seizures. Since patients were being titrated off another antiepilepsy drug during the first portion of the trial, it is not possible, in many cases, to determine whether the following adverse reactions can be ascribed to divalproex sodium alone, or the combination of divalproex sodium and other antiepilepsy drugs.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Table 3. Adverse reactions Reported by &gt; 5% of Patients in the High Dose Group in the Controlled Trial of Divalproex Sodium Monotherapy for Complex Partial Seizures<sup>a</sup>
+                           </content>
+                        </paragraph>
+                        <paragraph>
+                           <renderMultiMedia referencedObject="MM2"/> </paragraph>
+                        <paragraph>a. Headache was the only adverse event that occurred in ≥ 5% of patients in the high dose group and at an equal or greater incidence in the low dose group.</paragraph>
+                        <paragraph>The following additional adverse reactions were reported by greater than 1% but less than 5% of the 358 patients treated with divalproex sodium in the controlled trials of complex partial seizures:</paragraph>
+                        <paragraph>Body as a Whole: Back pain, chest pain, malaise.</paragraph>
+                        <paragraph>Cardiovascular System: Tachycardia, hypertension, palpitation.</paragraph>
+                        <paragraph>Digestive System: Increased appetite, flatulence, hematemesis, eructation, pancreatitis, periodontal abscess.</paragraph>
+                        <paragraph>Hemic and Lymphatic System: Petechia.</paragraph>
+                        <paragraph>Metabolic and Nutritional Disorders: SGOT increased, SGPT increased.</paragraph>
+                        <paragraph>Musculoskeletal System: Myalgia, twitching, arthralgia, leg cramps, myasthenia.</paragraph>
+                        <paragraph>Nervous System: Anxiety, confusion, abnormal gait, paresthesia, hypertonia, incoordination, abnormal dreams, personality disorder.</paragraph>
+                        <paragraph>Respiratory System: Sinusitis, cough increased, pneumonia, epistaxis.</paragraph>
+                        <paragraph>Skin and Appendages: Rash, pruritus, dry skin.</paragraph>
+                        <paragraph>Special Senses: Taste perversion, abnormal vision, deafness, otitis media.</paragraph>
+                        <paragraph>Urogenital System: Urinary incontinence, vaginitis, dysmenorrhea, amenorrhea, urinary frequency.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                     <component>
+                        <observationMedia ID="MM1">
+                           <text>Table 1. Adverse reactions Reported by .&gt; 5% of Patients Treated with Divalproex Sodium during Placebo Controlled Trial of AdjunctiveTherapy for Complex Partial Seizures.</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-1.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                     <component>
+                        <observationMedia ID="MM2">
+                           <text>Table 2. Adverse reactions Reported by &gt; 5% of Patients in the High Dose Group in the Controlled Trial of Divalproex Sodium Monotherapy for Complex Partial Seizures</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-2.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_c4da0859-ba5d-4537-8f30-a795b41ef4ec">
+                     <id root="04707d6d-f4ea-4dd9-91f9-c6e6aca3a3a5"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>6.2 Other Patient Population</title>
+                     <text>
+                        <paragraph>Adverse reactions that have been reported with all dosage forms of valproate from epilepsy trials, spontaneous reports, and other sources are listed below by body system.</paragraph>
+                        <paragraph>Gastrointestinal</paragraph>
+                        <paragraph>The most commonly reported side effects at the initiation of therapy are nausea, vomiting, and indigestion. These effects are usually transient and rarely require discontinuation of therapy. Diarrhea, abdominal cramps, and constipation have been reported. Both anorexia with some weight loss and increased appetite with weight gain have also been reported. The administration of delayed-release divalproex sodium may result in reduction of gastrointestinal side effects in some patients.</paragraph>
+                        <paragraph>CNS Effects</paragraph>
+                        <paragraph>Sedative effects have occurred in patients receiving valproate alone but occur most often in patients receiving combination therapy. Sedation usually abates upon reduction of other antiepileptic medication. Tremor (may be dose-related), hallucinations, ataxia, headache, nystagmus, diplopia, asterixis, "spots before eyes", dysarthria, dizziness, confusion, hypesthesia, vertigo, incoordination, and parkinsonism have been reported with the use of valproate. Rare cases of coma have occurred in patients receiving valproate alone or in conjunction with phenobarbital. In rare instances encephalopathy with or without fever has developed shortly after the introduction of valproate monotherapy without evidence of hepatic dysfunction or inappropriately high plasma valproate levels. Although recovery has been described following drug withdrawal, there have been fatalities in patients with hyperammonemic encephalopathy, particularly in patients with underlying urea cycle disorders [see <content styleCode="bold">
+                              <linkHtml href="#LINK_cb0b5e8e-a4ef-48bc-9194-4d3d893a7433">Warnings and Precautions (5.5)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>Several reports have noted reversible cerebral atrophy and dementia in association with valproate therapy.</paragraph>
+                        <paragraph>Dermatologic</paragraph>
+                        <paragraph>Transient hair loss, skin rash, photosensitivity, generalized pruritus, erythema multiforme, and Stevens-Johnson syndrome. Rare cases of toxic epidermal necrolysis have been reported including a fatal case in a 6 month old infant taking valproate and several other concomitant medications. An additional case of toxic epidermal necrosis resulting in death was reported in a 35 year old patient with AIDS taking several concomitant medications and with a history of multiple cutaneous drug reactions. Serious skin reactions have been reported with concomitant administration of lamotrigine and valproate [see Drug Interactions (7.2)].</paragraph>
+                        <paragraph>Psychiatric</paragraph>
+                        <paragraph>Emotional upset, depression, psychosis, aggression, hyperactivity, hostility, and behavioral deterioration.</paragraph>
+                        <paragraph>Musculoskeletal</paragraph>
+                        <paragraph>Weakness.</paragraph>
+                        <paragraph>Hematologic</paragraph>
+                        <paragraph>Thrombocytopenia and inhibition of the secondary phase of platelet aggregation may be reflected in altered bleeding time, petechiae, bruising, hematoma formation, epistaxis, and frank hemorrhage [see <content styleCode="bold">
+                              <linkHtml href="#LINK_496b7624-c38c-49f3-a271-f655f28223b4">Warnings and Precautions (5.7)</linkHtml>
+                           </content>]. Relative lymphocytosis, macrocytosis, hypofibrinogenemia, leukopenia, eosinophilia, anemia including macrocytic with or without folate deficiency, bone marrow suppression, pancytopenia, aplastic anemia, agranulocytosis, and acute intermittent porphyria.</paragraph>
+                        <paragraph>Hepatic</paragraph>
+                        <paragraph>Minor elevations of transaminases (eg, SGOT and SGPT) and LDH are frequent and appear to be dose-related. Occasionally, laboratory test results include increases in serum bilirubin and abnormal changes in other liver function tests. These results may reflect potentially serious hepatotoxicity [see <content styleCode="bold">
+                              <linkHtml href="#LINK_7238db63-38aa-413d-a496-d54e1e95d56c">Warnings and Precautions (5.1)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>Endocrine</paragraph>
+                        <paragraph>Irregular menses, secondary amenorrhea, breast enlargement, galactorrhea, and parotid gland swelling. Abnormal thyroid function tests [see <content styleCode="bold">
+                              <linkHtml href="#LINK_379b73bb-d248-4e76-b1c7-b58aacac946e">Warnings and Precautions (5.15)</linkHtml>
+                           </content>]. </paragraph>
+                        <paragraph>There have been rare spontaneous reports of polycystic ovary disease. A cause and effect relationship has not been established.</paragraph>
+                        <paragraph>Pancreatic: </paragraph>
+                        <paragraph>Acute pancreatitis including fatalities [see <content styleCode="bold">
+                              <linkHtml href="#LINK_b69a6b29-ffcf-4ea3-ac2f-e7ca1f454589">Warnings and Precautions (5.4)</linkHtml>
+                           </content>]. </paragraph>
+                        <paragraph>Metabolic: </paragraph>
+                        <paragraph>Hyperammonemia [see <content styleCode="bold">Warnings and Precautions (5.8 and 5.9)</content>], hyponatremia, and inappropriate ADH secretion. </paragraph>
+                        <paragraph>There have been rare reports of Fanconi's syndrome occurring chiefly in children.</paragraph>
+                        <paragraph>Decreased carnitine concentrations have been reported although the clinical relevance is undetermined. </paragraph>
+                        <paragraph>Hyperglycinemia has occurred and was associated with a fatal outcome in a patient with preexistent nonketotic hyperglycinemia.</paragraph>
+                        <paragraph>Genitourinary: </paragraph>
+                        <paragraph>Enuresis and urinary tract infection.</paragraph>
+                        <paragraph>Special Senses: </paragraph>
+                        <paragraph>Hearing loss, either reversible or irreversible, has been reported; however, a cause and effect relationship has not been established. Ear pain has also been reported.</paragraph>
+                        <paragraph>Other:</paragraph>
+                        <paragraph>Allergic reaction, anaphylaxis, edema of the extremities, lupus erythematosus, bone pain, cough increased, pneumonia, otitis media, bradycardia, cutaneous vasculitis, fever, and hypothermia [see <content styleCode="bold">
+                              <linkHtml href="#LINK_6580b973-1543-430f-8953-384ca0ed27e6">Warnings and Precautions (5.10)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>There have been reports of developmental delay, autism and/or autism spectrum disorder in the offspring of women exposed to valproate during pregnancy.</paragraph>
+                     </text>
+                     <effectiveTime value="20130128"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_317ca73e-ff68-4960-8bba-8e2f0bacbf8f">
+               <id root="f338f615-54d0-4317-83f0-bdcb9eb19208"/>
+               <code code="34073-7" codeSystem="2.16.840.1.113883.6.1" displayName="DRUG INTERACTIONS SECTION"/>
+               <title>7 DRUG INTERACTIONS</title>
+               <effectiveTime value="20130117"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Hepatic enzyme-inducing drugs (e.g., phenytoin, carbamazepine, phenobarbital, primidone, rifampin) can increase valproate clearance, while enzyme inhibitors (e.g.,   felbamate) can decrease valproate clearance. Therefore increased monitoring of valproate and concomitant drug concentrations and dosage adjustment are indicated whenever enzyme-inducing or inhibiting drugs are introduced or withdrawn (7.1)   
+</item>
+                           <item>Aspirin, carbapenem antibiotics: Monitoring of valproate concentrations is recommended (7.1)    
+</item>
+                           <item>Co-administration of valproate can affect the pharmacokinetics of other drugs (e.g.diazepam, ethosuximide, lamotrigine, phenytoin) by inhibiting their metabolism or protein binding displacement (7.2) 
+</item>
+                           <item>Dosage adjustment of amitryptyline/nortryptyline, warfarin, and zidovudine may be necessary if used concomitantly with divalproex sodium  coated particles in capsules (7.2)   
+</item>
+                           <item>Topiramate: Hyperammonemia and encephalopathy (5.9, 7.3)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_f67182c1-ee6e-48df-86ee-63ca8abe2fbc">
+                     <id root="8be00960-430b-4b0b-b718-ff58ce9a3d88"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.1 Effects of Co-Administered Drugs on Valproate Clearance</title>
+                     <text>
+                        <paragraph>Drugs that affect the level of expression of hepatic enzymes, particularly those that elevate levels of glucuronosyltransferases, may increase the clearance of valproate. For example, phenytoin, carbamazepine, and phenobarbital (or primidone) can double the clearance of valproate. Thus, patients on monotherapy will generally have longer half-lives and higher concentrations than patients receiving polytherapy with antiepilepsy drugs.</paragraph>
+                        <paragraph>In contrast, drugs that are inhibitors of cytochrome P450 isozymes, e.g., antidepressants, may be expected to have little effect on valproate clearance because cytochrome P450 microsomal mediated oxidation is a relatively minor secondary metabolic pathway compared to glucuronidation and beta-oxidation.</paragraph>
+                        <paragraph>Because of these changes in valproate clearance, monitoring of valproate and concomitant drug concentrations should be increased whenever enzyme inducing drugs are introduced or withdrawn.</paragraph>
+                        <paragraph>The following list provides information about the potential for an influence of several commonly prescribed medications on valproate pharmacokinetics. The list is not exhaustive nor could it be, since new interactions are continuously being reported.</paragraph>
+                        <paragraph>Drugs for which a potentially important interaction has been observed</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Aspirin</content>
+                        </paragraph>
+                        <paragraph>A study involving the co-administration of aspirin at antipyretic doses (11 to 16 mg/kg) with valproate to pediatric patients (n=6) revealed a decrease in protein binding and an inhibition of metabolism of valproate. Valproate free fraction was increased 4-fold in the presence of aspirin compared to valproate alone. The β-oxidation pathway consisting of 2-E-valproic acid, 3-OH-valproic acid, and 3-keto valproic acid was decreased from 25% of total metabolites excreted on valproate alone to 8.3% in the presence of aspirin. Caution should be observed if valproate and aspirin are to be co-administered.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Carbapenem Antibiotics</content>
+                        </paragraph>
+                        <paragraph>A clinically significant reduction in serum valproic acid concentration has been reported in patients receiving carbapenem antiobiotics (ertapenem, imipenem, meropenem) and may result in loss of seizure control. The mechanism of this interaction in not well understood. Serum valproic acid concentrations should be monitored frequently after initiating carbapenem therapy. Alternative antibacterial or anticonvulsant therapy should be considered if serum valproic acid concentrations drop significantly or seizure control deteriorates [see <content styleCode="bold">
+                              <linkHtml href="#LINK_083c57f6-dc88-4b6c-8a28-ac385f1e7e29">Warnings and Precautions (5.12)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Felbamate</content>
+                        </paragraph>
+                        <paragraph>A study involving the co-administration of 1200 mg/day of felbamate with valproate to patients with epilepsy (n=10) revealed an increase in mean valproate peak concentration by 35% (from 86 to 115 mcg/mL) compared to valproate alone. Increasing the felbamate dose to 2400 mg/day increased the mean valproate peak concentration to 133 mcg/mL (another 16% increase). A decrease in valproate dosage may be necessary when felbamate therapy is initiated.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Rifampin</content>
+                        </paragraph>
+                        <paragraph>A study involving the administration of a single dose of valproate (7 mg/kg) 36 hours after 5 nights of daily dosing with rifampin (600 mg) revealed a 40% increase in the oral clearance of valproate. Valproate dosage adjustment may be necessary when it is co-administered with rifampin. </paragraph>
+                        <paragraph>Drugs for which either no interaction or a likely clinically unimportant interaction has been observed</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Antacids</content>
+                        </paragraph>
+                        <paragraph>A study involving the co-administration of valproate 500 mg with commonly administered antacids (Maalox, Trisogel, and Titralac - 160 mEq doses) did not reveal any effect on the extent of absorption of valproate.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Chlorpromazine</content>
+                        </paragraph>
+                        <paragraph>A study involving the administration of 100 to 300 mg/day of chlorpromazine to schizophrenic patients already receiving valproate (200 mg BID) revealed a 15% increase in trough plasma levels of valproate.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Haloperidol</content>
+                        </paragraph>
+                        <paragraph>A study involving the administration of 6 to 10 mg/day of haloperidol to schizophrenic patients already receiving valproate (200 mg BID) revealed no significant changes in valproate trough plasma levels. </paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Cimetidine and Ranitidine</content>
+                        </paragraph>
+                        <paragraph>Cimetidine and ranitidine do not affect the clearance of valproate.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_27639637-5a66-4328-aee2-6c2e7e269f69">
+                     <id root="0e4bd5ec-5b3f-48d2-8005-d2208f38bbc2"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.2 Effects of Valproate on Other Drugs</title>
+                     <text>
+                        <paragraph>Valproate has been found to be a weak inhibitor of some P450 isozymes, epoxide hydrase, and glucuronosyltransferases. </paragraph>
+                        <paragraph>The following list provides information about the potential for an influence of valproate co-administration on the pharmacokinetics or pharmacodynamics of several commonly prescribed medications. The list is not exhaustive, since new interactions are continuously being reported.</paragraph>
+                        <paragraph>Drugs for which a potentially important valproate interaction has been observed</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Amitriptyline/Nortriptyline</content>
+                        </paragraph>
+                        <paragraph>Administration of a single oral 50 mg dose of amitriptyline to 15 normal volunteers (10 males and 5 females) who received valproate (500 mg BID) resulted in a 21% decrease in plasma clearance of amitriptyline and a 34% decrease in the net clearance of nortriptyline. Rare postmarketing reports of concurrent use of valproate and amitriptyline resulting in an increased amitriptyline level have been received. Concurrent use of valproate and amitriptyline has rarely been associated with toxicity. Monitoring of amitriptyline levels should be considered for patients taking valproate concomitantly with amitriptyline. Consideration should be given to lowering the dose of amitriptyline/nortriptyline in the presence of valproate.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Carbamazepine/carbamazepine-10,11-Epoxide</content>
+                        </paragraph>
+                        <paragraph>Serum levels of carbamazepine (CBZ) decreased 17% while that of carbamazepine-10,11-epoxide (CBZ-E) increased by 45% upon co-administration of valproate and CBZ to epileptic patients.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Clonazepam</content>
+                        </paragraph>
+                        <paragraph>The concomitant use of valproic acid and clonazepam may induce absence status in patients with a history of absence type seizures.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Diazepam</content>
+                        </paragraph>
+                        <paragraph>Valproate displaces diazepam from its plasma albumin binding sites and inhibits its metabolism. Co-administration of valproate (1500 mg daily) increased the free fraction of diazepam (10 mg) by 90% in healthy volunteers (n=6). Plasma clearance and volume of distribution for free diazepam were reduced by 25% and 20%, respectively, in the presence of valproate. The elimination half-life of diazepam remained unchanged upon addition of valproate.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Ethosuximide</content>
+                        </paragraph>
+                        <paragraph>Valproate inhibits the metabolism of ethosuximide. Administration of a single ethosuximide dose of 500 mg with valproate (800 to 1600 mg/day) to healthy volunteers (n=6) was accompanied by a 25% increase in elimination half-life of ethosuximide and a 15% decrease in its total clearance as compared to ethosuximide alone. Patients receiving valproate and ethosuximide, especially along with other anticonvulsants, should be monitored for alterations in serum concentrations of both drugs.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Lamotrigine</content>
+                        </paragraph>
+                        <paragraph>In a steady-state study involving 10 healthy volunteers, the elimination half-life of lamotrigine increased from 26 to 70 hours with valproate co-administration (a 165% increase). The dose of lamotrigine should be reduced when co-administered with valproate. Serious skin reactions (such as Stevens-Johnson Syndrome and toxic epidermal necrolysis) have been reported with concomitant lamotrigine and valproate administration. See lamotrigine package insert for details on lamotrigine dosing with concomitant valproate administration.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Phenobarbital</content>
+                        </paragraph>
+                        <paragraph>Valproate was found to inhibit the metabolism of phenobarbital. Co-administration of valproate (250 mg BID for 14 days) with phenobarbital to normal subjects (n=6) resulted in a 50% increase in half-life and a 30% decrease in plasma clearance of phenobarbital (60 mg single-dose). The fraction of phenobarbital dose excreted unchanged increased by 50% in presence of valproate.</paragraph>
+                        <paragraph>There is evidence for severe CNS depression, with or without significant elevations of barbiturate or valproate serum concentrations. All patients receiving concomitant barbiturate therapy should be closely monitored for neurological toxicity. Serum barbiturate concentrations should be obtained, if possible, and the barbiturate dosage decreased, if appropriate. </paragraph>
+                        <paragraph>Primidone, which is metabolized to a barbiturate, may be involved in a similar interaction with valproate.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Phenytoin</content>
+                        </paragraph>
+                        <paragraph>Valproate displaces phenytoin from its plasma albumin binding sites and inhibits its hepatic metabolism. Co-administration of valproate (400 mg TID) with phenytoin (250 mg) in normal volunteers (n=7) was associated with a 60% increase in the free fraction of phenytoin. Total plasma clearance and apparent volume of distribution of phenytoin increased 30% in the presence of valproate. Both the clearance and apparent volume of distribution of free phenytoin were reduced by 25%. In patients with epilepsy, there have been reports of breakthrough seizures occurring with the combination of valproate and phenytoin. The dosage of phenytoin should be adjusted as required by the clinical situation.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Tolbutamide</content>
+                        </paragraph>
+                        <paragraph>From <content styleCode="italics">in vitro</content> experiments, the unbound fraction of tolbutamide was increased from 20% to 50% when added to plasma samples taken from patients treated with valproate. The clinical relevance of this displacement is unknown.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Warfarin</content>
+                        </paragraph>
+                        <paragraph>In an <content styleCode="italics">in vitro</content> study, valproate increased the unbound fraction of warfarin by up to 32.6%. The therapeutic relevance of this is unknown; however, coagulation tests should be monitored if valproic acid therapy is instituted in patients taking anticoagulants.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Zidovudine</content>
+                        </paragraph>
+                        <paragraph>In six patients who were seropositive for HIV, the clearance of zidovudine (100 mg q8h) was decreased by 38% after administration of valproate (250 or 500 mg q8h); the half-life of zidovudine was unaffected.</paragraph>
+                        <paragraph>Drugs for which either no interaction or a likely clinically unimportant interaction has been observed</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Acetaminophen</content>
+                        </paragraph>
+                        <paragraph>Valproate had no effect on any of the pharmacokinetic parameters of acetaminophen when it was concurrently administered to three epileptic patients.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Clozapine</content>
+                        </paragraph>
+                        <paragraph>In psychotic patients (n=11), no interaction was observed when valproate was co-administered with clozapine.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Lithium</content>
+                        </paragraph>
+                        <paragraph>Co-administration of valproate (500 mg BID) and lithium carbonate (300 mg TID) to normal male volunteers (n=16) had no effect on the steady-state kinetics of lithium.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Lorazepam</content>
+                        </paragraph>
+                        <paragraph>Concomitant administration of valproate (500 mg BID) and lorazepam (1 mg BID) in normal male volunteers (n=9) was accompanied by a 17% decrease in the plasma clearance of lorazepam.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Oral Contraceptive Steroids</content>
+                        </paragraph>
+                        <paragraph>Administration of a single-dose of ethinyloestradiol (50 mcg)/levonorgestrel (250 mcg) to 6 women on valproate (200 mg BID) therapy for 2 months did not reveal any pharmacokinetic interaction.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_141e7e52-71a4-40d5-80d2-03cb69467e40">
+                     <id root="a4a8bb62-5bd3-4d17-bb91-969c3f6985d3"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>7.3 Topiramate</title>
+                     <text>
+                        <paragraph>Concomitant administration of valproic acid and topiramate has been associated with hyperammonemia with and without encephalopathy [see <content styleCode="bold">
+                              <linkHtml href="#LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9">Contraindications (4)</linkHtml>
+                           </content> and <content styleCode="bold">Warnings and Precautions (5.</content>5, <content styleCode="bold">5.8</content>, <content styleCode="bold">5.9</content>
+                           <content styleCode="bold">)</content>]. Concomitant administration of topiramate with valproate has also been associated with hypothermia in patients who have tolerated either drug alone. It may be prudent to examine blood ammonia levels in patients in whom the onset of hypothermia has been reported [see <content styleCode="bold">Warnings and Precautions (5.8</content>, <content styleCode="bold">5.10</content>)].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_713ba4ab-3aca-4c5c-88d7-65ea20e83cfc">
+               <id root="5ad691c4-95f0-4c64-b65e-5b75bde05c6e"/>
+               <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+               <title>8 USE IN SPECIFIC POPULATIONS</title>
+               <effectiveTime value="20130117"/>
+               <excerpt>
+                  <highlight>
+                     <text>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Pregnancy: Divalproex sodium# capsules (sprinkle) can cause congenital malformations including neural tube defects. Pregnancy registry available (5.2, 8.1) 
+</item>
+                           <item>Pediatric: Children under the age of two years are at considerably higher risk of fatal  hepatotoxicity (5.1, 8.4) 
+</item>
+                           <item>Geriatric: reduce starting dose; increase dosage more slowly; monitor fluid and nutritional intake, and somnolence (5.13, 8.5)</item>
+                        </list>
+                     </text>
+                  </highlight>
+               </excerpt>
+               <component>
+                  <section ID="LINK_774da610-4fe9-448d-a664-acd69bfa0ffd">
+                     <id root="f58bd986-247f-4655-bcc8-fd6b5e1583e4"/>
+                     <code code="42228-7" codeSystem="2.16.840.1.113883.6.1" displayName="PREGNANCY SECTION"/>
+                     <title>8.1 Pregnancy</title>
+                     <text>
+                        <paragraph>Teratogenic Effects: Pregnancy Category D [see Warnings and Precautions (5.3)]</paragraph>
+                        <paragraph>Pregnancy Registry </paragraph>
+                        <paragraph>To collect information on the effects of in utero exposure to divalproex sodium# capsules (sprinkle), physicians should encourage pregnant patients taking divalproex sodium# capsules (sprinkle) to enroll in the North American Antiepileptic Drug (NAAED) Pregnancy Registry. This can be done by calling toll free 1-888-233-2334, and must be done by the patients themselves. Information on the registry can be found at the website, http://www.aedpregnancyregistry.org/. </paragraph>
+                        <paragraph>Fetal Risk </paragraph>
+                        <paragraph>Summary All pregnancies have a background risk of birth defects (about 3%), pregnancy loss (about 15%), or other adverse outcomes regardless of drug exposure. Maternal valproate use during pregnancy for any indication increases the risk of congenital malformations, particularly neural tube defects, but also malformations involving other body systems (e.g., craniofacial defects, cardiovascular malformations). The risk of major structural abnormalities is greatest during the first trimester; however, other serious developmental effects can occur with valproate use throughout pregnancy. The rate of congenital malformations among babies born to epileptic mothers who used valproate during pregnancy has been shown to be about four times higher than the rate among babies born to epileptic mothers who used other anti-seizure monotherapies. </paragraph>
+                        <paragraph>Several published epidemiological studies have indicated that children exposed to valproate in utero have lower cognitive test scores than children exposed to either another antiepileptic drug in utero or to no antiepileptic drugs in utero [see Warnings and Precautions (5.3)]. </paragraph>
+                        <paragraph>In animal studies, offspring had structural malformations similar to those seen in humans and demonstrated behavioral deficits. </paragraph>
+                        <paragraph>Clinical Considerations</paragraph>
+                        <list listType="unordered" styleCode="Disk">
+                           <item>Neural tube defects are the congenital malformation most strongly associated with maternal valproate use. The risk of spina bifida following in utero valproate exposure is generally estimated as 1 to 2%, compared to an estimated general population risk for spina bifida of about 0.06 to 0.07% (6 to 7 in 10,000 births). </item>
+                           <item>To prevent major seizures, women with epilepsy should not discontinue divalproex sodium abruptly, as this can precipitate status epilepticus with resulting maternal and fetal hypoxia and threat to life. Even minor seizures may pose some hazard to the developing embryo or fetus. However, discontinuation of the drug may be considered prior to and during pregnancy in individual cases if the seizure disorder severity and frequency do not pose a serious threat to the patient. </item>
+                           <item>Available prenatal diagnostic testing to detect neural tube and other defects should be offered to pregnant women using valproate. </item>
+                           <item>Evidence suggests that folic acid supplementation prior to conception and during the first trimester of pregnancy decreases the risk for congenital neural tube defects in the general population. It is not known whether the risk of neural tube defects in the offspring of women receiving valproate is reduced by folic acid supplementation. Dietary folic acid supplementation both prior to conception and during pregnancy should be routinely recommended for patients using valproate. </item>
+                           <item>Patients taking valproate may develop clotting abnormalities [seeWarnings and Precautions (5.7)]. A patient who had low fibrinogen when taking multiple anticonvulsants including valproate gave birth to an infant with afibrinogenemia who subsequently died of hemorrhage. If valproate is used in pregnancy, the clotting parameters should be monitored carefully. </item>
+                           <item>Patients taking valproate may develop hepatic failure [see Boxed Warning, Warnings and Precautions (5.1)]. Fatal cases of hepatic failure in infants exposed to valproate in utero have also been reported following maternal use of valproate during pregnancy. </item>
+                        </list>
+                        <paragraph>Data  </paragraph>
+                        <paragraph>Human </paragraph>
+                        <paragraph>There is an extensive body of evidence demonstrating that exposure to valproate in utero increases the risk of neural tube defects and other structural abnormalities. Based on published data from the CDC’s National Birth Defects Prevention Network, the risk of spina bifida in the general population is about 0.06 to 0.07%. The risk of spina bifida following in utero valproate exposure has been estimated to be approximately 1 to 2%. </paragraph>
+                        <paragraph>In one study using NAAED Pregnancy Registry data, 16 cases of major malformations following prenatal valproate exposure were reported among offspring of 149 enrolled women who used valproate during pregnancy. Three of the 16 cases were neural tube defects; the remaining cases included craniofacial defects, cardiovascular malformations and malformations of varying severity involving other body systems. The NAAED Pregnancy Registry has reported a major malformation rate of 10.7% (95% C.I. 6.3% - 16.9%) in the offspring of women exposed to an average of 1,000 mg/day of valproate monotherapy during pregnancy (dose range 500 to 2,000 mg/day). The major malformation rate among the internal comparison group of 1,048 epileptic women who received any other antiepileptic drug monotherapy during pregnancy was 2.9% (95% CI 2% to 4.1%). These data show a four-fold increased risk for any major malformation (Odds Ratio 4; 95% CI 2.1 to 7.4) following valproate exposure in utero compared to the risk following exposure in utero to any other antiepileptic drug monotherapy. </paragraph>
+                        <paragraph>Several published epidemiological studies have indicated that children exposed to valproate in utero have lower cognitive test scores than children exposed to either another antiepileptic drug in utero or to no antiepileptic drugs in utero. The largest of these studies is a prospective cohort study conducted in the United States and United Kingdom that found that children with prenatal exposure to valproate had lower Differential Ability Scale scores at age 3 (92 [95% C.I. 88-97]) than children with prenatal exposure to the other anti-epileptic drug monotherapy treatments evaluated: lamotrigine (101 [95% C.I. 98-104]), carbamazepine (98 [95% C.I. 95-102]) and phenytoin, 99 [95% C.I. 94-104)]. The D.A.S., which has a mean score of 100 (SD = 15), is a battery of cognitive tests designed for children ages 2.5 to 17 years. The D.A.S. is a measure of neurobehavioral development performed when children are too young to undergo IQ testing and generally correlates with IQ scores later in childhood. </paragraph>
+                        <paragraph>Although all of the available studies have methodological limitations, the weight of the evidence supports a causal association between valproate exposure in utero and subsequent adverse effects on cognitive development. </paragraph>
+                        <paragraph>There are published case reports of fatal hepatic failure in offspring of women who used valproate during pregnancy. </paragraph>
+                        <paragraph>Animal </paragraph>
+                        <paragraph>In developmental toxicity studies conducted in mice, rats, rabbits, and monkeys, increased rates of fetal structural abnormalities, intrauterine growth retardation, and embryo-fetal death occurred following treatment of pregnant animals with valproate during organogenesis at clinically relevant doses (calculated on a body surface area basis). Valproate induced malformations of multiple organ systems, including skeletal, cardiac, and urogenital defects. In mice, in addition to other malformations, fetal neural tube defects have been reported following valproate administration during critical periods of organogenesis, and the teratogenic response correlated with peak maternal drug levels. Behavioral abnormalities (including cognitive, locomotor, and social interaction deficits) and brain histopathological changes have also been reported in mice and rat offspring exposed prenatally to clinically relevant doses of valproate.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_2d718fe4-1206-4809-bfb3-a064b1e93c25">
+                     <id root="03daac33-f21e-480c-ab84-6f4fac60b034"/>
+                     <code code="34080-2" codeSystem="2.16.840.1.113883.6.1" displayName="NURSING MOTHERS SECTION"/>
+                     <title>8.3 Nursing Mothers</title>
+                     <text>
+                        <paragraph>Valproate is excreted in human milk. Caution should be exercised when valproate is administered to a nursing woman.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_ab9cb68d-1e96-42bf-9949-f89f208d0b73">
+                     <id root="ced068fc-e277-4d80-9179-cbf88084d5bc"/>
+                     <code code="34081-0" codeSystem="2.16.840.1.113883.6.1" displayName="PEDIATRIC USE SECTION"/>
+                     <title>8.4 Pediatric Use</title>
+                     <text>
+                        <paragraph>Experience has indicated that pediatric patients under the age of two years are at a considerably increased risk of developing fatal hepatotoxicity, especially those with the aforementioned conditions [see Boxed Warning, Warning and Precautions (5.1)]. When valproate is used in this patient group, it should be used with extreme caution and as a sole agent. The benefits of therapy should  be weighed against the risks. Above the age of 2 years, experience in epilepsy has indicated that the incidence of fatal hepatotoxicity decreases considerably in progressively older patient groups. </paragraph>
+                        <paragraph>Younger children, especially those receiving enzyme inducing drugs, will require larger maintenance doses to attain targeted total and unbound valproate concentrations. Pediatric patients (i.e., between 3 months and 10 years) have 50% higher clearances expressed on weight (i.e., mL/min/kg) than do adults. Over the age of 10 years, children have pharmacokinetic parameters that approximate those of adults. The variability in free fraction limits the clinical usefulness of monitoring total serum valproic acid concentration. Interpretation of valproic acid concentrations in children should include consideration of factors that affect hepatic metabolism and protein binding.</paragraph>
+                        <paragraph>Pediatric Clinical Trials</paragraph>
+                        <paragraph>Divalproex sodium was studied in seven pediatric clinical trials.</paragraph>
+                        <paragraph>Two of the pediatric studies were double-blinded placebo-controlled trials to evaluate the efficacy of divalproex sodium extended-release for the indications of mania (150 patients aged 10 to 17 years, 76 of whom were on divalproex sodium extended-release) and migraine (304 patients aged 12 to 17 years, 231 of whom were on divalproex sodium extended-release). Efficacy was not established for either the treatment of migraine or the treatment of mania.</paragraph>
+                        <paragraph>The remaining five trials were long term safety studies. Two six-month pediatric studies were conducted to evaluate the long-term safety of divalproex sodium extended-release for the indication of mania (292 patients aged 10 to 17 years). Two twelve-month pediatric studies were conducted to evaluate the long-term safety of divalproex sodium extended-release for the indication of migraine (353 patients aged 12 to 17 years). One twelve-month study was conducted to evaluate the safety of divalproex# sodium capsules (sprinkle) in the indication of partial seizures (169 patients aged 3 to 10 years). The safety and tolerability of divalproex sodium in pediatric patients were shown to be comparable to those in adults [see Adverse Reactions (6)].</paragraph>
+                        <paragraph>Nonclinical Developmental Toxicology</paragraph>
+                        <paragraph>In studies of valproate in immature animals, toxic effects not observed in adult animals included retinal dysplasia in rats treated during the neonatal period (from postnatal day 4) and nephrotoxicity in rats treated during the neonatal and juvenile (from postnatal day 14) periods. The no-effect dose for these findings was less than the maximum recommended human dose on a mg/m2 basis.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_16012728-cf8f-48ca-8fcc-a16a3ea8543b">
+                     <id root="91dc183b-8541-49c5-a0e4-67526c24a6c4"/>
+                     <code code="34082-8" codeSystem="2.16.840.1.113883.6.1" displayName="GERIATRIC USE SECTION"/>
+                     <title>8.5 Geriatric Use</title>
+                     <text>
+                        <paragraph>No patients above the age of 65 years were enrolled in double-blind prospective clinical trials of mania associated with bipolar illness. In a case review study of 583 patients, 72 patients (12%) were greater than 65 years of age. A higher percentage of patients above 65 years of age reported accidental injury, infection, pain, somnolence, and tremor. Discontinuation of valproate was occasionally associated with the latter two events. It is not clear whether these events indicate additional risk or whether they result from preexisting medical illness and concomitant medication use among these patients.</paragraph>
+                        <paragraph>A study of elderly patients with dementia revealed drug related somnolence and discontinuation for somnolence [see Warnings and Precautions (5.13)]. The starting dose should be reduced in these patients, and dosage reductions or discontinuation should be considered in patients with excessive somnolence [see Dosage and Administration (2.2)]. The capacity of elderly patients (age range: 68 to 89 years) to eliminate valproate has been shown to be reduced compared to younger adults (age range: 22 to 26) [see Clinical Pharmacology (12.3)].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_786ff877-4ba8-4e90-8b48-eab0177d6417">
+                     <id root="786ff877-4ba8-4e90-8b48-eab0177d6417"/>
+                     <code code="43684-0" codeSystem="2.16.840.1.113883.6.1" displayName="USE IN SPECIFIC POPULATIONS SECTION"/>
+                     <title>8.6 Effect of Disease</title>
+                     <text>
+                        <paragraph>Liver Disease</paragraph>
+                        <paragraph>(see <content styleCode="bold">
+                              <linkHtml href="#LINK_0d5e1566-bf22-4804-ac57-24577d384f88">Boxed Warning</linkHtml>
+                           </content>,<content styleCode="bold">
+                              <linkHtml href="#LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9"> Contraindications(4)</linkHtml>
+                           </content>, and<content styleCode="bold">
+                              <linkHtml href="#LINK_64ef57de-2f4a-4dd6-86d0-e56f2558aa75"> Warnings And Precautions (5)</linkHtml>
+                           </content> and <content styleCode="bold">
+                              <linkHtml href="#LINK_aeb3f162-e2e1-4e33-8fcd-f1333963052b">Clinical Pharmacology (12.3)</linkHtml>
+                           </content>]. Liver disease impairs the capacity to eliminate valproate.</paragraph>
+                     </text>
+                     <effectiveTime value="20100806"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_a9882514-6d61-4eb1-90c4-90ef13899dd6">
+               <id root="72dc1e73-5994-4f0c-9de1-63068acc4cfb"/>
+               <code code="34088-5" codeSystem="2.16.840.1.113883.6.1" displayName="OVERDOSAGE SECTION"/>
+               <title>10 OVERDOSAGE</title>
+               <text>
+                  <paragraph>Overdosage with valproate may result in somnolence, heart block, and deep coma. Fatalities have been reported; however patients have recovered from valproate levels as high as 2,120 mcg/mL.</paragraph>
+                  <paragraph>In overdose situations, the fraction of drug not bound to protein is high and hemodialysis or tandem hemodialysis plus hemoperfusion may result in significant removal of drug. The benefit of gastric lavage or emesis will vary with the time since ingestion. General supportive measures should be applied with particular attention to the maintenance of adequate urinary output.</paragraph>
+                  <paragraph>Naloxone has been reported to reverse the CNS depressant effects of valproate over dosage. Because naloxone could theoretically also reverse the antiepileptic effects of valproate, it should be used with caution in patients with epilepsy.</paragraph>
+               </text>
+               <effectiveTime value="20130117"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_b2c22d4a-9fe1-4665-98f5-5866fbdb9af7">
+               <id root="a3312835-8e5d-4093-948d-9ec2a4fc1ea1"/>
+               <code code="34089-3" codeSystem="2.16.840.1.113883.6.1" displayName="DESCRIPTION SECTION"/>
+               <title>11 DESCRIPTION</title>
+               <text>
+                  <paragraph>Divalproex sodium USP is a stable co-ordination compound comprised of sodium valproate and valproic acid in a 1:1 molar relationship and formed during the partial neutralization of valproic acid with 0.5 equivalent of sodium hydroxide. Chemically it is designated as sodium hydrogen bis(2-propylpentanoate). Divalproex sodium USP has the following structure:</paragraph>
+                  <renderMultiMedia referencedObject="MM3"/>
+                  <paragraph>Divalproex sodium USP occurs as a white to off white powder with a characteristic odor, very soluble in chloroform, freely soluble in methanol and ethyl ether, soluble in acetone, practically insoluble in acetonitrile.</paragraph>
+                  <paragraph>Divalproex sodium# capsules (sprinkle) are for oral administration. Divalproex sodium capsules (sprinkle) contain specially coated particles of divalproex sodium USP equivalent to 125 mg of valproic acid in a hard gelatin capsule.</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Inactive Ingredients</content>
+                  </paragraph>
+                  <paragraph>Divalproex sodium# capsules (sprinkle): black iron oxide, D&amp;C Red 28, ethyl cellulose, FD&amp;C Blue 1, gelatin, hypromellose, magnesium stearate, sugar sphere, titanium dioxide, and triethyl citrate NF.</paragraph>
+               </text>
+               <effectiveTime value="20130117"/>
+               <component>
+                  <observationMedia ID="MM3">
+                     <text>Divalproex Sodium -Structure Formula</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="divalproex-sodium-capsules-3.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_9b84c5ea-b450-4bd7-8108-6179f135b847">
+               <id root="f5d43f2c-9746-4153-8204-615b75ad1b01"/>
+               <code code="34090-1" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL PHARMACOLOGY SECTION"/>
+               <title>12 CLINICAL PHARMACOLOGY</title>
+               <effectiveTime value="20130117"/>
+               <component>
+                  <section ID="LINK_8bd148e5-97ab-4e9d-aa3a-165fca548f4e">
+                     <id root="8bd148e5-97ab-4e9d-aa3a-165fca548f4e"/>
+                     <code code="43679-0" codeSystem="2.16.840.1.113883.6.1" displayName="MECHANISM OF ACTION SECTION"/>
+                     <title>12.1 Mechanism of Action</title>
+                     <text>
+                        <paragraph>Divalproex sodium dissociates to the valproate ion in the gastrointestinal tract. The mechanisms by which valproate exerts its therapeutic effects have not been established. It has been suggested that its activity in epilepsy is related to increased brain concentrations of gamma-aminobutyric acid (GABA).</paragraph>
+                     </text>
+                     <effectiveTime value="20100806"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_c221cdb0-8aaa-4ec9-8c25-388b7cdff2c0">
+                     <id root="68aac2bb-232a-4ac6-bfb1-4e2ead9b009a"/>
+                     <code code="43681-6" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACODYNAMICS SECTION"/>
+                     <title>12.2 Pharmacodynamics</title>
+                     <text>
+                        <paragraph>The relationship between plasma concentration and clinical response is not well documented. One contributing factor is the nonlinear, concentration dependent protein binding of valproate which affects the clearance of the drug. Thus, monitoring of total serum valproate may not provide a reliable index of the bioactive valproate species.</paragraph>
+                        <paragraph>For example, because the plasma protein binding of valproate is concentration dependent, the free fraction increases from approximately 10% at 40 mcg/mL to 18.5% at 130 mcg/mL. Higher than expected free fractions occur in the elderly, in hyperlipidemic patients, and in patients with hepatic and renal diseases.</paragraph>
+                        <paragraph>Epilepsy</paragraph>
+                        <paragraph>The therapeutic range in epilepsy is commonly considered to be 50 to 100 mcg/mL of total valproate, although some patients may be controlled with lower or higher plasma concentrations.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_aeb3f162-e2e1-4e33-8fcd-f1333963052b">
+                     <id root="12a94484-eed8-4a5f-801b-6a2d9f48852c"/>
+                     <code code="43682-4" codeSystem="2.16.840.1.113883.6.1" displayName="PHARMACOKINETICS SECTION"/>
+                     <title>12.3 Pharmacokinetics</title>
+                     <text>
+                        <paragraph>Absorption/Bioavailability</paragraph>
+                        <paragraph>Equivalent oral doses of divalproex sodium products and valproic acid capsules deliver equivalent quantities of valproate ion systemically. Although the rate of valproate ion absorption may vary with the formulation administered (liquid, solid, or sprinkle), conditions of use (e.g., fasting or postprandial) and the method of administration (e.g., whether the contents of the capsule are sprinkled on food or the capsule is taken intact), these differences should be of minor clinical importance under the steady state conditions achieved in chronic use in the treatment of epilepsy. </paragraph>
+                        <paragraph>However, it is possible that differences among the various valproate products in T<sub>max </sub>and C<sub>max</sub> could be important upon initiation of treatment. For example, in single dose studies, the effect of feeding had a greater influence on the rate of absorption of the tablet (increase in T<sub>max</sub> from 4 to 8 hours) than on the absorption of the coated particles in capsules (increase in T<sub>max</sub> from 3.3 to 4.8 hours).</paragraph>
+                        <paragraph>While the absorption rate from the G.I. tract and fluctuation in valproate plasma concentrations vary with dosing regimen and formulation, the efficacy of valproate as an anticonvulsant in chronic use is unlikely to be affected. Experience employing dosing regimens from once-a-day to four-times-a-day, as well as studies in primate epilepsy models involving constant rate infusion, indicate that total daily systemic bioavailability (extent of absorption) is the primary determinant of seizure control and that differences in the ratios of plasma peak to trough concentrations between valproate formulations are inconsequential from a practical clinical standpoint.</paragraph>
+                        <paragraph>Co-administration of oral valproate products with food and substitution among the various divalproex sodium and valproic acid formulations should cause no clinical problems in the management of patients with epilepsy.</paragraph>
+                        <paragraph>Distribution</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Protein Binding</content>
+                        </paragraph>
+                        <paragraph>The plasma protein binding of valproate is concentration dependent and the free fraction increases from approximately 10% at 40 mcg/mL to 18.5% at 130 mcg/mL. Protein binding of valproate is reduced in the elderly, in patients with chronic hepatic diseases, in patients with renal impairment, and in the presence of other drugs (e.g., aspirin). Conversely, valproate may displace certain protein-bound drugs (e.g., phenytoin, carbamazepine, warfarin, and tolbutamide) [see<content styleCode="bold">
+                              <linkHtml href="#LINK_317ca73e-ff68-4960-8bba-8e2f0bacbf8f"> Drug Interactions (7)</linkHtml>
+                           </content> for more detailedinformation on the pharmacokinetic interactions of valproate with other drugs].</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">CNS Distribution</content>
+                        </paragraph>
+                        <paragraph>Valproate concentrations in cerebrospinal fluid (CSF) approximate unbound concentrations in plasma (about 10% of total concentration).</paragraph>
+                        <paragraph>Metabolism</paragraph>
+                        <paragraph>Valproate is metabolized almost entirely by the liver. In adult patients on monotherapy, 30 to 50% of an administered dose appears in urine as a glucuronide conjugate. Mitochondrial β-oxidation is the other major metabolic pathway, typically accounting for over 40% of the dose. Usually, less than 15 to 20% of the dose is eliminated by other oxidative mechanisms. Less than 3% of an administered dose is excreted unchanged in urine.</paragraph>
+                        <paragraph>The relationship between dose and total valproate concentration is nonlinear; concentration does not increase proportionally with the dose, but rather, increases to a lesser extent due to saturable plasma protein binding. The kinetics of unbound drug are linear.</paragraph>
+                        <paragraph>Elimination</paragraph>
+                        <paragraph>Mean plasma clearance and volume of distribution for total valproate are 0.56 L/hr/1.73 m<sup>2</sup> and 11 L/1.73 m<sup>2</sup>, respectively. Mean plasma clearance and volume of distribution for free valproate are 4.6 L/hr/1.73 m<sup>2</sup> and 92 L/1.73 m<sup>2</sup>. Mean terminal half-life for valproate monotherapy ranged from 9 to 16 hours following oral dosing regimens of 250 to 1000 mg.</paragraph>
+                        <paragraph>The estimates cited apply primarily to patients who are not taking drugs that affect hepatic metabolizing enzyme systems. For example, patients taking enzyme-inducing antiepileptic drugs (carbamazepine, phenytoin, and phenobarbital) will clear valproate more rapidly. Because of these changes in valproate clearance, monitoring of antiepileptic concentrations should be intensified whenever concomitant antiepileptics areintroduced or withdrawn.</paragraph>
+                        <paragraph>Special Populations</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Effect of Age</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Children</content>
+                        </paragraph>
+                        <paragraph>Pediatric patients (i.e., between 3 months and 10 years) have 50% higher clearances expressed on weight (i.e., mL/min/kg) than do adults. Over the age of 10 years, children have pharmacokinetic parameters that approximate those of adults.</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Elderly</content>
+                        </paragraph>
+                        <paragraph>The capacity of elderly patients (age range: 68 to 89 years) to eliminate valproate has been shown to be reduced compared to younger adults (age range: 22 to 26). Intrinsic clearance is reduced by 39%; the free fraction is increased by 44%. Accordingly, the initial dosage should be reduced in the elderly [see <content styleCode="bold">Dosage and Administration (2.4)</content>].</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Effect of Sex</content>
+                        </paragraph>
+                        <paragraph>There are no differences in the body surface area adjusted unbound clearance between males and females (4.8 ± 0.17 and 4.7±0.07 L/hr per 1.73 m<sup>2</sup>, respectively).</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Effect of Race</content>
+                        </paragraph>
+                        <paragraph>The effects of race on the kinetics of valproate have not been studied.</paragraph>
+                        <paragraph>
+                           <content styleCode="italics">Effect of Disease</content>
+                        </paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Liver Disease</content>
+                        </paragraph>
+                        <paragraph>Liver disease impairs the capacity to eliminate valproate. In one study, the clearance of free valproate was decreased by 50% in 7 patients with cirrhosis and by 16% in 4 patients with acute hepatitis, compared with 6 healthy subjects. In that study, the half-life of valproate was increased from 12 to 18 hours. Liver disease is also associated with decreased albumin concentrations and larger unbound fractions (2 to 2.6 fold increase) of valproate. Accordingly, monitoring of total concentrations may be misleading since freeconcentrations may be substantially elevated in patients with hepatic disease whereas total concentrations may appear to be normal [see<content styleCode="bold">
+                              <linkHtml href="#LINK_0d5e1566-bf22-4804-ac57-24577d384f88"> Boxed Warning</linkHtml>
+                           </content>
+                           <content styleCode="bold">, </content>
+                           <content styleCode="bold">
+                              <linkHtml href="#LINK_86aa2eb8-f060-45b6-a3f9-b65ccbbc00d9">Contraindications (4)</linkHtml>
+                           </content>
+                           <content styleCode="bold">,<linkHtml href="#LINK_7238db63-38aa-413d-a496-d54e1e95d56c"> Warnings and Precautions (5.1)</linkHtml>
+                           </content>].</paragraph>
+                        <paragraph>
+                           <content styleCode="underline">Renal Disease</content>
+                        </paragraph>
+                        <paragraph>A slight reduction (27%) in the unbound clearance of valproate has been reported in patients with renal failure (creatinine clearance &lt; 10 mL/minute); however, hemodialysis typically reduces valproate concentrations by about 20%. Therefore, no dosage adjustment appears to be necessary in patients with renal failure. Protein binding in these patients is substantially reduced; thus, monitoring total concentrations may be misleading.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_ce36a256-9c09-4549-9559-ef7f02cef108">
+               <id root="eaf4ac34-f7a3-4e2f-8f7c-e06729b9a2e0"/>
+               <code code="43680-8" codeSystem="2.16.840.1.113883.6.1" displayName="NONCLINICAL TOXICOLOGY SECTION"/>
+               <title>13 NONCLINICAL TOXICOLOGY</title>
+               <effectiveTime value="20130117"/>
+               <component>
+                  <section ID="LINK_0beb638f-e71f-456a-81b6-97cc3cfbe239">
+                     <id root="dac6a515-56bb-49c7-a9f7-15472a99c0e0"/>
+                     <code code="34083-6" codeSystem="2.16.840.1.113883.6.1" displayName="CARCINOGENESIS &amp; MUTAGENESIS &amp; IMPAIRMENT OF FERTILITY SECTION"/>
+                     <title>13.1 Carcinogenesis, Mutagenesis, Impairment of Fertility</title>
+                     <text>
+                        <paragraph>Carcinogenesis</paragraph>
+                        <paragraph>Valproate was administered orally to rats and mice at doses of 80 and 170 mg/kg/day (less than the maximum recommended human dose on a mg/m2 basis) for two years. The primary findings were an increase in the incidence of subcutaneous fibrosarcomas in high dose male rats receiving valproate and a statistically significant dose-related trend for benign pulmonary adenomas in male mice receiving valproate. The significance of these findings for humans is unknown.</paragraph>
+                        <paragraph>Mutagenesis</paragraph>
+                        <paragraph>Valproate was not mutagenic in an in vitro bacterial assay (Ames test), did not produce dominant lethal effects in mice, and did not increase chromosome aberration frequency in an in vivo cytogenetic study in rats. Increased frequencies of sister chromatid exchange (SCE) have been reported in a study of epileptic children taking valproate, but this association was not observed in another study conducted in adults. There is some evidence that increased SCE frequencies may be associated with epilepsy. The biologicalsignificance of an increase in SCE frequency is not known.</paragraph>
+                        <paragraph>Fertility</paragraph>
+                        <paragraph>Chronic toxicity studies of valproate in juvenile and adult rats and dogs demonstrated reduced spermatogenesis and testicular atrophy at oral doses of 400 mg/kg/day or greater in rats (approximately equivalent to or greater than the maximum recommended human dose (MRHD) on a mg/m2 basis) and 150 mg/kg/day or greater in dogs (approximately 1.4 times the MRHD or greater on a mg/m2 basis). Fertility studies in rats have shown no effect on fertility at oral doses of valproate up to 350 mg/kg/day (approximately equal to the MRHD on a mg/m2 basis) for 60 days. The effect of valproate on testicular development and on sperm production and fertility in humans is unknown.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_f322027f-652d-4e12-a830-54c549ecca43">
+               <id root="91e522ee-999e-4959-ba40-7eed9aa15030"/>
+               <code code="34092-7" codeSystem="2.16.840.1.113883.6.1" displayName="CLINICAL STUDIES SECTION"/>
+               <title>14 CLINICAL STUDIES</title>
+               <effectiveTime value="20130117"/>
+               <component>
+                  <section ID="LINK_f1ae485f-cdc9-4dd6-bfa1-71a6a9d26191">
+                     <id root="963abc73-67fa-4a31-a2d3-568bd7682e89"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>14.1 Epilepsy</title>
+                     <text>
+                        <paragraph>The efficacy of valproate in reducing the incidence of complex partial seizures (CPS) that occur in isolation or in association with other seizure types was established in two controlled trials.</paragraph>
+                        <paragraph>In one, multiclinic, placebo controlled study employing an add-on design, (adjunctive therapy) 144 patients who continued to suffer eight or more CPS per 8 weeks during an 8 week period of monotherapy with doses of either carbamazepine or phenytoin sufficient to assure plasma concentrations within the &amp;apos;therapeutic range&amp;apos; were randomized to receive, in addition to their original antiepilepsy drug (AED), either divalproex sodium or placebo. Randomized patients were to be followed for a total of 16 weeks. The following Table presents the findings.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Table 4: Adjunctive Therapy Study Median Incidence of CPS per 8 Weeks</content>
+                        </paragraph>
+                        <renderMultiMedia referencedObject="MM4">
+                           <caption/>
+                        </renderMultiMedia>
+                        <paragraph>
+                           <content styleCode="bold">*</content>Reduction from baseline statistically significantly greater for divalproex sodium than placebo at  p ≤ 0.05 level.</paragraph>
+                        <paragraph>Figure 1 presents the proportion of patients (X axis) whose percentage reduction from baseline in complex partial seizure rates was at least as great as that indicated on the Y axis in the adjunctive therapy study. A positive percent reduction indicates an improvement (i.e., a decrease in seizure frequency), while a negative percent reduction indicates worsening. Thus, in a display of this type, the curve for an effective treatment is shifted to the left of the curve for placebo. This Figure shows that the proportion of patients achieving any particular level of improvement was consistently higher for divalproex sodium than for placebo. For example, 45% of patients treated with divalproex sodium had a ≥ 50% reduction in complex partial seizure rate compared to 23% of patients treated with placebo.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Figure 1</content>
+                        </paragraph>
+                        <renderMultiMedia referencedObject="MM5"/>
+                        <paragraph>The second study assessed the capacity of valproate to reduce the incidence of CPS when administered as the sole AED. The study compared the incidence of CPS among patients randomized to either a high or low dose treatment arm. Patients qualified for entry into the randomized comparison phase of this study only if 1) they continued to experience 2 or more CPS per 4 weeks during an 8 to 12 week long period of monotherapy with adequate doses of an AED (i.e., phenytoin, carbamazepine, phenobarbital, or primidone) and 2) they made a successful transition over a two week interval to valproate. Patients entering the randomized phase were then brought to their assigned target dose, gradually tapered off their concomitant AED and followed for an interval as long as 22 weeks. Less than 50% of the patients randomized, however, completed the study. In patients converted to divalproex sodium monotherapy, the mean total valproate concentrations during monotherapy were 71 and 123 mcg/mL in the low dose and high dose groups, respectively.</paragraph>
+                        <paragraph>The following Table presents the findings for all patients randomized who had at least one post-randomization assessment.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Table 5: Monotherapy Study Median Incidence of CPS per 8 Weeks</content>
+                        </paragraph>
+                        <renderMultiMedia referencedObject="MM6">
+                           <caption/>
+                        </renderMultiMedia>
+                        <paragraph>
+                           <content styleCode="bold">*</content>Reduction from baseline statistically significantly greater for high dose than low dose at p ≤ 0.05 level.</paragraph>
+                        <paragraph>Figure 2 presents the proportion of patients (X axis) whose percentage reduction from baseline in complex partial seizure rates was at least as great as that indicated on the Y axis in the monotherapy study. A positive percent reduction indicates an improvement (i.e., a decrease in seizure frequency), while a negative percent reduction indicates worsening. Thus, in a display of this type, the curve for a more effective treatment is shifted to the left of the curve for a less effective treatment. This Figure shows that the proportion of patients achieving any particular level of reduction was consistently higher for high dose divalproex sodium than for low dose divalproex sodium. For example, when switching from carbamazepine, phenytoin, phenobarbital or primidone monotherapy to high dose divalproex sodium monotherapy, 63% of patients experienced no change or a reduction in complex partial seizure rates compared to 54% of patients receiving low dose divalproex sodium.</paragraph>
+                        <paragraph>
+                           <content styleCode="bold">Figure 2</content>
+                        </paragraph>
+                        <renderMultiMedia referencedObject="MM7"/>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                     <component>
+                        <observationMedia ID="MM4">
+                           <text>Table 4. Adjunctive Therapy Study Median Incidence pf CPS per 8 weeks</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-4.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                     <component>
+                        <observationMedia ID="MM5">
+                           <text>Divalproex Sodium - Figure 1</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-5.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                     <component>
+                        <observationMedia ID="MM6">
+                           <text>Table 5. Monotherapy Study Median Incidence of CPS per 8 weeks</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-6.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                     <component>
+                        <observationMedia ID="MM7">
+                           <text>Divalproex Sodium - Figure 2</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-7.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_f6c53538-fccf-4c01-a083-02fc8e08e4cd">
+               <id root="7f4a3d97-5d1e-4e94-a838-a922543d1566"/>
+               <code code="34069-5" codeSystem="2.16.840.1.113883.6.1" displayName="HOW SUPPLIED SECTION"/>
+               <title>16 HOW SUPPLIED/STORAGE AND HANDLING</title>
+               <text>
+                  <paragraph>Divalproex sodium capsules (sprinkle), 125 mg (divalproex sodium USP equivalent to 125 mg of valproic acid) are white to off-white, coated particles filled in ‘size 1’ hard gelatin capsules of light blue transparent cap imprinted ‘­ ↑THIS END UP↑ ­’ and white opaque body imprinted ‘RDY 532’ on the body using black ink and are supplied in blisterpacks of 30’s, 31’s, and 15's.</paragraph>
+                  <paragraph>Blisterpacks of 30                                                 NDC 0615-1393-39</paragraph>
+                  <paragraph>Blisterpacks of 31                                                 NDC 0615-1393-31</paragraph>
+                  <paragraph>Blisterpacks of 15                                                 NDC 0615-1393-05</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Recommended storage</content>
+                  </paragraph>
+                  <paragraph>Store at 20°-25°C (68°-77°F); [see USP Controlled Room Temperature].</paragraph>
+               </text>
+               <effectiveTime value="20130117"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_c6cc7ece-847f-48f1-a964-2ee8e76ca278">
+               <id root="df46f3b2-5b52-44a5-9e38-499f6d0acf56"/>
+               <code code="42230-3" codeSystem="2.16.840.1.113883.6.1" displayName="SPL PATIENT PACKAGE INSERT SECTION"/>
+               <title>17 PATIENT COUNSELING INFORMATION</title>
+               <text>
+                  <paragraph>See 17 for PATIENT COUNSELING INFORMATION and Medication Guide</paragraph>
+               </text>
+               <effectiveTime value="20130118"/>
+               <component>
+                  <section ID="LINK_b5eec2e2-22d5-4c04-8719-62ec5546fbda">
+                     <id root="bc57b052-fa81-4129-af6a-243f4dfd223d"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.1 Hepatotoxicity</title>
+                     <text>
+                        <paragraph>Patients and guardians should be warned that nausea, vomiting, abdominal pain, anorexia, diarrhea, asthenia, and/or jaundice can be symptoms of hepatotoxicity and, therefore, require further medical evaluation promptly.[see Warnings and Precautions (5.1)]</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_6716ff59-ff62-43fb-9fb9-def029a98208">
+                     <id root="02f56929-40e4-4f2a-9f43-e4ae6452d2a8"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.2 Pancreatitis</title>
+                     <text>
+                        <paragraph>Patients and guardians should be warned that abdominal pain, nausea, vomiting, and/or anorexia can be symptoms of pancreatitis and, therefore, require further medical evaluation promptly [see <content styleCode="bold">Warnings and Precautions (5.4</content>
+                           <content styleCode="bold">)</content>].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_d153220d-e006-4b23-bcf1-d0529c4c3c27">
+                     <id root="0175716c-f27d-40ae-8e20-f26e37d48bc2"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.3 Birth Defects and Neurobehavioral Development Adverse Effects</title>
+                     <text>
+                        <paragraph>Prescribers should inform pregnant women and women of childbearing potential that use of divalproex sodium during pregnancy increases the risk of birth defects and adverse effects on neurobehavioral development. Prescribers should advise women to use effective contraception while using valproate. When appropriate, prescribers should counsel these patients about alternative therapeutic options. This is particularly important when valproate use is considered for a condition not usually associated with permanent injury or death (e.g. migraine). Patients should read the Medication Guide, which appears as the last section of the labeling [see Warnings and Precautions (5.3) and Use in Specific Populations (8.1)]. </paragraph>
+                        <paragraph>Patients should be encouraged to enroll in the NAAED Pregnancy Registry if they become pregnant. This registry is collecting information about the safety of antiepileptic drugs during pregnancy. To enroll, patients can call the toll free number 1-888-233-2334 [see Use in Specific Populations (8.1)].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_0bc1a92b-b4d8-4ff4-8641-f110e4949299">
+                     <id root="3dfb44c6-f293-4bf0-b0f4-e5ec2b24a2a2"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.4 Suicidal Thinking and Behavior</title>
+                     <text>
+                        <paragraph>Patients, their caregivers, and families should be counseled that AED’s, including divalproex sodium, may increase the risk of suicidal thoughts and behavior and should be advised of the need to be alert for the emergence or worsening of symptoms of depression, any unusual changes in mood or behavior, or the emergence of suicidal thoughts, behavior, or thoughts about self-harm. Behaviors of concern should be reported immediately to the healthcare providers [see Warnings and Precautions (5.6)].  </paragraph>
+                     </text>
+                     <effectiveTime value="20130118"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_5043fd65-170c-4293-98b2-4b761eca6aca">
+                     <id root="e74c78bd-3f81-4245-977d-88c33a99e296"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.5 Hyperammonemia</title>
+                     <text>
+                        <paragraph>Patients should be informed of the signs and symptoms associated with hyperammonemic encephalopathy and be told to inform the prescriber if any of these symptoms occur [see <content styleCode="bold">
+                              <linkHtml href="#LINK_eb901d80-043a-4c90-9f78-50316cf57151">Warnings and Precautions (5.8,</linkHtml>5.9)]</content>.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_81b69158-e393-4fad-b688-d77e1deff15d">
+                     <id root="fab3ef45-97b9-4f13-98c2-fb4e0141b96b"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.6 CNS depression</title>
+                     <text>
+                        <paragraph>Since valproate products may produce CNS depression, especially when combined with another CNS depressant (e.g., alcohol), patients should be advised not to engage in hazardous activities, such as driving an automobile or operating dangerous machinery, until it is known that they do not become drowsy from the drug.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_a58e980c-d6a5-4c1e-b2af-2c5aaaa93efc">
+                     <id root="d82d5359-34f8-4cd6-b633-52ea3b7ac9fe"/>
+                     <code code="42229-5" codeSystem="2.16.840.1.113883.6.1" displayName="SPL UNCLASSIFIED SECTION"/>
+                     <title>17.7 Multi-organ Hypersensitivity Reaction</title>
+                     <text>
+                        <paragraph>Patients should be instructed that a fever associated with other organ system involvement (rash, lymphadenopathy, etc.) may be drug-related and should be reported to the physician immediately [see <content styleCode="bold">
+                              <linkHtml href="#LINK_5b375cbd-3d1d-4c0f-9569-28d708d5e685">Warnings and Precautions (5.11)</linkHtml>
+                           </content>].</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                  </section>
+               </component>
+               <component>
+                  <section ID="LINK_e308ac3e-017c-484b-b76e-08c9e6ff70ad">
+                     <id root="d7ff033b-88cd-4791-a0aa-be3c2eb54bb3"/>
+                     <code code="34076-0" codeSystem="2.16.840.1.113883.6.1" displayName="INFORMATION FOR PATIENTS SECTION"/>
+                     <title>17.8 Administration Guide</title>
+                     <text>
+                        <paragraph>DIVALPROEX SODIUM# CAPSULES (SPRINKLE)</paragraph>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) may be swallowed whole or the capsule contents may be sprinkled onto soft food such as applesauce or pudding.</paragraph>
+                        <paragraph>Serving Suggestions</paragraph>
+                        <paragraph>Divalproex sodium# capsules (sprinkle) provide the medicine that your healthcare provider has prescribed. The sprinkles are flavorless. Soft foods such as applesauce or pudding are best to use for mixing and taking divalproex sodium# capsules (sprinkle).</paragraph>
+                        <paragraph>TO ADMINISTER WITH FOOD:</paragraph>
+                        <renderMultiMedia referencedObject="MM8"/>
+                        <paragraph>Make sure this medicine is taken exactly as your doctor prescribed it. If you have any questions, please contact your doctor or pharmacist. Keep all of your doctor's appointments as scheduled. Make sure that divalproex sodium coated particles in capsules and all other medicines are kept out of the reach of children.</paragraph>
+                        <paragraph>Note</paragraph>
+                        <paragraph>You may see the specially coated particles in divalproex sodium# capsules (sprinkle) in stool; this is normal.</paragraph>
+                        <paragraph>Ask your healthcare provider or pharmacist about possible side effects with divalproex sodium# capsules (sprinkle).  </paragraph>
+                        <paragraph>Store divalproex sodium# capsules (sprinkle) at 20°-25°C (68°-77°F)  </paragraph>
+                        <paragraph># Divalproex sodium USP equivalent to 125 mg of valproic acid.</paragraph>
+                     </text>
+                     <effectiveTime value="20130117"/>
+                     <component>
+                        <observationMedia ID="MM8">
+                           <text>Divalproex Sodium- How to administer with food.</text>
+                           <value xsi:type="ED" mediaType="image/jpeg">
+                              <reference value="divalproex-sodium-capsules-8.jpg"/>
+                           </value>
+                        </observationMedia>
+                     </component>
+                  </section>
+               </component>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_e149a123-dd29-4870-bf32-d56c64bd64e3">
+               <id root="d8663fa7-ff5b-4b0d-bd81-b57667b9c1cf"/>
+               <code code="42231-1" codeSystem="2.16.840.1.113883.6.1" displayName="SPL MEDGUIDE SECTION"/>
+               <title>Medication Guide</title>
+               <text>
+                  <paragraph>
+                     <content styleCode="bold">Divalproex Sodium# Capsules (Sprinkle)</content>  </paragraph>
+                  <paragraph>Read this Medication Guide before you start taking a divalproex sodium# capsules (sprinkle) and each time you get a refill. There may be new information. This information does not take the place of talking to your healthcare provider about your medical condition or treatment. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What is the most important information I should know about divalproex sodium# capsules (sprinkle)?  </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Do not stop divalproex sodium# capsules (sprinkle) without first talking to your healthcare provider. </content>
+                  </paragraph>
+                  <paragraph>Stopping divalproex sodium# capsules (sprinkle) suddenly can cause serious problems. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Divalproex sodium# capsules (sprinkle) can cause serious side effects, including:</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">1. Serious liver damage that can cause death, especially in children younger than 2 years old. </content>
+                  </paragraph>
+                  <paragraph>The risk of getting this serious liver damage is more likely to happen within the first 6 months of treatment. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Call your healthcare provider right away if you get any of the following symptoms: </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>nausea or vomiting that does not go away </item>
+                     <item>loss of appetite </item>
+                     <item>pain on the right side of your stomach (abdomen) </item>
+                     <item>dark urine </item>
+                     <item>swelling of your face </item>
+                     <item>yellowing of your skin or the whites of your eyes </item>
+                  </list>
+                  <paragraph>In some cases, liver damage may continue despite stopping the drug. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">2. Divalproex sodium# capsules (sprinkle) may harm your unborn baby. </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>If you take divalproex sodium# capsules (sprinkle) during pregnancy for any medical condition, your baby is at risk for serious birth defects. The most common birth defects with divalproex sodium# capsules (sprinkle) affect the brain and spinal cord and are called spina bifida or neural tube defects. These defects occur in 1 to 2 out of every 100 babies born to mothers who use this medicine during pregnancy. These defects can begin in the first month, even before you know you are pregnant. Other birth defects can happen. </item>
+                     <item>Birth defects may occur even in children born to women who are not taking any medicines and do not have other risk factors. </item>
+                     <item>Taking folic acid supplements before getting pregnant and during early pregnancy can lower the chance of having a baby with a neural tube defect. </item>
+                     <item>If you take divalproex sodium# capsules (sprinkle) during pregnancy for any medical condition, your child is at risk for having a lower IQ. </item>
+                     <item>There may be other medicines to treat your condition that have a lower chance of birth defects. </item>
+                     <item>All women of childbearing age should talk to their healthcare provider about using other possible treatments instead of divalproex sodium# capsules (sprinkle). If the decision is made to use divalproex sodium# capsules (sprinkle), you should use effective birth control (contraception) unless you are planning to become pregnant. </item>
+                     <item>Tell your healthcare provider right away if you become pregnant while taking divalproex sodium# capsules (sprinkle). You and your healthcare provider should decide if you will continue to take divalproex sodium# capsules (sprinkle) while you are pregnant. </item>
+                     <item>Pregnancy Registry: If you become pregnant while taking divalproex sodium# capsules (sprinkle), talk to your healthcare provider about registering with the North American Antiepileptic Drug Pregnancy Registry. You can enroll in this registry by calling 1-888-233-2334. The purpose of this registry is to collect information about the safety of antiepileptic drugs during pregnancy. </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">3. Inflammation of your pancreas that can cause death. </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Call your healthcare provider right away if you have any of these symptoms: </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>severe stomach pain that you may also feel in your back </item>
+                     <item>nausea or vomiting that does not go away </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">4. Like other antiepileptic drugs, divalproex sodium# capsules (sprinkle) may cause suicidal thoughts or actions in a very small number of people, about 1 in 500. </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Call a healthcare provider right away if you have any of these symptoms, especially if they are new, worse, or worry you: </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>thoughts about suicide or dying </item>
+                     <item>attempts to commit suicide </item>
+                     <item>new or worse depression </item>
+                     <item>new or worse anxiety </item>
+                     <item>feeling agitated or restless </item>
+                     <item>panic attacks </item>
+                     <item>trouble sleeping (insomnia) </item>
+                     <item>new or worse irritability </item>
+                     <item>acting aggressive, being angry, or violent </item>
+                     <item>acting on dangerous impulses </item>
+                     <item>an extreme increase in activity and talking (mania) </item>
+                     <item>other unusual changes in behavior or mood </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">How can I watch for early symptoms of suicidal thoughts and actions? </content>
+                  </paragraph>
+                  <paragraph>Pay attention to any changes, especially sudden changes in mood, behaviors, thoughts, or feelings. Keep all follow-up visits with your healthcare provider as scheduled.  </paragraph>
+                  <paragraph>Call your healthcare provider between visits as needed, especially if you are worried about symptoms.  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Do not stop divalproex sodium# capsules (sprinkle) without first talking to a healthcare provider. </content>
+                  </paragraph>
+                  <paragraph>Stopping divalproex sodium# capsules (sprinkle) suddenly can cause serious problems. Stopping a seizure medicine suddenly in a patient who has epilepsy can cause seizures that will not stop (status epilepticus). </paragraph>
+                  <paragraph>Suicidal thoughts or actions can be caused by things other than medicines. If you have suicidal thoughts or actions, your healthcare provider may check for other causes. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What are divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <paragraph>Divalproex sodium# capsules (sprinkle) are prescription medicines used alone or with other medicines, to treat: </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>complex partial seizures in adults and children 10 years of age and older </item>
+                     <item>simple and complex absence seizures, with or without other seizure types </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Who should not take divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <paragraph>Do not take divalproex sodium# capsules (sprinkle) if you: </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>have liver problems </item>
+                     <item>are allergic to divalproex sodium, valproic acid, sodium valproate, or any of the ingredients in divalproex sodium# capsules (sprinkle). See the end of this leaflet for a complete list of ingredients in divalproex sodium# capsules (sprinkle). </item>
+                     <item>have a genetic problem call a urea cycle disorder </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">What should I tell my healthcare provider before taking divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <paragraph>Before you take divalproex sodium# capsules (sprinkle), tell your healthcare provider if you: </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>drink alcohol </item>
+                     <item>are pregnant or breastfeeding. Divalproex sodium# capsules (sprinkle) can pass into breast milk. Talk to your healthcare provider about the best way to feed your baby if you take divalproex sodium# capsules (sprinkle). </item>
+                     <item>have or have had depression, mood problems, or suicidal thoughts or behavior </item>
+                     <item>have any other medical conditions </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Tell your healthcare provider about all the medicines you take</content>, including prescription and non-prescription medicines, vitamins, herbal supplements and medicines that you take for a short period of time.  </paragraph>
+                  <paragraph>Taking divalproex sodium# capsules (sprinkle) with certain other medicines can cause side effects or affect how well they work. Do not start or stop other medicines without talking to your healthcare provider.  </paragraph>
+                  <paragraph>Know the medicines you take. Keep a list of them and show it your healthcare provider and pharmacist each time you get a new medicine. </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How should I take divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Take divalproex sodium# capsules (sprinkle) exactly as your healthcare provider tells you. Your healthcare provider will tell you how much divalproex sodium# capsules (sprinkle) to take and when to take it. </item>
+                     <item>Your healthcare provider may change your dose. </item>
+                     <item>Do not change your dose of divalproex sodium# capsules (sprinkle) without talking to your healthcare provider. </item>
+                     <item>Do not stop taking divalproex sodium# capsules (sprinkle) without first talking to your healthcare provider. Stopping divalproex sodium# capsules (sprinkle) suddenly can cause serious problems. </item>
+                     <item>Divalproex sodium# capsules (sprinkle) may be swallowed whole, or they may be opened and the contents may be sprinkled on a small amount of soft food, such as applesauce or pudding. See the Administration Guide, for detailed instructions on how to use divalproex sodium# capsules (sprinkle). </item>
+                     <item>If you take too much divalproex sodium# capsules (sprinkle), call your healthcare provider or local Poison Control Center right away. </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">What should I avoid while taking divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Divalproex sodium# capsules (sprinkle) can cause drowsiness and dizziness. Do not drink alcohol or take other medicines that make you sleepy or dizzy while taking divalproex sodium# capsules (sprinkle), until you talk with your doctor. Taking divalproex sodium# capsules (sprinkle) with alcohol or drugs that cause sleepiness or dizziness may make your sleepiness or dizziness worse. </item>
+                     <item>Do not drive a car or operate dangerous machinery until you know how divalproex sodium# capsules (sprinkle) affects you. Divalproex sodium# capsules (sprinkle) can slow your thinking and motor skills. </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">What are the possible side effects with divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>See <content styleCode="bold">“What is the most important information I should know about divalproex sodium# capsules (sprinkle)?”   </content>
+                     </item>
+                  </list>
+                  <paragraph>Divalproex sodium# capsules (sprinkle) can cause serious side effects including:  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>
+                        <content styleCode="bold">Low blood count:</content> red or purple spots on your skin, bruising, bleeding from your mouth, teeth or nose. </item>
+                     <item>
+                        <content styleCode="bold">High ammonia levels in your blood:</content> feeling tired, vomiting, changes in mental status. </item>
+                     <item>
+                        <content styleCode="bold">Low body temperature (hypothermia):</content> drop in your body temperature to less than 95°F, feeling tired, confusion, coma. </item>
+                     <item>
+                        <content styleCode="bold">Allergic (hypersensitivity) reactions:</content> fever, skin rash, hives, sores in your mouth, skin blistering and peeling of your skin, swelling of your lymph nodes, swelling of your face, eyes, lips, tongue, or throat, trouble swallowing or breathing. </item>
+                     <item>
+                        <content styleCode="bold">Drowsiness or sleepiness in the elderly.</content> This extreme drowsiness may cause you to eat or drink less than you normally would. Tell your doctor if you are not able to eat or drink as you normally do. Your doctor may start you at a lower dose of divalproex sodium# capsules (sprinkle). </item>
+                  </list>
+                  <paragraph>
+                     <content styleCode="bold">Call your healthcare provider right away, if you have any of the symptoms listed above.</content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">The common side effects of divalproex sodium# capsules (sprinkle) include: </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>nausea </item>
+                     <item>headache </item>
+                     <item>sleepiness </item>
+                     <item>vomiting </item>
+                     <item>weakness </item>
+                     <item>tremor </item>
+                     <item>dizziness </item>
+                     <item>stomach pain </item>
+                     <item>blurry vision </item>
+                     <item>double vision </item>
+                     <item>diarrhea </item>
+                     <item>increased appetite </item>
+                     <item>weight gain </item>
+                     <item>hair loss </item>
+                     <item>loss of appetite </item>
+                     <item>problems with walking or coordination </item>
+                  </list>
+                  <paragraph>These are not all of the possible side effects of <content styleCode="bold">divalproex sodium# capsules (sprinkle).</content> For more information, ask your healthcare provider or pharmacist.  </paragraph>
+                  <paragraph>Tell your healthcare provider if you have any side effect that bothers you or that does not go away.  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Call your doctor for medical advice about side effects. You may report side effects to FDA at 1-800­FDA-1088.   </content>
+                  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">How should I store divalproex sodium# capsules (sprinkle)? </content>
+                  </paragraph>
+                  <list listType="unordered" styleCode="Disk">
+                     <item>Store divalproex sodium# capsules (sprinkle) at 20°-25°C (68°-77°F)  </item>
+                  </list>
+                  <paragraph>Keep divalproex sodium# capsules (sprinkle) and all medicines out of the reach of children.  </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">General information about the safe and effective use of divalproex sodium# capsules (sprinkle) </content>
+                  </paragraph>
+                  <paragraph>Medicines are sometimes prescribed for purposes other than those listed in a Medication Guide. Do not use divalproex sodium# capsules (sprinkle) for a condition for which it was not prescribed. Do not give divalproex sodium# capsules (sprinkle) to other people, even if they have the same symptoms that you have. It may harm them.  </paragraph>
+                  <paragraph>This Medication Guide summarizes the most important information about divalproex sodium# capsules (sprinkle). If you would like more information, talk with your healthcare provider. You can ask your pharmacist or healthcare provider for information about divalproex sodium# capsules (sprinkle) that is written for health professionals.  </paragraph>
+                  <paragraph>For more information, call 1-888-375-3784.   </paragraph>
+                  <paragraph>
+                     <content styleCode="bold">What are the ingredients in divalproex sodium# capsules (sprinkle)?: </content>
+                  </paragraph>
+                  <paragraph>Active ingredient: divalproex sodium  </paragraph>
+                  <paragraph>Inactive ingredients: </paragraph>
+                  <paragraph>Divalproex sodium# capsules (sprinkle): black iron oxide, D&amp;C Red 28, ethyl cellulose, FD&amp;C Blue 1, gelatin, hypromellose, magnesium stearate, sugar sphere, titanium dioxide, and triethyl citrate NF. </paragraph>
+                  <paragraph>This Medication Guide has been approved by the U.S. Food and Drug Administration. </paragraph>
+                  <paragraph>To reorder additional Medication Guides, contact Dr. Reddy’s Customer Service at 1-866-733-3952. </paragraph>
+                  <paragraph># Divalproex sodium USP equivalent to 125 mg of valproic acid. </paragraph>
+                  <paragraph>RX Only </paragraph>
+                  <paragraph>Manufactured by:</paragraph>
+                  <paragraph>
+                     <content styleCode="bold">Dr. Reddy’s Laboratories Limited </content>
+                  </paragraph>
+                  <paragraph>Bachepalli – 502 325 INDIA  </paragraph>
+                  <paragraph>Revised: 0112</paragraph>
+               </text>
+               <effectiveTime value="20130117"/>
+            </section>
+         </component>
+         <component>
+            <section ID="LINK_d5ec5d83-9217-40b4-bf8e-509915c4089b">
+               <id root="ab26efb9-37f9-4f9b-9c19-6a69ca8b3b53"/>
+               <code code="51945-4" codeSystem="2.16.840.1.113883.6.1" displayName="PACKAGE LABEL.PRINCIPAL DISPLAY PANEL"/>
+               <title>Package Label Principal Display Panel</title>
+               <text>
+                  <paragraph>Divalproex Sodium </paragraph>
+                  <paragraph>Capsules (Sprinkle) 125mg</paragraph>
+                  <renderMultiMedia referencedObject="MM9">
+                     <caption/>
+                  </renderMultiMedia>
+               </text>
+               <effectiveTime value="20130117"/>
+               <component>
+                  <observationMedia ID="MM9">
+                     <text>Principal Display Panel - Divalproex Sodium Capsules (Sprinkle) 125mg</text>
+                     <value xsi:type="ED" mediaType="image/jpeg">
+                        <reference value="divalproex-sodium-capsules-9.jpg"/>
+                     </value>
+                  </observationMedia>
+               </component>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</document>

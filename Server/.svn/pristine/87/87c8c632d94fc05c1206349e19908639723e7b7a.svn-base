@@ -1,0 +1,45 @@
+<?php
+require_once("sensitive_data.php");
+
+// protects from SQL injection
+function sanitize($str) {
+$str = trim($str);
+return "\"".$str."\"";
+}
+
+$username = $_GET['username'];
+$password = $_GET['password'];
+
+$conflictingconditions = sanitize($_GET['conflictingconditions']);
+$genericnames = sanitize($_GET['genericnames']);
+$ndc = sanitize($_GET['ndc']);
+$precautions = sanitize($_GET['precautions']);
+$uses = sanitize($_GET['uses']);
+$warnings = sanitize($_GET['warnings']);
+$conflictingconditions = sanitize($_GET['conflictingconditions']);
+$setid = sanitize($_GET['setid']);
+$adversereactions = sanitize($_GET['adversereactions']);
+$boxwarnings = sanitize($_GET['boxwarnings']);
+$name = sanitize($_GET['name']);
+$medicationguide = sanitize($_GET['medicationguide']);
+if ($username === "snapmeds_admin" && $password == "safeerides"){
+	$connection = new mysqli("engr-cpanel-mysql.engr.illinois.edu", $username, $password, "snapmeds_root");
+	if ($setid != NULL){
+		$result = $connection->query("INSERT INTO NDC (setid, ndc) VALUES (".$setid.",".$ndc.")");
+	}
+	$result = $connection->query("INSERT INTO ADVERSEREACTIONS (setid, adversereactions) VALUES (".$setid.",".$adversereactions.")");
+	$result = $connection->query("INSERT INTO CONFLICTINGCONDITIONS (setid,conflictingconditions) VALUES (".$setid.",".$conflictingconditions.")");
+	$result = $connection->query("INSERT INTO GENERICNAMES (setid, genericnames) VALUES (".$setid.",".$genericnames.")");
+	$result = $connection->query("INSERT INTO PRECAUTIONS (setid, precautions) VALUES (".$setid.",".$precautions.")");
+	$result = $connection->query("INSERT INTO BOXWARNINGS (setid, boxwarnings) VALUES (".$setid.",".$boxwarnings.")");
+	$result = $connection->query("INSERT INTO USES (setid, uses) VALUES (".$setid.",".$uses.")");
+	$result = $connection->query("INSERT INTO WARNINGS (setid, warnings) VALUES (".$setid.",".$warnings.")");
+	$result = $connection->query("INSERT INTO NAME (setid, name) VALUES (".$setid.",".$name.")");
+	$result = $connection->query("INSERT INTO MEDICATIONGUIDE (setid, medicationguide) VALUES (".$setid.",".$medicationguide.")");
+
+	
+	$connection->close();
+}
+
+
+?>
